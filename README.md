@@ -1,10 +1,32 @@
-# RestoKit
+<p align="center"><img src="img/banner.jpg" alt="RestoKit, a voice-ready field kit for water, mold, and crawlspace restoration" width="100%"></p>
 
-![RestoKit banner](img/banner.jpg)
+<p align="center"><strong>A voice-ready field kit for water, mold, and crawlspace restoration techs.</strong></p>
 
-**A voice-ready field kit for water, mold, and crawlspace restoration techs.**
+<p align="center">
+  <img src="https://img.shields.io/badge/version-0.8.9-d97706?style=flat&amp;labelColor=0b1f3a" alt="Version 0.8.9">
+  <img src="https://img.shields.io/badge/IICRC-S500%20%7C%20S520-0e7490?style=flat&amp;labelColor=0b1f3a" alt="IICRC S500 | S520">
+  <img src="https://img.shields.io/badge/voice--ready-0891b2?style=flat&amp;labelColor=0b1f3a" alt="Voice-ready">
+  <img src="https://img.shields.io/badge/status-full%20kit%20private-475569?style=flat&amp;labelColor=0b1f3a" alt="Status: full kit private">
+  <img src="https://komarev.com/ghpvc/?username=neuresthetics&amp;label=visitors&amp;color=0e75b6&amp;style=flat" alt="Visitors">
+</p>
 
-## What it is
+<p align="center">
+  <a href="#-what-it-is">What it is</a> ·
+  <a href="#%EF%B8%8F-what-it-covers-on-a-job">What it covers on a job</a> ·
+  <a href="#-checks-the-kit-calls-out">Checks the kit calls out</a> ·
+  <a href="#-the-science-behind-the-calls">The science behind the calls</a> ·
+  <a href="#%EF%B8%8F-voice-behavior">Voice behavior</a> ·
+  <a href="#-how-it-grows">How it grows</a> ·
+  <a href="#-where-its-headed">Where it's headed</a> ·
+  <a href="#-for-shops">For shops</a> ·
+  <a href="#-about">About</a> ·
+  <a href="#%EF%B8%8F-kit-structure">Kit structure</a> ·
+  <a href="#-a-note-on-this-repo">A note on this repo</a>
+</p>
+
+---
+
+## 🧰 What it is
 
 RestoKit is a structured JSON kit that loads into a voice assistant and works alongside a tech on the job. It's grounded in IICRC S500 (water) and S520 (mold) principles and written in a peer voice, the way a senior tech talks a job through from the truck.
 
@@ -15,7 +37,7 @@ It has two layers:
 
 It's senior-tech knowledge in a form you can use in the field. It doesn't replace years on the job. Its main job is memory: it holds the rare edge-case lessons that don't come up often enough to stay top of mind.
 
-## What it covers on a job
+## 🏗️ What it covers on a job
 
 - **Phase 0, Hold Status:** Minimum stabilization while a job waits on approval, abatement, or a plumber. That means protecting contents, flagging hazards, putting up minimal containment, and documenting the hold and the wet-time clock.
 - **Phase 1, Initial Response & Stabilization:** A signed work authorization comes before any physical work. Then: a job-type check, the safety walk and category check, source control, bulk extraction, and baseline readings in affected and unaffected areas. It also covers crawlspace inspection and asbestos sampling in pre-1980 homes before destructive work.
@@ -23,7 +45,7 @@ It's senior-tech knowledge in a form you can use in the field. It doesn't replac
 - **Phase 3, Active Drying & Monitoring:** Daily temperature, RH, and GPP readings, plus dehumidifier grain depression. Moisture readings go at the same points every visit, and containment gets re-checked. If progress stalls after 48–72 hours of proper conditions, the kit calls for a root-cause check.
 - **Phase 4, Verification & Closeout:** Controls stay up and teardown waits until final moisture verification passes. Then the cavity and crawlspace inspection, customer walkthrough, and documentation package.
 
-## Checks the kit calls out
+## ✅ Checks the kit calls out
 
 - **Category:** When unsure, go with the higher category. Water from under a toilet is Category 3 until proven otherwise. A strong musty or sewage odor overrides appearance.
 - **Electrical:** Standing water plus live circuits means stop. Kill it at the breaker, verify it's dead, and use GFCI on temp power.
@@ -33,7 +55,7 @@ It's senior-tech knowledge in a form you can use in the field. It doesn't replac
 - **Dry standard:** Match the unaffected material in the same building. For wood, that's within about 2–4 points. The ≤16 / 16.1–19.9 / ≥20% traffic light is a risk band, not a second dry standard.
 - **Mold:** The condition labels Normal, Settled, and Colonized are ranked by severity, not a timeline. Kill is not remove, because dead spores stay a reservoir.
 
-## The science behind the calls
+## 🔬 The science behind the calls
 
 - Read RH and temp, log GPP. RH for the quick check, GPP to compare days, rooms, and dehu inlet vs. outlet, since RH shifts with temperature.
 - Vapor pressure and vapor drive
@@ -41,7 +63,9 @@ It's senior-tech knowledge in a form you can use in the field. It doesn't replac
 - Material behavior, including LVP and other modern flooring that traps water underneath
 - Equipment sizing by water class and cubic footage, and the displacement principle behind tenting and ducting
 
-## Voice behavior
+---
+
+## 🎙️ Voice behavior
 
 Each step carries a short line meant to be spoken. A tech asks in one short phrase and gets only that part, not the whole module. Deeper detail stays in the reference layer until the tech asks for it.
 
@@ -49,28 +73,32 @@ Each step carries a short line meant to be spoken. A tech asks in one short phra
 
 > "Full containment before demo. Neg air target: about minus five pascals continuous, or more negative. Quick check: bounce a quarter on the six-mil. If it's flat or flapping, you lost pressure."
 
-## How it grows
+## 🌱 How it grows
 
 RestoKit grows from daily voice job logs. A lesson goes into the kit only after it proves itself on real jobs, as a short voice note in the module that owns it.
 
 The current version is **0.8.9**.
 
-## Where it's headed
+## 🧭 Where it's headed
 
 Next up is connecting the field scope to Xactimate so the scope and the estimate line up.
 
-## For shops
+---
+
+## 🤝 For shops
 
 A demo of the kit is available on request. From there, Jason can build a company version around a shop's own procedures.
 
-## About
+## 👤 About
 
 RestoKit is built by **Jason Burns**, a restoration tech and builder in Portland, OR, and a U.S. Army Engineer veteran.
 
 - GitHub: [github.com/neuresthetics](https://github.com/neuresthetics)
 - Email: [neuresthetics@gmail.com](mailto:neuresthetics@gmail.com)
 
-## Kit structure
+---
+
+## 🗂️ Kit structure
 
 Top-level layout of the kit, contents omitted:
 
@@ -144,6 +172,6 @@ Top-level layout of the kit, contents omitted:
 }
 ```
 
-## A note on this repo
+## 🔒 A note on this repo
 
 This is a public window into the project. The full kit is kept private. A demo is available on request.
