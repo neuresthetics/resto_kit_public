@@ -1,4 +1,4 @@
-<p align="center"><img src="img/brand/restokit_logo_horizontal.svg" alt="RestoKit logo" width="520"></p>
+<p align="center"><img src="img/brand/restokit_logo_horizontal.png" alt="RestoKit logo" width="520"></p>
 
 <p align="center"><img src="img/banner.jpg" alt="RestoKit, a restoration kit for water, mold, and crawlspace work" width="100%"></p>
 
