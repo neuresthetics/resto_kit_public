@@ -4,7 +4,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-0.8.9-d97706?style=flat&amp;labelColor=0b1f3a" alt="Version 0.8.9">
-  <img src="https://img.shields.io/badge/IICRC-S500%20%7C%20S520-0e7490?style=flat&amp;labelColor=0b1f3a" alt="IICRC S500 | S520">
   <img src="https://img.shields.io/badge/voice--ready-0891b2?style=flat&amp;labelColor=0b1f3a" alt="Voice-ready">
   <img src="https://img.shields.io/badge/status-full%20kit%20private-475569?style=flat&amp;labelColor=0b1f3a" alt="Status: full kit private">
   <img src="https://komarev.com/ghpvc/?username=neuresthetics&amp;label=visitors&amp;color=0e75b6&amp;style=flat" alt="Visitors">
