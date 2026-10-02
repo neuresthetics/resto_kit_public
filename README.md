@@ -28,7 +28,7 @@
 
 ## 🧰 What it is
 
-RestoKit is a structured JSON kit that loads into a commercial AI model and works alongside anyone running a restoration job, from tech and lead to project manager and estimator. It's grounded in IICRC S500 (water) and S520 (mold) principles and written in a peer voice, the way a senior tech talks a job through. For now it runs on commercial models only.
+RestoKit is a structured JSON kit that loads into an AI model and works alongside anyone running a restoration job, from tech and lead to project manager and estimator. It's grounded in IICRC S500 (water) and S520 (mold) principles and written in a peer voice, the way a senior tech talks a job through. For now it runs on commercial models only.
 
 It has two layers:
 
