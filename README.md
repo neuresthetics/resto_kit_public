@@ -1,10 +1,11 @@
-<p align="center"><img src="img/banner.jpg" alt="RestoKit, a voice-ready field kit for water, mold, and crawlspace restoration" width="100%"></p>
+<p align="center"><img src="img/banner.jpg" alt="RestoKit, a restoration kit for water, mold, and crawlspace work" width="100%"></p>
 
-<p align="center"><strong>A voice-ready field kit for water, mold, and crawlspace restoration techs.</strong></p>
+<p align="center"><strong>A restoration kit for water, mold, and crawlspace work, from tech to lead, PM, and estimator.</strong></p>
 
 <p align="center">
   <img src="https://img.shields.io/badge/version-0.8.9-d97706?style=flat&amp;labelColor=0b1f3a" alt="Version 0.8.9">
-  <img src="https://img.shields.io/badge/voice--ready-0891b2?style=flat&amp;labelColor=0b1f3a" alt="Voice-ready">
+  <img src="https://img.shields.io/badge/for-tech%20%7C%20lead%20%7C%20PM%20%7C%20estimator-0891b2?style=flat&amp;labelColor=0b1f3a" alt="For tech, lead, PM, and estimator">
+  <img src="https://img.shields.io/badge/runs%20on-commercial%20models-0e7490?style=flat&amp;labelColor=0b1f3a" alt="Runs on commercial models">
   <img src="https://img.shields.io/badge/status-full%20kit%20private-475569?style=flat&amp;labelColor=0b1f3a" alt="Status: full kit private">
   <img src="https://komarev.com/ghpvc/?username=neuresthetics&amp;label=visitors&amp;color=0e75b6&amp;style=flat" alt="Visitors">
 </p>
@@ -14,7 +15,7 @@
   <a href="#%EF%B8%8F-what-it-covers-on-a-job">What it covers on a job</a> ·
   <a href="#-checks-the-kit-calls-out">Checks the kit calls out</a> ·
   <a href="#-the-science-behind-the-calls">The science behind the calls</a> ·
-  <a href="#%EF%B8%8F-voice-behavior">Voice behavior</a> ·
+  <a href="#-how-it-answers">How it answers</a> ·
   <a href="#-how-it-grows">How it grows</a> ·
   <a href="#-where-its-headed">Where it's headed</a> ·
   <a href="#-for-shops">For shops</a> ·
@@ -27,14 +28,14 @@
 
 ## 🧰 What it is
 
-RestoKit is a structured JSON kit that loads into a voice assistant and works alongside a tech on the job. It's grounded in IICRC S500 (water) and S520 (mold) principles and written in a peer voice, the way a senior tech talks a job through from the truck.
+RestoKit is a structured JSON kit that loads into a commercial AI model and works alongside anyone running a restoration job, from tech and lead to project manager and estimator. It's grounded in IICRC S500 (water) and S520 (mold) principles and written in a peer voice, the way a senior tech talks a job through. For now it runs on commercial models only.
 
 It has two layers:
 
 - **Phases:** a linear job flow with gates in a set order, so safety-critical steps don't get skipped under time pressure.
 - **Modules and base science:** a reference pool the steps point into for the why. It covers category, remove-vs-dry, containment, equipment sizing, drying science, mold cleaning, and crawlspaces.
 
-It's senior-tech knowledge in a form you can use in the field. It doesn't replace years on the job. Its main job is memory: it holds the rare edge-case lessons that don't come up often enough to stay top of mind.
+It's senior field knowledge in a form a tech, lead, PM, or estimator can use. It doesn't replace years on the job. Its main job is memory: it holds the rare edge-case lessons that don't come up often enough to stay top of mind.
 
 ## 🏗️ What it covers on a job
 
@@ -64,17 +65,17 @@ It's senior-tech knowledge in a form you can use in the field. It doesn't replac
 
 ---
 
-## 🎙️ Voice behavior
+## 📋 How it answers
 
-Each step carries a short line meant to be spoken. A tech asks in one short phrase and gets only that part, not the whole module. Deeper detail stays in the reference layer until the tech asks for it.
+Each step carries a short summary line. Ask about one step and you get only that part, not the whole module. Deeper detail stays in the reference layer until you ask for it. The short lines are also written to work read aloud.
 
-**Example of what a tech might hear:**
+**Example answer:**
 
 > "Full containment before demo. Neg air target: about minus five pascals continuous, or more negative. Quick check: bounce a quarter on the six-mil. If it's flat or flapping, you lost pressure."
 
 ## 🌱 How it grows
 
-RestoKit grows from daily voice job logs. A lesson goes into the kit only after it proves itself on real jobs, as a short voice note in the module that owns it.
+RestoKit grows from daily job logs. A lesson goes into the kit only after it proves itself on real jobs, as a short note in the module that owns it.
 
 The current version is **0.8.9**.
 
