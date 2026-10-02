@@ -1,13 +1,15 @@
+<p align="center"><img src="img/brand/restokit_logo_horizontal.svg" alt="RestoKit logo" width="520"></p>
+
 <p align="center"><img src="img/banner.jpg" alt="RestoKit, a restoration kit for water, mold, and crawlspace work" width="100%"></p>
 
 <p align="center"><strong>A restoration kit for water, mold, and crawlspace work, from tech to lead, PM, and estimator.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.8.9-d97706?style=flat&amp;labelColor=0b1f3a" alt="Version 0.8.9">
-  <img src="https://img.shields.io/badge/for-tech%20%7C%20lead%20%7C%20PM%20%7C%20estimator-0891b2?style=flat&amp;labelColor=0b1f3a" alt="For tech, lead, PM, and estimator">
-  <img src="https://img.shields.io/badge/runs%20on-commercial%20models-0e7490?style=flat&amp;labelColor=0b1f3a" alt="Runs on commercial models">
-  <img src="https://img.shields.io/badge/status-full%20kit%20private-475569?style=flat&amp;labelColor=0b1f3a" alt="Status: full kit private">
-  <img src="https://komarev.com/ghpvc/?username=neuresthetics&amp;label=visitors&amp;color=0e75b6&amp;style=flat" alt="Visitors">
+  <img src="https://img.shields.io/badge/version-0.8.9-b45309?style=flat&amp;labelColor=134e4a" alt="Version 0.8.9">
+  <img src="https://img.shields.io/badge/for-tech%20%7C%20lead%20%7C%20PM%20%7C%20estimator-b45309?style=flat&amp;labelColor=134e4a" alt="For tech, lead, PM, and estimator">
+  <img src="https://img.shields.io/badge/runs%20on-commercial%20models-27272a?style=flat&amp;labelColor=134e4a" alt="Runs on commercial models">
+  <img src="https://img.shields.io/badge/status-full%20kit%20private-27272a?style=flat&amp;labelColor=134e4a" alt="Status: full kit private">
+  <img src="https://komarev.com/ghpvc/?username=neuresthetics&amp;label=visitors&amp;color=b45309&amp;style=flat" alt="Visitors">
 </p>
 
 <p align="center">
