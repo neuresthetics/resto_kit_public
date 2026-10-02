@@ -100,75 +100,174 @@ RestoKit is built by **Jason Burns**, a restoration tech and builder in Portland
 
 ## 🗂️ Kit structure
 
-Top-level layout of the kit, contents omitted:
+Layout of the kit two levels deep. Each section lists the keys inside it; contents omitted.
 
-```json
+```jsonc
 {
-  "framework": "Kit identifier",
-  "meta": "Author, version, date, and kit description",
-  "framework_scale": "Rules for when modules grow into shallow trees",
+  "framework": "…",  // Kit identifier
+  "meta": ["author", "description", "repository", "version", "date"],  // Author, version, date, and kit description
+  "framework_scale": [  // Rules for when modules grow into shallow trees
+    "purpose", "core_principle", "triggers_for_tree", "tree_design_rules", "restructuring_process",
+    "what_stays_flat", "current_candidates", "success_test", "remembering_function",
+    "runtime_contracts"
+  ],
   "main_content": {
     "phases": {
-      "phase0": "Hold Status: minimal stabilization while a job waits",
-      "phase1": "Initial Response & Stabilization",
-      "phase2": "Selective Demolition & Post-Demo Cleaning",
-      "phase3": "Active Drying & Monitoring",
-      "phase4": "Verification & Closeout"
+      "phase0": [  // Hold Status: minimal stabilization while a job waits
+        "name", "frequency", "objective", "sequence", "hold_reasons", "minimal_actions_only",
+        "when_to_resume", "pm_board_alignment", "voice_note", "resume_voice_line"
+      ],
+      "phase1": ["name", "objective", "sequence", "pm_board_alignment", "phase_collapse_note"],  // Initial Response & Stabilization
+      "phase2": ["name", "objective", "sequence", "pm_board_alignment"],  // Selective Demolition & Post-Demo Cleaning
+      "phase3": ["name", "objective", "sequence", "pm_board_alignment"],  // Active Drying & Monitoring
+      "phase4": ["name", "objective", "sequence", "pm_board_alignment"]  // Verification & Closeout
     },
     "modules": {
-      "demolition": "Remove-vs-dry decisions, demo sequence, controls, post-demo clean",
-      "crawlspaces": "Crawl safety, inspection, insulation, airflow, vapor barrier",
-      "special_situations": "High-complexity homes needing elevated PPE and sequencing",
-      "leadership_and_labor": "Crew leadership and labor distribution",
-      "practical_judgment": "Sound technical calls under real-world constraints",
-      "emergency_calls": "Triage for after-hours and urgent calls",
-      "service_contract": "Work authorization before scope or demo",
-      "initial_assessment": "First on-site evaluation",
-      "source_control": "Stopping and verifying the water source",
-      "extraction": "Removing standing water",
-      "ambient_humidity_assessment": "Quick RH and temp screen before equipment",
-      "contents_handling": "Protecting, moving, cleaning, and returning contents",
-      "engineering_controls": "Negative pressure, air filtration, and related controls",
-      "containment": "Containment types, build sequence, and blowouts",
-      "extension_cord_safety": "",
-      "electrical_safety": "",
-      "drying_and_monitoring": "Drying setup, tenting, dry standards, dehu ducting",
-      "general_cleaning": "",
-      "ulv_vs_hand_pump_sprayer": "Choosing an application method for antimicrobials",
-      "trash_management_and_logistics": "Debris handling and hauling",
-      "final_verification": "Final moisture checks before teardown",
-      "job_closeout": "Teardown, walkthrough, and closing the job",
-      "documentation": "Documentation habits across the job",
-      "category_decision": "Verifying or upgrading water category on site",
-      "hazard_sampling": "Asbestos and hazardous material sampling",
-      "limited_targeted_access": "Low-risk access before full demo",
-      "equipment_setup": "Equipment placement and sizing",
-      "van_organization": "Work vehicle setup",
-      "mcgyver": "Practical field improvisations",
-      "insurance_dynamics": "Working within carrier rules",
-      "monitoring": "Daily monitoring methods and trend logging",
-      "mold_cleaning": "Mold cleaning approach, sequence, and condition labels",
-      "ale": "Additional living expense notes",
-      "electricity_bills": "Equipment power cost notes",
-      "_structure_note": "Internal note on module layout",
-      "job_type_gate": "Confirm the job type before loading water modules"
+      "demolition": ["title", "description", "tree", "voice_entry_points"],  // Remove-vs-dry decisions, demo sequence, controls, post-demo clean
+      "crawlspaces": ["title", "description", "tree", "voice_entry_points"],  // Crawl safety, inspection, insulation, airflow, vapor barrier
+      "special_situations": ["title", "description", "tree", "voice_entry_points"],  // High-complexity homes needing elevated PPE and sequencing
+      "leadership_and_labor": [  // Crew leadership and labor distribution
+        "description", "core_principle", "key_considerations", "voice_considerations",
+        "pump_truck_deployment"
+      ],
+      "practical_judgment": [  // Sound technical calls under real-world constraints
+        "description", "core_principle", "key_considerations", "minimize_passes", "voice_note",
+        "noise_mitigation", "good_enough", "remembering_edge_cases"
+      ],
+      "emergency_calls": [  // Triage for after-hours and urgent calls
+        "title", "description", "triage_questions", "true_emergency_criteria",
+        "non_emergency_examples", "emotional_reaction_handling", "on_site_protocol",
+        "mitigation_to_restoration_note", "voice_considerations", "heavy_sewage_override"
+      ],
+      "service_contract": [  // Work authorization before scope or demo
+        "description", "key_activities", "critical_decision_points", "practical_guidance",
+        "voice_considerations", "life_safety_carve_out"
+      ],
+      "initial_assessment": [  // First on-site evaluation
+        "description", "key_activities", "critical_decision_points", "practical_guidance",
+        "voice_considerations"
+      ],
+      "source_control": [  // Stopping and verifying the water source
+        "description", "key_activities", "critical_decision_points", "practical_guidance",
+        "voice_considerations"
+      ],
+      "extraction": [  // Removing standing water
+        "description", "key_activities", "critical_decision_points", "practical_guidance",
+        "voice_considerations"
+      ],
+      "ambient_humidity_assessment": [  // Quick RH and temp screen before equipment
+        "title", "description", "traffic_light", "key_activities", "voice_line", "integration",
+        "scope_note"
+      ],
+      "contents_handling": ["description", "key_activities", "contents_return", "voice_considerations"],  // Protecting, moving, cleaning, and returning contents
+      "engineering_controls": [  // Negative pressure, air filtration, and related controls
+        "description", "key_activities", "critical_decision_points", "practical_guidance",
+        "voice_considerations", "negative_pressure_targets", "gas_appliance_backdraft"
+      ],
+      "containment": [  // Containment types, build sequence, and blowouts
+        "zipper_doors", "types", "philosophy", "blowout", "hvac_intake_ban",
+        "gas_appliance_backdraft_check", "core_mindset", "when_to_use", "recommended_sequence",
+        "voice_note", "voice_considerations", "recommended_sequence_voice_chunks"
+      ],
+      "extension_cord_safety": ["description", "key_rules", "practical_guidance", "voice_considerations"],
+      "electrical_safety": ["description", "key_rules", "practical_guidance", "voice_considerations", "voice_note"],
+      "drying_and_monitoring": [  // Drying setup, tenting, dry standards, dehu ducting
+        "description", "key_activities", "tenting", "critical_decision_points", "practical_guidance",
+        "voice_considerations", "references", "monitoring_module_note", "dry_standards",
+        "moisture_after_spray", "dehumidifier_ducting"
+      ],
+      "general_cleaning": ["description", "core_approach", "practical_tips", "voice_note"],
+      "ulv_vs_hand_pump_sprayer": ["description", "key_rules", "rules_of_thumb", "when_not_to_use_ulv", "financial_note"],  // Choosing an application method for antimicrobials
+      "trash_management_and_logistics": [  // Debris handling and hauling
+        "description", "core_approaches", "daily_handling", "vehicle_loading",
+        "contaminated_material", "equipment_decisions", "key_principles"
+      ],
+      "final_verification": [  // Final moisture checks before teardown
+        "description", "key_activities", "critical_decision_points", "practical_guidance",
+        "voice_considerations"
+      ],
+      "job_closeout": [  // Teardown, walkthrough, and closing the job
+        "description", "key_activities", "critical_decision_points", "practical_guidance", "warnings",
+        "voice_considerations"
+      ],
+      "documentation": [  // Documentation habits across the job
+        "description", "core_principle", "key_habits", "decision_criteria", "practical_guidance",
+        "warnings", "voice_considerations"
+      ],
+      "category_decision": [  // Verifying or upgrading water category on site
+        "description", "key_activities", "critical_decision_points", "practical_guidance",
+        "voice_considerations"
+      ],
+      "hazard_sampling": [  // Asbestos and hazardous material sampling
+        "description", "key_activities", "critical_decision_points", "practical_guidance",
+        "voice_considerations"
+      ],
+      "limited_targeted_access": [  // Low-risk access before full demo
+        "description", "key_activities", "critical_decision_points", "practical_guidance",
+        "voice_considerations"
+      ],
+      "equipment_setup": [  // Equipment placement and sizing
+        "description", "key_activities", "critical_decision_points", "industry_rules_of_thumb",
+        "sizing_and_calculations", "practical_guidance", "references", "voice_considerations",
+        "noise_reduction"
+      ],
+      "van_organization": [  // Work vehicle setup
+        "description", "core_principle", "vehicle_type_recommendations",
+        "cab_separation_and_contamination_control", "clean_dirty_flow", "functional_zones",
+        "racking_and_shelving", "theft_and_security", "weather_adaptations",
+        "van_cleaning_and_maintenance", "professional_appearance", "comfort_and_quality_of_life",
+        "daily_reset_habits", "voice_considerations"
+      ],
+      "mcgyver": [  // Practical field improvisations
+        "name", "description", "core_principle", "trigger_phrases", "field_fixes",
+        "voice_considerations", "edge_case_memory"
+      ],
+      "insurance_dynamics": [  // Working within carrier rules
+        "description", "key_realities", "field_reality", "practical_guidance", "voice_considerations",
+        "honesty_guard"
+      ],
+      "monitoring": [  // Daily monitoring methods and trend logging
+        "description", "core_principle", "key_principles", "fixed_point_techniques",
+        "long_dwell_sewage_handling", "integration", "voice_considerations"
+      ],
+      "mold_cleaning": [  // Mold cleaning approach, sequence, and condition labels
+        "title", "description", "core_principle", "customer_notify", "cleaning_stacks",
+        "practical_approach", "voice_note", "moisture_after_spray_note", "spore_reservoir",
+        "kill_then_remove", "condition_labels"
+      ],
+      "ale": ["title", "description", "status", "deferred_reason", "voice_note"],  // Additional living expense notes
+      "electricity_bills": ["title", "description", "status", "deferred_reason", "voice_note"],  // Equipment power cost notes
+      "_structure_note": ["description"],  // Internal note on module layout
+      "job_type_gate": ["title", "rule", "example", "voice_note"]  // Confirm the job type before loading water modules
     },
     "base_science": {
-      "water_category": "",
-      "psychrometry": "",
-      "moisture_physics": "",
-      "water_movement_pathways": "",
-      "evaporation_principles": "",
-      "dry_standards": "",
-      "contamination_science": "",
-      "mold_science": "",
-      "material_behavior": "",
-      "vapor_drive_and_pressure": "",
-      "wood_emc": "Wood equilibrium moisture content"
+      "water_category": [
+        "description", "category_1", "category_2", "category_3", "time_and_migration",
+        "decision_rules", "nuances", "voice_notes"
+      ],
+      "psychrometry": ["description", "core_concepts", "field_implication", "voice_note"],
+      "moisture_physics": ["description", "core_concepts", "field_implications"],
+      "water_movement_pathways": [
+        "description", "core_mechanisms", "layering_and_drainage", "horizontal_pathways",
+        "vertical_pathways", "high_probability_collection_points", "field_implications", "voice_notes"
+      ],
+      "evaporation_principles": ["description", "core_concepts", "field_implication"],
+      "dry_standards": ["description", "core_principle", "wood", "non_wood_materials", "insulation_rule", "voice_note"],
+      "contamination_science": ["description", "core_concepts", "field_implication"],
+      "mold_science": [
+        "description", "core_concepts", "key_relationships", "field_implications",
+        "common_misunderstandings"
+      ],
+      "material_behavior": [
+        "description", "core_concepts", "key_relationships", "field_implications",
+        "common_misunderstandings"
+      ],
+      "vapor_drive_and_pressure": ["description", "core_concepts", "field_implications"],
+      "wood_emc": ["description", "core_concepts", "field_implications"]  // Wood equilibrium moisture content
     },
-    "board_stage_aliases": "Maps workflow stages to project-board column names"
+    "board_stage_aliases": ["purpose", "aliases", "notes"]  // Maps workflow stages to project-board column names
   },
-  "update_notes": "Version-by-version changelog"
+  "update_notes": "…"  // Version-by-version changelog
 }
 ```
 
