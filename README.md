@@ -10,7 +10,7 @@
 <p align="center"><strong>A restoration kit for water, mold, and crawlspace work, from tech to lead, PM, and estimator.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.8.9-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.8.9">
+  <img src="https://img.shields.io/badge/version-0.9.0-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.0">
   <img src="https://img.shields.io/badge/for-tech%20%7C%20lead%20%7C%20PM%20%7C%20estimator-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="For tech, lead, PM, and estimator">
   <img src="https://img.shields.io/badge/runs%20on-commercial%20models-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Runs on commercial models">
   <img src="https://img.shields.io/badge/status-full%20kit%20private-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Status: full kit private">
@@ -57,11 +57,11 @@ It's senior field knowledge in a form a tech, lead, PM, or estimator can use. It
 
 - **Category:** When unsure, go with the higher category. Water from under a toilet is Category 3 until proven otherwise. A strong musty or sewage odor overrides appearance.
 - **Electrical:** Standing water plus live circuits means stop. Kill it at the breaker, verify it's dead, and use GFCI on temp power.
-- **Crawlspaces:** Every crawl gets a 4-gas check (O₂, CO, H₂S/sewer gas). Never work one alone, and never push crawl air up into the house.
+- **Crawlspaces:** Size it up at the hatch. A 4-gas check is recommended; a gas or sewer smell means get out. Don't work a tight, hot, or contaminated crawl alone, and never push crawl air up into the house.
 - **Containment:** Minimal containment on every job, even Category 1. Full containment before demo or when contamination risk rises. Never bag a live HVAC return.
 - **Negative air:** Target about −5 Pa continuous, sized for 4+ air changes per hour. If a gas appliance is in or next to the chamber, check flue draft and plan makeup air.
-- **Dry standard:** Match the unaffected material in the same building. For wood, that's within about 2–4 points. The ≤16 / 16.1–19.9 / ≥20% traffic light is a risk band, not a second dry standard.
-- **Mold:** The condition labels Normal, Settled, and Colonized are ranked by severity, not a timeline. Kill is not remove, because dead spores stay a reservoir.
+- **Dry standard:** The unaffected material in the same building sets it, and the goal is at or above it. For wood, 2–4 points is a quick field check. The ≤16 / 16.1–19.9 / ≥20% traffic light is a risk band, not a second dry standard.
+- **Mold:** Surfaces are called Condition 1, 2, or 3. Kill is not remove, because dead spores stay a reservoir.
 
 ## 🔬 The science behind the calls
 
@@ -77,7 +77,7 @@ It's senior field knowledge in a form a tech, lead, PM, or estimator can use. It
 
 RestoKit is a single JSON file. There's nothing to install and no code to run.
 
-1. **Load it.** Open the Grok app or a Grok Bot and attach `resto_kit_0.8.9.json`, or add it to a project or bot's knowledge so it stays loaded.
+1. **Load it.** Open the Grok app or a Grok Bot and attach `resto_kit_0.9.0.json`, or add it to a project or bot's knowledge so it stays loaded.
 2. **Tell it the job.** For example, "Category 2 supply-line leak, kitchen and crawlspace, 1990s house, I'm the PM."
 3. **Ask one thing at a time.** For example, "What's Phase 1?", "Remove or dry this LVP?", "Containment before demo?", or "Is the subfloor dry?" It answers from the kit's phases, checks, and science, and goes deeper only when you ask.
 
@@ -95,7 +95,7 @@ Each step carries a short summary line. Ask about one step and you get only that
 
 RestoKit grows from daily job logs. A lesson goes into the kit only after it proves itself on real jobs, as a short note in the module that owns it.
 
-The current version is **0.8.9**.
+The current version is **0.9.0**.
 
 ## 🧭 Where it's headed
 
@@ -161,6 +161,13 @@ Layout of the kit two levels deep. Each section lists the keys inside it; conten
         "description", "key_activities", "critical_decision_points", "practical_guidance",
         "voice_considerations", "life_safety_carve_out"
       ],
+      "legal_and_liability": [  // Authorization, change orders, deviations, consent, records, and what not to claim
+        "title", "description", "core_principle", "disclaimer_framing", "work_authorization_and_contract",
+        "change_orders", "limitations_complexities_complications_conflicts", "deviation_procedure",
+        "informed_consent_antimicrobials", "who_decides_what", "qualifications_and_licensing",
+        "records_and_retention", "insurance_boundary", "must_not_claim", "waivers", "voice_note"
+      ],
+      "glossary": ["title", "description", "terms", "voice_note"],  // Plain-language definitions of field terms
       "initial_assessment": [  // First on-site evaluation
         "description", "key_activities", "critical_decision_points", "practical_guidance",
         "voice_considerations"
@@ -187,6 +194,7 @@ Layout of the kit two levels deep. Each section lists the keys inside it; conten
         "gas_appliance_backdraft_check", "core_mindset", "when_to_use", "recommended_sequence",
         "voice_note", "voice_considerations", "recommended_sequence_voice_chunks"
       ],
+      "hvac_systems": ["title", "description", "key_rules", "source", "voice_note"],  // When the building's HVAC is part of the loss and how to handle it
       "extension_cord_safety": ["description", "key_rules", "practical_guidance", "voice_considerations"],
       "electrical_safety": ["description", "key_rules", "practical_guidance", "voice_considerations", "voice_note"],
       "drying_and_monitoring": [  // Drying setup, tenting, dry standards, dehu ducting
