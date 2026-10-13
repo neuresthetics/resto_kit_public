@@ -10,7 +10,7 @@
 <p align="center"><strong>A restoration kit for water, mold, and crawlspace work, from tech to lead, PM, and estimator.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.9.0-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.0">
+  <img src="https://img.shields.io/badge/version-0.9.1-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.1">
   <img src="https://img.shields.io/badge/for-tech%20%7C%20lead%20%7C%20PM%20%7C%20estimator-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="For tech, lead, PM, and estimator">
   <img src="https://img.shields.io/badge/runs%20on-commercial%20models-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Runs on commercial models">
   <img src="https://img.shields.io/badge/status-full%20kit%20private-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Status: full kit private">
@@ -78,7 +78,7 @@ It's senior field knowledge in a form a tech, lead, PM, or estimator can use. It
 
 RestoKit is a single JSON file. There's nothing to install and no code to run.
 
-1. **Load it.** Open the Grok app or a Grok Bot and attach `resto_kit_0.9.0.json`, or add it to a project or bot's knowledge so it stays loaded.
+1. **Load it.** Open the Grok app or a Grok Bot and attach `resto_kit_0.9.1.json`, or add it to a project or bot's knowledge so it stays loaded.
 2. **Tell it the job.** For example, "Category 2 supply-line leak, kitchen and crawlspace, 1990s house, I'm the PM."
 3. **Ask one thing at a time.** For example, "What's Phase 1?", "Remove or dry this LVP?", "Containment before demo?", or "Is the subfloor dry?" It answers from the kit's phases, checks, and science, and goes deeper only when you ask.
 
@@ -96,7 +96,7 @@ Each step carries a short summary line. Ask about one step and you get only that
 
 RestoKit grows from daily job logs. A lesson goes into the kit only after it proves itself on real jobs, as a short note in the module that owns it.
 
-The current version is **0.9.0**.
+The current version is **0.9.1**.
 
 ## 🧭 Where it's headed
 
