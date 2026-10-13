@@ -47,11 +47,12 @@ It's senior field knowledge in a form a tech, lead, PM, or estimator can use. It
 
 ## 🏗️ What it covers on a job
 
-- **Phase 0, Hold Status:** Minimum stabilization while a job waits on approval, abatement, or a plumber. That means protecting contents, flagging hazards, putting up minimal containment, and documenting the hold and the wet-time clock.
-- **Phase 1, Initial Response & Stabilization:** A signed work authorization comes before any physical work. Then: a job-type check, the safety walk and category check, source control, bulk extraction, and baseline readings in affected and unaffected areas. It also covers crawlspace inspection and asbestos sampling in pre-1980 homes before destructive work.
+- **Phase 0, Survey & Estimate:** The first look before any work is authorized. The surveyor talks with the customer, investigates and marks wet areas, takes a quick photo sweep, checks the crawlspace from the hatch (4-gas before entry), samples suspect materials before anything is disturbed, and builds the scope, estimate sketch, and job file the tech inherits. The surveyor doesn't lock scope, because initial scopes almost always run low.
+- **Phase 1, Initial Response & Stabilization:** Starts at signed work authorization. Then: a job-type check, the safety walk and category check, confirming or completing the survey photos and measurements, source control, bulk extraction, and baseline readings in affected and unaffected areas. It also covers full crawlspace entry and confirming asbestos results before any disturbing work.
 - **Phase 2, Selective Demolition & Post-Demo Cleaning:** Remove vs. dry-in-place by material, category, and dwell time. Controls are upgraded before demo, and demo runs top-down. Hidden water gets chased into cavities, under LVP, and along base plates. Then post-demo cleaning and an equipment re-set.
 - **Phase 3, Active Drying & Monitoring:** Daily temperature, RH, and GPP readings, plus dehumidifier grain depression. Moisture readings go at the same points every visit, and containment gets re-checked. If progress stalls after 48–72 hours of proper conditions, the kit calls for a root-cause check.
 - **Phase 4, Verification & Closeout:** Controls stay up and teardown waits until final moisture verification passes. Then the cavity and crawlspace inspection, customer walkthrough, and documentation package.
+- **Hold Status (any phase):** A job can pause at any phase while it waits on approval, abatement, a plumber, or a signature. Hold means minimum stabilization: protect contents, flag hazards, put up minimal containment, and document the hold and the wet-time clock. Each phase lists its common hold points, and the job returns to the phase it left once cleared. Whether to pause is a judgment call between the restoration company, homeowner, and carrier.
 
 ## ✅ Checks the kit calls out
 
@@ -131,14 +132,16 @@ Layout of the kit two levels deep. Each section lists the keys inside it; conten
   ],
   "main_content": {
     "phases": {
-      "phase0": [  // Hold Status: minimal stabilization while a job waits
+      "phase0": ["name", "objective", "principles", "sequence", "pm_board_alignment", "hold_triggers", "references"],  // Survey & Estimate
+      "phase1": ["name", "objective", "sequence", "pm_board_alignment", "phase_collapse_note", "hold_triggers"],  // Initial Response & Stabilization
+      "phase2": ["name", "objective", "sequence", "pm_board_alignment", "hold_triggers"],  // Selective Demolition & Post-Demo Cleaning
+      "phase3": ["name", "objective", "sequence", "pm_board_alignment", "hold_triggers"],  // Active Drying & Monitoring
+      "phase4": ["name", "objective", "sequence", "pm_board_alignment", "hold_triggers"],  // Verification & Closeout
+      "hold_status": [  // Hold Status: unnumbered, enterable from any phase
         "name", "frequency", "objective", "sequence", "hold_reasons", "minimal_actions_only",
-        "when_to_resume", "pm_board_alignment", "voice_note", "resume_voice_line"
-      ],
-      "phase1": ["name", "objective", "sequence", "pm_board_alignment", "phase_collapse_note"],  // Initial Response & Stabilization
-      "phase2": ["name", "objective", "sequence", "pm_board_alignment"],  // Selective Demolition & Post-Demo Cleaning
-      "phase3": ["name", "objective", "sequence", "pm_board_alignment"],  // Active Drying & Monitoring
-      "phase4": ["name", "objective", "sequence", "pm_board_alignment"]  // Verification & Closeout
+        "when_to_resume", "pm_board_alignment", "voice_note", "resume_voice_line",
+        "entry_rule", "exit_rule", "judgment_note"
+      ]
     },
     "modules": {
       "demolition": ["title", "description", "tree", "voice_entry_points"],  // Remove-vs-dry decisions, demo sequence, controls, post-demo clean
