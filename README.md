@@ -14,7 +14,6 @@
   <img src="https://img.shields.io/badge/for-tech%20%7C%20lead%20%7C%20PM%20%7C%20estimator-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="For tech, lead, PM, and estimator">
   <img src="https://img.shields.io/badge/runs%20on-commercial%20models-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Runs on commercial models">
   <img src="https://img.shields.io/badge/status-full%20kit%20private-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Status: full kit private">
-  <img src="https://komarev.com/ghpvc/?username=neuresthetics&amp;label=visitors&amp;color=1D69C6&amp;style=flat" alt="Visitors">
 </p>
 
 <p align="center">
@@ -303,3 +302,13 @@ Layout of the kit two levels deep. Each section lists the keys inside it; conten
 ## 🔒 A note on this repo
 
 This is a public window into the project. The full kit is kept private. A demo is available on request.
+
+## 🕰️ Development history
+
+- **Pre-0.6.** First single-file kit, then split into a modular kit.
+- **0.6.7 to 0.6.9.** First numbered releases.
+- **0.8.0 and 0.8.1.** Base for the 0.8 line.
+- **0.8.2.** Field-memory expansion: crawlspaces rebuilt around displacement, combustion backdrafting, condition labels, cleaning stacks, dehumidifier ducting, and a job-type gate.
+- **0.8.3 to 0.8.9.** Batched field additions, ending with Normal, Settled, and Colonized condition labels.
+- **0.9.0.** Depth cap, four tiers, citations and notes moved out of the kit body, and a pump truck module.
+- **0.9.1.** Job flow restructured into five phases, survey to closeout, plus Hold as a status. Hazard sampling rebuilt: the asbestos stop matches the regulatory line (more than 1 percent), Oregon's small-repair exemption is added as a note, and age-based wording is replaced with "older or suspect, any age."
