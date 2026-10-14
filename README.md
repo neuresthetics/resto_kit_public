@@ -228,8 +228,8 @@ Layout of the kit two levels deep. Each section lists the keys inside it; conten
         "voice_considerations"
       ],
       "hazard_sampling": [  // Asbestos and hazardous material sampling
-        "description", "key_activities", "critical_decision_points", "practical_guidance",
-        "voice_considerations"
+        "title", "description", "references", "who_samples", "decisions", "homogeneous_areas",
+        "minimum_counts", "collection", "lab_and_results", "count_vs_cost", "lead", "voice_considerations"
       ],
       "limited_targeted_access": [  // Low-risk access before full demo
         "description", "key_activities", "critical_decision_points", "practical_guidance",
