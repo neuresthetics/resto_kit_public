@@ -1,0 +1,2666 @@
+{
+  "schema": {
+    "kind": "resto_mitigation_scope_sheet",
+    "version": "0.1",
+    "principle": "Whole-job, per-visit line-item sheet (up to 5 room columns). Baseline of commonly billed mitigation labor. Companion to logs/scope_sheet_template.json (per-room object); line numbers here are the shared reference for crew procedures and photos."
+  },
+  "meta": {
+    "version": "0.1",
+    "provenance": "transcribed from a third-party industry mitigation scope sheet (rev 2017) as a baseline of commonly billed mitigation labor; company overlay pending review",
+    "source_revision": "REV 10.16.17",
+    "status": "working copy",
+    "transcribed": "2026-10-18",
+    "genericized": "Source company name omitted; brand-name products replaced with generic terms (lines 2, 4).",
+    "photo_rule": "If it is on the sheet, photograph it. Ties to crew procedures 1.3 (proof photos) and 1.5 (daily scope sheet). Lines 101-103 are explicitly 'photo needed' on the source.",
+    "cat3_flag_meaning": "Source prints a shaded '3' in the column before the room columns on these lines; read as 'typically applies on Category 3 losses'. Not a rule that other lines never apply.",
+    "highlighted_in_source": "Lines 71, 72, 74b, 93, 94, 94a, 95-98 are highlighted yellow on the source (reason not stated; mostly hour-based or PPE items).",
+    "relationship": "logs/scope_sheet_template.json (schema 1.1) is the existing per-room keyed object (header + containment/extraction/flooring/... + equipment date-set array). This template does not replace it: it is the line-numbered whole-job sheet. Most of its fields map to lines here (e.g. containment.plastic_sf -> 5/14, zippers -> 16, flooring.* -> 25-48, cabinets.* -> 49-53, content_manipulation.hours -> 6, equipment[] -> 80-94a). The old one has items this one lacks (crown, appliance removal counts, R-value, date set/pulled per unit) and vice versa (PPE, QA checklist, manpower, Cat 3 flags). Merge later via NEXT.md, not silently.",
+    "transcription_notice": "TRANSCRIPTION, working draft. Transcribed from photos of a third-party mitigation scope sheet; may contain reading errors and needs cleanup. Use it to understand what a scope sheet covering most billable mitigation labor looks like, not as a finished company form."
+  },
+  "units": {
+    "SF": "square feet",
+    "LF": "linear feet",
+    "EA": "each",
+    "QTY": "quantity",
+    "HRS": "hours",
+    "QTY x DAYS": "quantity times days on site",
+    "GAL": "gallons",
+    "KW": "kilowatts",
+    "PAIR": "pair",
+    "BID": "bid item (priced separately)",
+    "LOADS": "number of loads",
+    "SM/M/LG": "small / medium / large",
+    "Y/N": "yes or no"
+  },
+  "header": {
+    "customer_name": "",
+    "ticket_no": "",
+    "lead_tech_name": "",
+    "tech_no": "",
+    "arrive_time": "",
+    "arrive_ampm": "",
+    "depart_time_first_day": "",
+    "depart_ampm": "",
+    "customer_signature": "",
+    "customer_signature_date": "",
+    "customer_signature_statement": "Customer signature signifying agreement to dates and time stated above",
+    "cause_of_loss": "",
+    "date_of_report": "",
+    "date_of_loss": "",
+    "carrier": "",
+    "claim_no": "",
+    "adjuster": "",
+    "adjuster_phone": "",
+    "adjuster_email": "",
+    "category": "",
+    "category_options": [
+      1,
+      2,
+      3
+    ],
+    "class": "",
+    "class_options": [
+      1,
+      2,
+      3,
+      4
+    ],
+    "year_of_construction": "",
+    "banner": "Remember to use the appropriate PPE"
+  },
+  "floor_type_key": {
+    "C": "carpet",
+    "VS": "sheet vinyl",
+    "LIN": "linoleum",
+    "LAM": "laminate",
+    "CO": "concrete",
+    "VCT": "vinyl tile",
+    "T": "ceramic tile",
+    "W": "wood"
+  },
+  "rooms": [
+    {
+      "col": 1,
+      "room_name": "",
+      "size_lxwxh": "",
+      "floor_type": ""
+    },
+    {
+      "col": 2,
+      "room_name": "",
+      "size_lxwxh": "",
+      "floor_type": ""
+    },
+    {
+      "col": 3,
+      "room_name": "",
+      "size_lxwxh": "",
+      "floor_type": ""
+    },
+    {
+      "col": 4,
+      "room_name": "",
+      "size_lxwxh": "",
+      "floor_type": ""
+    },
+    {
+      "col": 5,
+      "room_name": "",
+      "size_lxwxh": "",
+      "floor_type": ""
+    }
+  ],
+  "notes_column": "NOTES / Comments column at right of every row; line 1 has a 'Tester:' field there.",
+  "sections": [
+    {
+      "id": "evaluate",
+      "title": "Evaluate",
+      "lines": "1-2"
+    },
+    {
+      "id": "protect_and_move",
+      "title": "Protect and Move",
+      "lines": "3-18"
+    },
+    {
+      "id": "prep",
+      "title": "Prep",
+      "lines": "19-21"
+    },
+    {
+      "id": "extract",
+      "title": "Extract",
+      "lines": "22-24"
+    },
+    {
+      "id": "demo",
+      "title": "Demo",
+      "lines": "25-65"
+    },
+    {
+      "id": "clean",
+      "title": "Clean",
+      "lines": "66-78"
+    },
+    {
+      "id": "equipment",
+      "title": "Equipment",
+      "lines": "79-94a",
+      "cell_input": "qty and days per room column"
+    },
+    {
+      "id": "ppe",
+      "title": "PPE",
+      "lines": "95-99"
+    },
+    {
+      "id": "other_plumbing",
+      "title": "Other (Plumbing)",
+      "lines": "100-104"
+    }
+  ],
+  "lines": [
+    {
+      "no": "1",
+      "section": "evaluate",
+      "label": "Testing lead / asbestos",
+      "unit": "per-room code",
+      "cell_input": "circle_one",
+      "options": [
+        "LS",
+        "LF",
+        "A",
+        "N/A"
+      ],
+      "instructions": "Indicate who performed testing (Tester field in Notes column). Lead test required if built before 1978; asbestos testing required if built before 1980 (source rule; verify against current local/state requirements).",
+      "cat3_flag": false,
+      "reserved": false,
+      "transcriber_note": "Option codes LS / LF not defined on sheet; see uncertain_lines.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "2",
+      "section": "evaluate",
+      "label": "Thermal (IR) images (FLIR)",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "3",
+      "section": "protect_and_move",
+      "label": "Self-adhesive runner",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "4",
+      "section": "protect_and_move",
+      "label": "Protective floor board for hardwoods (Ram Board)",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "transcriber_note": "Source names a specific brand of floor-protection board; generalized.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "5",
+      "section": "protect_and_move",
+      "label": "Cover with plastic",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "6",
+      "section": "protect_and_move",
+      "label": "Content manipulation",
+      "unit": "HRS",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "7",
+      "section": "protect_and_move",
+      "label": "Content room",
+      "unit": "SM/M/LG",
+      "cell_input": "circle_one",
+      "options": [
+        "SM",
+        "M",
+        "LG"
+      ],
+      "instructions": "Indicate SM, M, LG by room",
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "8",
+      "section": "protect_and_move",
+      "label": "Block or tab furniture",
+      "unit": "SM/M/LG",
+      "cell_input": "circle_one",
+      "options": [
+        "SM",
+        "M",
+        "LG"
+      ],
+      "instructions": "Indicate SM, M, LG",
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "9",
+      "section": "protect_and_move",
+      "label": "",
+      "unit": null,
+      "cell_input": "none",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "10",
+      "section": "protect_and_move",
+      "label": "Detach door",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Indicate if knobs or hinges were removed",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "11",
+      "section": "protect_and_move",
+      "label": "Move, reset and/or clean appliances",
+      "unit": "EA by code",
+      "cell_input": "checkboxes",
+      "options": [
+        "Mv&Rest",
+        "Cln",
+        "Move"
+      ],
+      "instructions": "Indicate by room: Range (R), Refrigerator (RF), Dishwasher (DW), Washer (W), Dryer (D), Toilet (T), Water Heater (WH), Baseboard Heater (BH), Furnace (F), Boiler (BL)",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "12",
+      "section": "protect_and_move",
+      "label": "Put corner protectors in place",
+      "unit": "Y/N",
+      "cell_input": "circle_one",
+      "options": [
+        "Y",
+        "N"
+      ],
+      "instructions": "Reminder",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "13",
+      "section": "protect_and_move",
+      "label": "Set up negative pressure chamber",
+      "unit": "N/D/Both",
+      "cell_input": "circle_one",
+      "options": [
+        "N",
+        "D",
+        "Both"
+      ],
+      "instructions": "Circle N in rooms with a negative pressure chamber; D if a decon chamber was used; or Both. Use line items below to provide details.",
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "14",
+      "section": "protect_and_move",
+      "label": "Containment / barrier",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "15",
+      "section": "protect_and_move",
+      "label": "Barrier poles",
+      "unit": "QTY x DAYS",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "16",
+      "section": "protect_and_move",
+      "label": "Containment zipper",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "17",
+      "section": "protect_and_move",
+      "label": "Use 2x4 for containment",
+      "unit": "QTY",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "transcriber_note": "No unit printed on source; QTY assumed.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "18",
+      "section": "protect_and_move",
+      "label": "",
+      "unit": null,
+      "cell_input": "none",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "19",
+      "section": "prep",
+      "label": "Apply pretreatment chemical",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "transcriber_note": "No unit printed on source; SF assumed.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "20",
+      "section": "prep",
+      "label": "Muck out",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "21",
+      "section": "prep",
+      "label": "Pumping / hauling of water",
+      "unit": "GAL or HRS",
+      "cell_input": "qty",
+      "options": [
+        "GALLONS",
+        "HR"
+      ],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "22",
+      "section": "extract",
+      "label": "Extraction of standing water on hard surface",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "23",
+      "section": "extract",
+      "label": "Extraction, carpet, weighted",
+      "unit": "SF",
+      "cell_input": "qty_and_circle_one",
+      "options": [
+        "Wand",
+        "Stand"
+      ],
+      "instructions": "Circle one: wand / stand",
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "24",
+      "section": "extract",
+      "label": "",
+      "unit": null,
+      "cell_input": "none",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "25",
+      "section": "demo",
+      "label": "Trim, excluding quarter round / door",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "26",
+      "section": "demo",
+      "label": "Base",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "27",
+      "section": "demo",
+      "label": "Cove molding",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "28",
+      "section": "demo",
+      "label": "Drill holes",
+      "unit": "QTY",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "29",
+      "section": "demo",
+      "label": "Toe kick remove",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "30",
+      "section": "demo",
+      "label": "Registers / vents removed",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "31",
+      "section": "demo",
+      "label": "Drywall flood cut",
+      "unit": "LF & HEIGHT",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Record LF and cut height",
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "32",
+      "section": "demo",
+      "label": "Drywall",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "33",
+      "section": "demo",
+      "label": "Paneling",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "34",
+      "section": "demo",
+      "label": "Insulation remove",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Indicate if confined space",
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "35",
+      "section": "demo",
+      "label": "Carpet remove",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "36",
+      "section": "demo",
+      "label": "Remove tack strip",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "37",
+      "section": "demo",
+      "label": "Lift carpet",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "38",
+      "section": "demo",
+      "label": "Pad remove",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "39",
+      "section": "demo",
+      "label": "Glue-down carpet remove",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "40",
+      "section": "demo",
+      "label": "Sheet vinyl or linoleum remove",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "41",
+      "section": "demo",
+      "label": "Wood remove",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "42",
+      "section": "demo",
+      "label": "Glued wood remove",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "43",
+      "section": "demo",
+      "label": "Laminate remove",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "44",
+      "section": "demo",
+      "label": "Tile remove",
+      "unit": "SF",
+      "cell_input": "qty_and_circle_one",
+      "options": [
+        "V",
+        "C"
+      ],
+      "instructions": "Indicate V = vinyl or C = ceramic",
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "45",
+      "section": "demo",
+      "label": "Cement board / mortar board",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "46",
+      "section": "demo",
+      "label": "Remove subfloor / sleeper",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "transcriber_note": "No unit printed on source; SF assumed.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "47",
+      "section": "demo",
+      "label": "Underlayment or luan removal",
+      "unit": "SF",
+      "cell_input": "qty_and_circle_one",
+      "options": [
+        "Underlayment",
+        "Luan"
+      ],
+      "instructions": "Indicate which",
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "48",
+      "section": "demo",
+      "label": "Ceiling tiles",
+      "unit": "SF",
+      "cell_input": "qty_and_circle_one",
+      "options": [
+        "Grid",
+        "Glued",
+        "Stapled"
+      ],
+      "instructions": "Indicate if grid, glued or stapled",
+      "cat3_flag": true,
+      "reserved": false,
+      "transcriber_note": "No unit printed on source; SF assumed.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "49",
+      "section": "demo",
+      "label": "Countertop detach",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Indicate type",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "50",
+      "section": "demo",
+      "label": "Kitchen sink detach",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "51",
+      "section": "demo",
+      "label": "Cabinet / vanity detach",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "52",
+      "section": "demo",
+      "label": "Cabinet upper detach",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "53",
+      "section": "demo",
+      "label": "Cabinet lower detach",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "54",
+      "section": "demo",
+      "label": "Bag contaminated items",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "55",
+      "section": "demo",
+      "label": "Crawlspace inspection",
+      "unit": "BID",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "transcriber_note": "Priced as a bid item, not a unit quantity.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "56",
+      "section": "demo",
+      "label": "Vapor barrier",
+      "unit": "SF",
+      "cell_input": "qty_and_circle_one",
+      "options": [
+        "Remove",
+        "Replace"
+      ],
+      "instructions": "SF; remove or replace",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "57",
+      "section": "demo",
+      "label": "Detach mirror",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "58",
+      "section": "demo",
+      "label": "Towel racks / accessories",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "59",
+      "section": "demo",
+      "label": "Electrical plates & fixtures",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "60",
+      "section": "demo",
+      "label": "Backsplash",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Indicate backsplash material type",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "61",
+      "section": "demo",
+      "label": "Remove flex ducting (Cat 2 or 3)",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "On Cat 2 or 3, remove flex ducting",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "62",
+      "section": "demo",
+      "label": "",
+      "unit": null,
+      "cell_input": "none",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "63",
+      "section": "demo",
+      "label": "",
+      "unit": null,
+      "cell_input": "none",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "64",
+      "section": "demo",
+      "label": "Extra bags used for content bagging",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "transcriber_note": "No unit printed on source; EA assumed.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "65",
+      "section": "demo",
+      "label": "Pick-up or dump truck",
+      "unit": "LOADS",
+      "cell_input": "qty_and_circle_one",
+      "options": [
+        "Pick-up",
+        "Dump truck"
+      ],
+      "instructions": "Footer fields: # of loads pick-up ____; # of loads dump truck ____",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "66",
+      "section": "clean",
+      "label": "Apply cleaning solution to affected areas (floors, studs, concrete walls and ceilings as appropriate)",
+      "unit": "Y/N",
+      "cell_input": "circle_one",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "instructions": "Circle one",
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "67",
+      "section": "clean",
+      "label": "Clean studs",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "68",
+      "section": "clean",
+      "label": "Clean walls: tile / concrete / other ____",
+      "unit": "SF",
+      "cell_input": "qty_and_circle_one",
+      "options": [
+        "Tile",
+        "Concrete",
+        "Other"
+      ],
+      "instructions": "SF including 2 ft up walls",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "69",
+      "section": "clean",
+      "label": "Clean joists",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "SF x 1.4",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "70",
+      "section": "clean",
+      "label": "Pressure wash, clean under sill plates & extract",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "transcriber_note": "Cat 3 marker read as row 70 after correcting for photo skew; see uncertain_lines.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "71",
+      "section": "clean",
+      "label": "HEPA vac",
+      "unit": "SF or HRS",
+      "cell_input": "qty_and_circle_one",
+      "options": [
+        "LT",
+        "HVY"
+      ],
+      "instructions": "Circle LT (light) or HVY (heavy) and indicate SF, or indicate hours",
+      "cat3_flag": false,
+      "reserved": false,
+      "highlighted_in_source": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "72",
+      "section": "clean",
+      "label": "Clean cross-contaminated areas",
+      "unit": "SF or HRS",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "highlighted_in_source": true,
+      "transcriber_note": "No unit printed on source.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "73",
+      "section": "clean",
+      "label": "Clean fixtures",
+      "unit": "EA by code",
+      "cell_input": "checkboxes",
+      "options": [
+        "S",
+        "SH",
+        "B"
+      ],
+      "instructions": "Indicate by room: Sink (S), Shower (SH), Bathtub (B)",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "74",
+      "section": "clean",
+      "label": "Clean other, specify by room",
+      "unit": "SF or HRS",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "transcriber_note": "No unit printed on source.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "74b",
+      "section": "clean",
+      "label": "Final cleaning",
+      "unit": "SF or HRS",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Specify either SF or hours",
+      "cat3_flag": false,
+      "reserved": false,
+      "highlighted_in_source": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "75",
+      "section": "clean",
+      "label": "Check cleaning",
+      "unit": "none",
+      "cell_input": "mark",
+      "options": [],
+      "instructions": "Reminder only",
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "76",
+      "section": "clean",
+      "label": "Apply antimicrobial to affected areas (floors, studs, concrete walls and ceilings as appropriate)",
+      "unit": "Y/N",
+      "cell_input": "circle_one",
+      "options": [
+        "Yes",
+        "No"
+      ],
+      "instructions": "Circle one",
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "77",
+      "section": "clean",
+      "label": "Antimicrobial floor",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "78",
+      "section": "clean",
+      "label": "Antimicrobial walls and other",
+      "unit": "SF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "79",
+      "section": "equipment",
+      "label": "",
+      "unit": null,
+      "cell_input": "none",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": true,
+      "transcriber_note": "Row carries the EQUIPMENT heading and the Qty / Days column labels.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "80",
+      "section": "equipment",
+      "label": "Large dehumidifier",
+      "unit": "QTY x DAYS",
+      "cell_input": "qty_days",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "no": "81",
+      "section": "equipment",
+      "label": "XL dehumidifier",
+      "unit": "QTY x DAYS",
+      "cell_input": "qty_days",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "no": "82",
+      "section": "equipment",
+      "label": "Air mover",
+      "unit": "QTY x DAYS",
+      "cell_input": "qty_days",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "no": "83",
+      "section": "equipment",
+      "label": "Axial air mover",
+      "unit": "QTY x DAYS",
+      "cell_input": "qty_days",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "no": "84",
+      "section": "equipment",
+      "label": "Negative air / air scrubber",
+      "unit": "QTY x DAYS",
+      "cell_input": "qty_days",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "no": "85",
+      "section": "equipment",
+      "label": "Wood floor drying unit & panels",
+      "unit": "QTY x DAYS",
+      "cell_input": "qty_days",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "no": "86",
+      "section": "equipment",
+      "label": "Wall drying, injected type",
+      "unit": "QTY x DAYS",
+      "cell_input": "qty_days",
+      "options": [],
+      "instructions": "Includes blower",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "no": "87",
+      "section": "equipment",
+      "label": "ETES (electric thermal energy system)",
+      "unit": "QTY x DAYS",
+      "cell_input": "qty_days",
+      "options": [],
+      "instructions": "Include air mover if applicable",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "no": "88",
+      "section": "equipment",
+      "label": "Hydroxyl generator",
+      "unit": "QTY x DAYS",
+      "cell_input": "qty_days",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "no": "89",
+      "section": "equipment",
+      "label": "",
+      "unit": null,
+      "cell_input": "none",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "90",
+      "section": "equipment",
+      "label": "Lay-flat ducting",
+      "unit": "LF",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "91",
+      "section": "equipment",
+      "label": "Power box",
+      "unit": "QTY x DAYS",
+      "cell_input": "qty_days",
+      "options": [
+        "E"
+      ],
+      "instructions": "Indicate with E if extension was used",
+      "cat3_flag": false,
+      "reserved": false,
+      "transcriber_note": "Cat 3 column shows '#' instead of '3' on this row; meaning unclear.",
+      "photo_required": false,
+      "rooms": [
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        },
+        {
+          "qty": "",
+          "days": ""
+        }
+      ],
+      "notes": ""
+    },
+    {
+      "no": "92",
+      "section": "equipment",
+      "label": "Generator",
+      "unit": "KW",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "93",
+      "section": "equipment",
+      "label": "Equipment decontaminated",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Add 1 per 50 ft length of hose",
+      "cat3_flag": true,
+      "reserved": false,
+      "highlighted_in_source": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "94",
+      "section": "equipment",
+      "label": "Equipment setup / take down",
+      "unit": "HRS",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "For self-pays, show total hours",
+      "cat3_flag": true,
+      "reserved": false,
+      "highlighted_in_source": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "94a",
+      "section": "equipment",
+      "label": "Monitoring",
+      "unit": "HRS",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "For self-pays, show total hours",
+      "cat3_flag": false,
+      "reserved": false,
+      "highlighted_in_source": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "95",
+      "section": "ppe",
+      "label": "PPE full suit for Cat 3",
+      "unit": "EA (changes)",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Indicate number of changes",
+      "cat3_flag": true,
+      "reserved": false,
+      "highlighted_in_source": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "96",
+      "section": "ppe",
+      "label": "PPE for Cat 1",
+      "unit": "EA (changes)",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Indicate number of changes",
+      "cat3_flag": false,
+      "reserved": false,
+      "highlighted_in_source": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "97",
+      "section": "ppe",
+      "label": "Respirator filters",
+      "unit": "PAIR",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": true,
+      "reserved": false,
+      "highlighted_in_source": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "98",
+      "section": "ppe",
+      "label": "Respirator",
+      "unit": "EA",
+      "cell_input": "qty_and_circle_one",
+      "options": [
+        "Half face",
+        "Full face"
+      ],
+      "instructions": "Circle type used",
+      "cat3_flag": true,
+      "reserved": false,
+      "highlighted_in_source": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "99",
+      "section": "ppe",
+      "label": "",
+      "unit": null,
+      "cell_input": "none",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": true,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "100",
+      "section": "other_plumbing",
+      "label": "PLUMBING (sub-heading)",
+      "unit": "none",
+      "cell_input": "none",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "transcriber_note": "Heading row, no entry.",
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "101",
+      "section": "other_plumbing",
+      "label": "Supply line, detach",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Photo needed",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": true,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "102",
+      "section": "other_plumbing",
+      "label": "P-trap, detach",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Photo needed",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": true,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "103",
+      "section": "other_plumbing",
+      "label": "Toilet, detach / reset",
+      "unit": "EA",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": "Photo needed",
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": true,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    },
+    {
+      "no": "104",
+      "section": "other_plumbing",
+      "label": "Plumbing bid item",
+      "unit": "BID",
+      "cell_input": "qty",
+      "options": [],
+      "instructions": null,
+      "cat3_flag": false,
+      "reserved": false,
+      "photo_required": false,
+      "rooms": [
+        "",
+        "",
+        "",
+        "",
+        ""
+      ],
+      "notes": ""
+    }
+  ],
+  "qa_checklist": [
+    {
+      "q": "Was a sketch completed with accuracy within 1 inch, showing placement of equipment?",
+      "answer": "",
+      "options": [
+        "Y",
+        "N",
+        "N/A"
+      ]
+    },
+    {
+      "q": "Were before and after pictures taken? Overviews? All equipment shown?",
+      "answer": "",
+      "options": [
+        "Y",
+        "N",
+        "N/A"
+      ]
+    },
+    {
+      "q": "Did you take and include any thermal images?",
+      "answer": "",
+      "options": [
+        "Y",
+        "N",
+        "N/A"
+      ]
+    },
+    {
+      "q": "Has the drying log been signed and submitted? Moisture map completed?",
+      "answer": "",
+      "options": [
+        "Y",
+        "N",
+        "N/A"
+      ]
+    },
+    {
+      "q": "Were readings taken at sill plates? 3-inch screw test?",
+      "answer": "",
+      "options": [
+        "Y",
+        "N",
+        "N/A"
+      ]
+    },
+    {
+      "q": "Did you get the customer signature on this form confirming work times?",
+      "answer": "",
+      "options": [
+        "Y",
+        "N",
+        "N/A"
+      ]
+    }
+  ],
+  "lead_technician_signature": {
+    "signature": "",
+    "date": ""
+  },
+  "manpower": {
+    "columns": [
+      "date",
+      "techs",
+      "hours",
+      "tech_nos_other_than_lead",
+      "after_hours_x"
+    ],
+    "rows": [
+      {
+        "date": "",
+        "techs": "",
+        "hours": "",
+        "tech_nos_other_than_lead": "",
+        "after_hours_x": ""
+      },
+      {
+        "date": "",
+        "techs": "",
+        "hours": "",
+        "tech_nos_other_than_lead": "",
+        "after_hours_x": ""
+      },
+      {
+        "date": "",
+        "techs": "",
+        "hours": "",
+        "tech_nos_other_than_lead": "",
+        "after_hours_x": ""
+      },
+      {
+        "date": "",
+        "techs": "",
+        "hours": "",
+        "tech_nos_other_than_lead": "",
+        "after_hours_x": ""
+      },
+      {
+        "date": "",
+        "techs": "",
+        "hours": "",
+        "tech_nos_other_than_lead": "",
+        "after_hours_x": ""
+      }
+    ],
+    "note": "HOURS PER DAY entered as ___ Techs ___ HRS; mark X if after-hours."
+  },
+  "other_notes": "",
+  "uncertain_lines": [
+    {
+      "no": "1",
+      "issue": "Option codes LS and LF are not defined on the sheet.",
+      "best_guess": "LS = lead sample/swab taken; LF = lead-free (or lead result filed); A = asbestos tested; N/A = not required. Confirm with source or replace with plain choices."
+    },
+    {
+      "no": "70",
+      "issue": "Cat 3 marker sits between rows 69 and 70 because the photo is skewed.",
+      "best_guess": "Row 70 (pressure wash / under sill plates / extract). The row is shaded like other Cat 3 rows and the text slope places the marker there. Row 69 (clean joists) not flagged."
+    },
+    {
+      "no": "91",
+      "issue": "Cat 3 column shows '#' rather than '3'.",
+      "best_guess": "Count marker (enter number of power boxes), not a Cat 3 flag. Treated cat3_flag=false."
+    },
+    {
+      "no": "87",
+      "issue": "'ETES' is an acronym, not spelled out.",
+      "best_guess": "Electric thermal energy system (heat drying). Confirm."
+    },
+    {
+      "no": "room cell 'A' marker",
+      "issue": "Most room cells print a small checkbox at left and a letter 'A' at right; meaning not stated.",
+      "best_guess": "'A' = all (entire room) shortcut instead of a measured quantity; the checkbox appears mainly on Cat 3 rows and may mean 'performed under Cat 3 conditions'. Not modeled per cell; confirm."
+    },
+    {
+      "no": "17, 19, 46, 48, 64, 72, 74",
+      "issue": "No unit printed.",
+      "best_guess": "17 QTY, 19 SF, 46 SF, 48 SF, 64 EA, 72 SF or HRS, 74 SF or HRS."
+    }
+  ]
+}
