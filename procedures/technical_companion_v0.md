@@ -1,5 +1,8 @@
 # Technical Companion to the Crew Procedures (v0, lead/PM version)
 
+> [!CAUTION]
+> **Not fully reviewed. Not policy yet.** This draft needs review by the RestoKit author before use. It has useful material, but AI-drafted RestoKit content tends to over-engineer and miss real-world limits (crew time, staffing, equipment on hand). The review is that reality check.
+
 > Generic v0 draft. Adapt to your company's procedures, scope sheet and local rules.
 
 **What this is:** This is the depth behind `crew_procedures_v0.md`, written for leads and PMs. The numbering matches the crew version, so any crew line maps to the detail here. The crew version builds habits. This version explains the why, the full how, the decision points, and what the crew version leaves out on purpose so the lead knows what to watch for.
