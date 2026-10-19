@@ -24,7 +24,7 @@ Each item ends with **Kit:** pointers into RestoKit 0.9.2 (`resto_kit_0.9.2.json
 - [Read first: stops that override every section](#read-first-stops-that-override-every-section)
 - [1. Field Documentation](#1-field-documentation): [1.1](#11-get-to-know-the-job-lead-first-crew-visit) · [1.2](#12-arrival-and-departure-sets) · [1.3](#13-proof-photos) · [1.4](#14-measurements) · [1.5](#15-daily-scope-sheet) · [1.6](#16-dehus) · [1.7](#17-equipment-numbers) · [1.8](#18-broken-equipment)
 - [2. Cleaning](#2-cleaning): [2.1](#21-every-visit) · [2.2](#22-standard-post-demo-cleaning-base-end-of-demo-day) · [2.3](#23-adjust-to-the-job) · [2.4](#24-final-check-before-we-call-it-done) · [Containment tip](#containment-tip-crew-20-minutes-of-plastic-saves-an-hour-of-cleaning) · [Air-test (IEP) jobs](#air-test-iep-jobs)
-- [3. Crew Training](#3-crew-training): [3.1](#31-dehu-setup) · [3.2](#32-scope-sheet-and-photos) · [3.3](#33-getting-to-know-the-water) · [3.4](#34-broken-equipment-tag) · [3.5](#35-cleaning) · [3.6](#36-arrival-and-departure-sets) · [3.7](#37-ulv-fogger-use-light-fog)
+- [3. Crew Training](#3-crew-training): [3.1](#31-dehu-setup) · [3.2](#32-scope-sheet-and-photos) · [3.3](#33-getting-to-know-the-water) · [3.4](#34-broken-equipment-tag) · [3.5](#35-cleaning) · [3.6](#36-arrival-and-departure-sets)
 - [Flags collected](#flags-collected)
 
 ---
@@ -395,7 +395,7 @@ These are not crew-meeting topics. They are holds the lead enforces before any c
 
 **How (full):** the company minimum.
 1. **HEPA vacuum the loose debris.** Remove heavy debris first, then pick up the loose load so the blow-down isn't pushing chunks around.
-2. **Dry blow-down, with the AFD / air scrubber running for dust control.** Blow top to bottom: ledges, door and window frames, top plates, tops of cabinets, boxes, and other horizontals, down to the floor. Use a blower, or the ULV with the liquid off. The air scrubber captures what goes airborne. (See "Where the blow-down happens" below.)
+2. **Dry blow-down, with the AFD / air scrubber running for dust control.** Blow top to bottom: ledges, door and window frames, top plates, tops of cabinets, boxes, and other horizontals, down to the floor. The ULV fogger with the liquid off is the handiest tool here, with a nice focused air jet; a fan or leaf blower also works. The air scrubber captures what goes airborne. (See "Where the blow-down happens" below.)
 3. **HEPA vacuum the floor while it's dry.** Pick up what the blow-down brought down before anything damp touches it. Fine drywall dust turns pasty when damp, smears, and loads the HEPA filter.
 4. **Damp wipe** exposed framing, plumbing, wiring, electrical boxes (inside them too), and horizontals.
  - **Direct application:** mist with a pump sprayer and wipe, or use a wet rag, the tech's call based on tools on hand.
@@ -417,7 +417,7 @@ It's less labor than HEPA, wipe, HEPA, and the result is better because the rag 
 - Light means flash-off, not a bath. Mist the air and surfaces lightly, and it should be gone in a short time. If it's running down the walls or pooling, that's too much. This matches the kit's fog rule ("fog is flash-off, not a bath").
 - Work from the far side of the space toward the exit, top down.
 - Keep the AFD running. Keep the mist off open electrical (boxes, panels, energized equipment) and out of cavities or ducts you can't see and clean.
-- Training needed before a tech runs the fogger (crew training 3.7). Fogger output and droplet size vary by model, so the "how light" setting is per unit. **[verify per fogger model]**
+- Train a tech on the fogger before they use it for fog. Fogger output and droplet size vary by model, so the "how light" setting is per unit. **[verify per fogger model]**
 - **What goes in the tank** for the optional light fog (plain water, or a cleaning solution at its label dilution) is not written yet. **Company decision needed.** If it's a product, its label governs whether it may be fogged, and its PPE and re-entry rules apply.
 
 **Where the blow-down happens:** Inside the demo setup, which normally already has plastic up and an air scrubber running. Kit background: air washing belongs in a controlled area with HEPA capture, not as open air movement through the house.
@@ -678,7 +678,7 @@ Each session is short and hands-on. Below are the learning objectives, what "don
  - correct wording (evaluation vs clearance);
  - air-test (IEP) jobs follow the strict procedure, not the minimum.
 - **Kit:** `demolition.tree.post_demo_clean`, `general_cleaning`, `mold_cleaning.cleaning_stacks`, `ulv_vs_hand_pump_sprayer`, `legal_and_liability.informed_consent_antimicrobials`, `containment`, `final_verification.restorer_evaluation`
-- **Depends on:** the fogger tank decision (2.2) and the manager's consent sign-off (2.3).
+- **Depends on:** the manager's consent sign-off (2.3).
 
 ### 3.6 Arrival and departure sets
 
@@ -689,19 +689,6 @@ Each session is short and hands-on. Below are the learning objectives, what "don
 - **Done looks like:** the departure set shows every piece of equipment and the airflow direction, and could serve as tomorrow's "before."
 - **Lead adds:** what counts as a layout change (1.2 list), shooting extra sets on stalled rooms, and same-day photos of any scope change.
 - **Kit:** `documentation.key_habits`, `documentation.decision_criteria`, `equipment_setup.practical_guidance`
-
-### 3.7 ULV fogger use (light fog)
-
-- **Objectives:**
- - Set up the fogger and fill it with the approved liquid.
- - Set output for a light fog on that model.
- - Fog top down, far side toward the exit, AFD running.
- - Know what too much looks like (running walls, pooling).
- - Keep the mist off open electrical and out of unseen cavities.
-- **Done looks like:** the tech fogs a post-demo room so it flashes off with no runs, then wipes and vacs.
-- **Lead adds:** the antimicrobial fogging rules (label must allow ULV, PPE, occupants out, re-entry time, HVAC off) for when a job escalates (2.3).
-- **Kit:** `ulv_vs_hand_pump_sprayer`, `mold_cleaning.cleaning_stacks.fog_rule`
-- **Company decision needed:** the tank liquid and a per-model output setting.
 
 ---
 
@@ -714,7 +701,7 @@ Each session is short and hands-on. Below are the learning objectives, what "don
 3. Equipment cleaning off contaminated jobs before repair or reuse. The kit has no procedure (1.8, 3.4).
 4. Running the AFD or negative air during plastic removal (2.3).
 5. Misting plastic before folding at teardown (2.3).
-6. Light-fog output setting per fogger model (2.2, 3.7).
+6. Light-fog output setting per fogger model (2.2).
 
 ### Company decision needed
 
@@ -728,6 +715,6 @@ Each session is short and hands-on. Below are the learning objectives, what "don
 8. Shop handling for tagged units: triage, return-to-service, contaminated-equipment cleaning standard (1.8).
 9. Antimicrobial: position decided (when conditions call for it: mold, Category 2/3, legal or insurance stakes; label rate; Day 1 consent). Your manager signs off on the consent language, defines "legal or insurance stakes," and decides Category 1 billing under that trigger. Product and applicator training are still open (2.3, 3.5).
 10. Training owners, venue, and completion records (3.x).
-11. Light ULV fog: what goes in the tank, and whether the kit's no-fog-in-occupied-homes rule applies to it (2.2, 3.7).
+11. Light ULV fog: what goes in the tank, and whether the kit's no-fog-in-occupied-homes rule applies to it (2.2).
 12. (Resolved: blow-down happens inside the demo setup.)
 14. Air-test (IEP) procedure: detailed protocol to be added (Air-test (IEP) jobs).

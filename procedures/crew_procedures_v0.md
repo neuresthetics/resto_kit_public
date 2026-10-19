@@ -95,7 +95,7 @@ Work from the top down, and move dirt toward the floor instead of chasing it wit
 ### 2.2 Standard post-demo cleaning (base, end of demo day)
 
 1. **HEPA.** Vacuum up the loose debris.
-2. **Dry blow-down.** With the air scrubber running, blow dust off ledges, door frames, tops and other horizontal surfaces down to the floor, inside your demo setup.
+2. **Dry blow-down.** With the air scrubber running, blow dust off ledges, door frames, tops and other horizontal surfaces down to the floor, inside your demo setup. The ULV fogger with the liquid off makes a great air jet for this; a fan or leaf blower works too.
 3. **HEPA.** Vacuum up what came down while it's still dry.
 4. **Damp wipe.** Mist with a pump sprayer and wipe, or use a wet rag, whichever fits your tools. You're only picking up dust now, not dirt, so one rag goes ten times further.
 5. **HEPA.** Vacuum the floor last.
@@ -128,7 +128,6 @@ Short, hands-on sessions in the shop or on a job.
 - **3.4 Broken equipment tag:** tape, problem, date, initials.
 - **3.5 Cleaning:** the after-demo minimum (HEPA, blow-down, HEPA, damp wipe, HEPA), when to use antimicrobial, final check, plastic tip.
 - **3.6 Arrival and departure sets:** when to take them, from the corners, clean up first.
-- **3.7 ULV fogger use (light fog):** setup, how light is light, what too much looks like.
 
 ---
 
