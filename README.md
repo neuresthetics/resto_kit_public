@@ -10,7 +10,7 @@
 <p align="center"><strong>A restoration kit for water, mold, and crawlspace work, from tech to lead, PM, and estimator.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.9.2-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.2">
+  <img src="https://img.shields.io/badge/version-0.9.8-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.8">
   <img src="https://img.shields.io/badge/for-tech%20%7C%20lead%20%7C%20PM%20%7C%20estimator-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="For tech, lead, PM, and estimator">
   <img src="https://img.shields.io/badge/runs%20on-commercial%20models-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Runs on commercial models">
   <img src="https://img.shields.io/badge/status-full%20kit%20private-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Status: full kit private">
@@ -56,7 +56,8 @@ It's senior field knowledge in a form a tech, lead, PM, or estimator can use. It
 ## ✅ Checks the kit calls out
 
 - **Category:** When unsure, go with the higher category. Water from under a toilet is Category 3 until proven otherwise. A strong musty or sewage odor overrides appearance.
-- **Electrical:** Standing water plus live circuits means stop. Kill it at the breaker, verify it's dead, and use GFCI on temp power.
+- **Electrical:** Standing water plus live circuits means stop. Kill it at the breaker, verify it's dead, and use GFCI on temp power. Anything bigger than a single small bathroom, or more than a little equipment, gets a spider box by default, because household breakers trip too often to rely on.
+- **Wet edge:** Tape past the fuzz. Blue tape goes 6 inches to a foot beyond the last wet reading, so nothing wet sits outside the line.
 - **Crawlspaces:** Size it up at the hatch. A 4-gas check is recommended; a gas or sewer smell means get out. Don't work a tight, hot, or contaminated crawl alone, and never push crawl air up into the house.
 - **Containment:** Minimal containment on every job, even Category 1. Full containment before demo or when contamination risk rises. Never bag a live HVAC return.
 - **Negative air:** Target about −5 Pa continuous, sized for 4+ air changes per hour. If a gas appliance is in or next to the chamber, check flue draft and plan makeup air.
@@ -77,7 +78,7 @@ It's senior field knowledge in a form a tech, lead, PM, or estimator can use. It
 
 RestoKit is a single JSON file. There's nothing to install and no code to run.
 
-1. **Load it.** Open the Grok app or a Grok Bot and attach `resto_kit_0.9.2.json`, or add it to a project or bot's knowledge so it stays loaded.
+1. **Load it.** Open the Grok app or a Grok Bot and attach `resto_kit_0.9.8.json`, or add it to a project or bot's knowledge so it stays loaded.
 2. **Tell it the job.** For example, "Category 2 supply-line leak, kitchen and crawlspace, 1990s house, I'm the PM."
 3. **Ask one thing at a time.** For example, "What's Phase 1?", "Remove or dry this LVP?", "Containment before demo?", or "Is the subfloor dry?" It answers from the kit's phases, checks, and science, and goes deeper only when you ask.
 
@@ -95,7 +96,7 @@ Each step carries a short summary line. Ask about one step and you get only that
 
 RestoKit grows from daily job logs. A lesson goes into the kit only after it proves itself on real jobs, as a short note in the module that owns it.
 
-The current version is **0.9.2**.
+The current version is **0.9.8**.
 
 ## 🧭 Where it's headed
 
@@ -313,3 +314,9 @@ This is a public window into the project. The full kit is kept private. A demo i
 - **0.9.0.** Depth cap, four tiers, citations and notes moved out of the kit body, and a pump truck module.
 - **0.9.1.** Job flow restructured into five phases, survey to closeout, plus Hold as a status. Hazard sampling rebuilt: the asbestos stop matches the regulatory line (more than 1 percent), Oregon's small-repair exemption is added as a note, and age-based wording is replaced with "older or suspect, any age."
 - **0.9.2.** Electrical material note on wiring exposed to water. Field improvisation patterns for water interception.
+- **0.9.3.** Daily log template loads with the kit.
+- **0.9.4.** Job file review workflow: read the job's photos room by room, ask the lead review questions, then produce photo-backed PM, Lead, and Tech to-dos, an estimator scope, and a floor covering estimate.
+- **0.9.5.** Review checks for the job file (media by room, atmosphere readings, dry standard, category facts, mold wording) and scope, lead, and estimator rules.
+- **0.9.6.** Before cutting, check clearance behind and below the cut.
+- **0.9.7.** Moisture mapping tape line: tape 6 inches to a foot past the wet edge, never in the middle of the fuzz.
+- **0.9.8.** Day forward plan format: Day 0 is the initial response, only the next day is concrete, and later phases are named by the condition that starts them. Checklist wording rules: room names match the floor plan, shared items read "Lead/Techs", and each day opens with a Lead reminder to fill out the scope sheet as you go or by end of day. Spider box as the default for temporary power beyond a small bathroom.
