@@ -28,7 +28,8 @@
   <a href="#-for-shops">For shops</a> ·
   <a href="#-about">About</a> ·
   <a href="#%EF%B8%8F-kit-structure">Kit structure</a> ·
-  <a href="#-a-note-on-this-repo">A note on this repo</a>
+  <a href="#-a-note-on-this-repo">A note on this repo</a> ·
+  <a href="#-how-it-changes-the-day-for-a-technician">How it changes the day</a>
 </p>
 
 ---
@@ -307,6 +308,16 @@ Layout of the kit two levels deep. Each section lists the keys inside it; conten
 ## 🔒 A note on this repo
 
 This is a public window into the project. The full kit is kept private. A demo is available on request.
+
+## 👷 How it changes the day for a technician
+
+![RestoKit on a phone, next to a meter and a moisture meter](img/resto_kit_3.png)
+
+The rare edge cases live in the kit, the ones that don't come up often enough to stay top of mind. You carry less of that inventory in your head.
+
+The claim trail rides with the work. Photos, moisture, why the equipment is there and where it sits, and a short note happen on the stop, instead of a second menu pass at the truck.
+
+Ask one thing and it answers like a senior tech next to you. Short, specific, the way you'd talk the job through. Not a boss.
 
 ## 🕰️ Development history
 
