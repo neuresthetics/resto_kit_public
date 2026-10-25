@@ -10,7 +10,7 @@
 <p align="center"><strong>A restoration kit for water, mold, and crawlspace work, from tech to lead, PM, and estimator.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.9.8-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.8">
+  <img src="https://img.shields.io/badge/version-0.9.13-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.13">
   <img src="https://img.shields.io/badge/for-tech%20%7C%20lead%20%7C%20PM%20%7C%20estimator-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="For tech, lead, PM, and estimator">
   <img src="https://img.shields.io/badge/runs%20on-commercial%20models-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Runs on commercial models">
   <img src="https://img.shields.io/badge/status-full%20kit%20private-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Status: full kit private">
@@ -28,7 +28,8 @@
   <a href="#-for-shops">For shops</a> ·
   <a href="#-about">About</a> ·
   <a href="#%EF%B8%8F-kit-structure">Kit structure</a> ·
-  <a href="#-a-note-on-this-repo">A note on this repo</a>
+  <a href="#-a-note-on-this-repo">A note on this repo</a> ·
+  <a href="#-how-it-changes-the-day-for-a-technician">How it changes the day</a>
 </p>
 
 ---
@@ -58,7 +59,7 @@ It's senior field knowledge in a form a tech, lead, PM, or estimator can use. It
 - **Category:** When unsure, go with the higher category. Water from under a toilet is Category 3 until proven otherwise. A strong musty or sewage odor overrides appearance.
 - **Electrical:** Standing water plus live circuits means stop. Kill it at the breaker, verify it's dead, and use GFCI on temp power. Anything bigger than a single small bathroom, or more than a little equipment, gets a spider box by default, because household breakers trip too often to rely on.
 - **Wet edge:** Tape past the fuzz. Blue tape goes 6 inches to a foot beyond the last wet reading, so nothing wet sits outside the line.
-- **Crawlspaces:** Size it up at the hatch. A 4-gas check is recommended; a gas or sewer smell means get out. Don't work a tight, hot, or contaminated crawl alone, and never push crawl air up into the house.
+- **Crawlspaces:** Size it up at the hatch. A 4-gas check is recommended; a gas or sewer smell means get out. Don't work a tight, hot, or contaminated crawl alone, and never push crawl air up into the house. When a shower or tub sits over the crawl, check the underside, including the underdeck.
 - **Containment:** Minimal containment on every job, even Category 1. Full containment before demo or when contamination risk rises. Never bag a live HVAC return.
 - **Negative air:** Target about −5 Pa continuous, sized for 4+ air changes per hour. If a gas appliance is in or next to the chamber, check flue draft and plan makeup air.
 - **Dry standard:** The unaffected material in the same building sets it, and the goal is at or above it. For wood, 2–4 points is a quick field check. The ≤16 / 16.1–19.9 / ≥20% traffic light is a risk band, not a second dry standard.
@@ -78,7 +79,7 @@ It's senior field knowledge in a form a tech, lead, PM, or estimator can use. It
 
 RestoKit is a single JSON file. There's nothing to install and no code to run.
 
-1. **Load it.** Open the Grok app or a Grok Bot and attach `resto_kit_0.9.8.json`, or add it to a project or bot's knowledge so it stays loaded.
+1. **Load it.** Open the Grok app or a Grok Bot and attach `resto_kit_0.9.13.json`, or add it to a project or bot's knowledge so it stays loaded.
 2. **Tell it the job.** For example, "Category 2 supply-line leak, kitchen and crawlspace, 1990s house, I'm the PM."
 3. **Ask one thing at a time.** For example, "What's Phase 1?", "Remove or dry this LVP?", "Containment before demo?", or "Is the subfloor dry?" It answers from the kit's phases, checks, and science, and goes deeper only when you ask.
 
@@ -96,11 +97,15 @@ Each step carries a short summary line. Ask about one step and you get only that
 
 RestoKit grows from daily job logs. A lesson goes into the kit only after it proves itself on real jobs, as a short note in the module that owns it.
 
-The current version is **0.9.8**.
+The current version is **0.9.13** (2026-10-25).
+
+Since 0.9.8, when a shower or tub sits over a crawl, check the underside, including the underdeck. Visit notes follow a cadence, and materials and readings map into the job notes. Approach photos can inform prep; leave-time notes wait until those photos have uploaded. Notes stay short sentences, with a line break between sections, so they're easy to scan.
 
 ## 🧭 Where it's headed
 
-Next up is connecting the field scope to Xactimate so the scope and the estimate line up.
+The kit stays a field memory and a voice guide, grounded in real restoration practice. It's also growing the habits that keep the claim trail filled every stop: photos, moisture, why the equipment is there and where it sits, and a short note. That gets written on the stop, not left for a second pass.
+
+Further out, connecting the field scope to Xactimate so the scope and the estimate line up.
 
 ---
 
@@ -304,6 +309,16 @@ Layout of the kit two levels deep. Each section lists the keys inside it; conten
 
 This is a public window into the project. The full kit is kept private. A demo is available on request.
 
+## 👷 How it changes the day for a technician
+
+![RestoKit on a phone, next to a meter and a moisture meter](img/resto_kit_3.png)
+
+The rare edge cases live in the kit, the ones that don't come up often enough to stay top of mind. You carry less of that inventory in your head.
+
+The claim trail rides with the work. Photos, moisture, why the equipment is there and where it sits, and a short note happen on the stop, instead of a second menu pass at the truck.
+
+Ask one thing and it answers like a senior tech next to you. Short, specific, the way you'd talk the job through. Not a boss.
+
 ## 🕰️ Development history
 
 - **Pre-0.6.** First single-file kit, then split into a modular kit.
@@ -320,3 +335,8 @@ This is a public window into the project. The full kit is kept private. A demo i
 - **0.9.6.** Before cutting, check clearance behind and below the cut.
 - **0.9.7.** Moisture mapping tape line: tape 6 inches to a foot past the wet edge, never in the middle of the fuzz.
 - **0.9.8.** Day forward plan format: Day 0 is the initial response, only the next day is concrete, and later phases are named by the condition that starts them. Checklist wording rules: room names match the floor plan, shared items read "Lead/Techs", and each day opens with a Lead reminder to fill out the scope sheet as you go or by end of day. Spider box as the default for temporary power beyond a small bathroom.
+- **0.9.9.** Field refinements.
+- **0.9.10.** When a shower or tub sits over a crawl, check the underside, including the underdeck.
+- **0.9.11.** Visit-note cadence: materials and readings map into the job notes.
+- **0.9.12.** Photo timing: approach photos can inform prep, and leave-time notes wait until the photos have uploaded.
+- **0.9.13.** Note style: short sentences, line breaks between sections, easy to scan.
