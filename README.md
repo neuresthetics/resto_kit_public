@@ -48,14 +48,14 @@ Beyond the kit itself, RestoKit grew a working field app: a live project board f
 <td align="center" width="33%"><a href="img/app/map.jpg"><img src="img/app/thumbs/map.jpg" alt="Map of the day's jobs"></a><br><sub>Map of the day's jobs</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><a href="img/app/crew_picker.jpg"><img src="img/app/thumbs/crew_picker.jpg" alt="Crew picker: tap a name, then a seat"></a><br><sub>Crew picker: tap a name, then a seat</sub></td>
+<td align="center" width="33%"><a href="img/app/lanes.jpg"><img src="img/app/thumbs/lanes.jpg" alt="Job lanes from call to close"></a><br><sub>Job lanes from call to close</sub></td>
 <td align="center" width="33%"><a href="img/app/job_table.jpg"><img src="img/app/thumbs/job_table.jpg" alt="Table view of every job"></a><br><sub>Table view of every job</sub></td>
-<td align="center" width="33%"><a href="img/app/photo_viewer.jpg"><img src="img/app/thumbs/photo_viewer.jpg" alt="Job photo viewer"></a><br><sub>Job photo viewer</sub></td>
+<td align="center" width="33%"><a href="img/app/vehicles.jpg"><img src="img/app/thumbs/vehicles.jpg" alt="Trucks and seats, drag to assign"></a><br><sub>Trucks and seats, drag to assign</sub></td>
 </tr>
 <tr>
-<td align="center" width="33%"><a href="img/app/labor_ratio.jpg"><img src="img/app/thumbs/labor_ratio.jpg" alt="Labor ratio"></a><br><sub>Labor ratio</sub></td>
+<td align="center" width="33%"><a href="img/app/templates.jpg"><img src="img/app/thumbs/templates.jpg" alt="Note templates"></a><br><sub>Note templates</sub></td>
 <td align="center" width="33%"><a href="img/app/file_quality.jpg"><img src="img/app/thumbs/file_quality.jpg" alt="Job file quality checks"></a><br><sub>Job file quality checks</sub></td>
-<td align="center" width="33%"><a href="img/app/phone.jpg"><img src="img/app/thumbs/phone.jpg" alt="The same board on a phone"></a><br><sub>The same board on a phone</sub></td>
+<td align="center" width="33%"><a href="img/app/phone_map.jpg"><img src="img/app/thumbs/phone_map.jpg" alt="The map on a phone"></a><br><sub>The map on a phone</sub></td>
 </tr>
 </table>
 
