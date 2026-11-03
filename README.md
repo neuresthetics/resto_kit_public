@@ -17,6 +17,7 @@
 </p>
 
 <p align="center">
+  <a href="#-the-application">The application</a> ·
   <a href="#-what-it-is">What it is</a> ·
   <a href="#%EF%B8%8F-what-it-covers-on-a-job">What it covers on a job</a> ·
   <a href="#-checks-the-kit-calls-out">Checks the kit calls out</a> ·
@@ -33,6 +34,30 @@
 </p>
 
 ---
+
+## 📱 The application
+
+Beyond the kit itself, RestoKit grew a working field app: a live project board for crews, trucks, dispatch and job files. These are real screens running on demo data (every name, claim and address is made up). Click any image to see it full size; the full walkthrough is in [restokit-showcase](https://github.com/neuresthetics/restokit-showcase).
+
+<p align="center"><a href="img/app/hero_board.jpg"><img src="img/app/hero_board.jpg" alt="The project board: crew, vehicles and every job lane on one screen" width="100%"></a><br><sub>The project board: crew, vehicles and every job lane on one screen</sub></p>
+
+<table>
+<tr>
+<td align="center" width="33%"><a href="img/app/dispatch.jpg"><img src="img/app/thumbs/dispatch.jpg" alt="Dispatch plans the day's routes"></a><br><sub>Dispatch plans the day's routes</sub></td>
+<td align="center" width="33%"><a href="img/app/dispatch_stops.jpg"><img src="img/app/thumbs/dispatch_stops.jpg" alt="Stops assigned per truck"></a><br><sub>Stops assigned per truck</sub></td>
+<td align="center" width="33%"><a href="img/app/map.jpg"><img src="img/app/thumbs/map.jpg" alt="Map of the day's jobs"></a><br><sub>Map of the day's jobs</sub></td>
+</tr>
+<tr>
+<td align="center" width="33%"><a href="img/app/crew_picker.jpg"><img src="img/app/thumbs/crew_picker.jpg" alt="Crew picker: tap a name, then a seat"></a><br><sub>Crew picker: tap a name, then a seat</sub></td>
+<td align="center" width="33%"><a href="img/app/job_table.jpg"><img src="img/app/thumbs/job_table.jpg" alt="Table view of every job"></a><br><sub>Table view of every job</sub></td>
+<td align="center" width="33%"><a href="img/app/photo_viewer.jpg"><img src="img/app/thumbs/photo_viewer.jpg" alt="Job photo viewer"></a><br><sub>Job photo viewer</sub></td>
+</tr>
+<tr>
+<td align="center" width="33%"><a href="img/app/labor_ratio.jpg"><img src="img/app/thumbs/labor_ratio.jpg" alt="Labor ratio"></a><br><sub>Labor ratio</sub></td>
+<td align="center" width="33%"><a href="img/app/file_quality.jpg"><img src="img/app/thumbs/file_quality.jpg" alt="Job file quality checks"></a><br><sub>Job file quality checks</sub></td>
+<td align="center" width="33%"><a href="img/app/phone.jpg"><img src="img/app/thumbs/phone.jpg" alt="The same board on a phone"></a><br><sub>The same board on a phone</sub></td>
+</tr>
+</table>
 
 ## 🧰 What it is
 
