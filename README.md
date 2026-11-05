@@ -231,17 +231,6 @@ The board manual: searchable chapters with quick-lookup chips.
 
 **Ties in:** A field reference that follows the kit; only chapter headings are shown here.
 
-### Tech demo (extracurricular)
-
-<a href="img/showroom/16_tech_demo.png"><img src="img/showroom/16_tech_demo.png" alt="Tech demo (extracurricular)" width="100%"></a>
-
-A show-and-tell panel for gear and ideas being tried. Not part of daily field ops.
-
-- Remote monitoring, smart glasses, voice capture and other topics
-- Status on each topic
-
-**Ties in:** Stands apart from the job flow; no job cards, lanes or priority.
-
 ## 🧰 What it is
 
 RestoKit is a structured JSON kit that loads into an AI model and works alongside anyone running a restoration job, from tech and lead to project manager and estimator. It's grounded in IICRC S500 (water) and S520 (mold) principles and written in a peer voice, the way a senior tech talks a job through. For now it runs on commercial models only.
