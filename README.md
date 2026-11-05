@@ -10,7 +10,7 @@
 <p align="center"><strong>A restoration kit for water, mold, and crawlspace work, from tech to lead, PM, and estimator.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.9.15-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.15">
+  <img src="https://img.shields.io/badge/version-0.9.20-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.20">
   <img src="https://img.shields.io/badge/for-tech%20%7C%20lead%20%7C%20PM%20%7C%20estimator-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="For tech, lead, PM, and estimator">
   <img src="https://img.shields.io/badge/runs%20on-commercial%20models-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Runs on commercial models">
   <img src="https://img.shields.io/badge/status-full%20kit%20private-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Status: full kit private">
@@ -165,7 +165,7 @@ The billable line-item list ScopeBot scopes against, in order of work.
 
 Blank note templates for copy and paste into the job file.
 
-- Inspection, every-visit, scope/rooms, plan and holds
+- Inspection, every-visit, scope/rooms, equipment rollups, and holds
 - One-tap Copy
 - No job data in the templates
 
@@ -276,7 +276,7 @@ It's senior field knowledge in a form a tech, lead, PM, or estimator can use. It
 
 RestoKit is a single JSON file. There's nothing to install and no code to run.
 
-1. **Load it.** Open the Grok app or a Grok Bot and attach `resto_kit_0.9.15.json`, or add it to a project or bot's knowledge so it stays loaded.
+1. **Load it.** Open the Grok app or a Grok Bot and attach `resto_kit_0.9.20.json`, or add it to a project or bot's knowledge so it stays loaded.
 2. **Tell it the job.** For example, "Category 2 supply-line leak, kitchen and crawlspace, 1990s house, I'm the PM."
 3. **Ask one thing at a time.** For example, "What's Phase 1?", "Remove or dry this LVP?", "Containment before demo?", or "Is the subfloor dry?" It answers from the kit's phases, checks, and science, and goes deeper only when you ask.
 
@@ -294,7 +294,9 @@ Each step carries a short summary line. Ask about one step and you get only that
 
 RestoKit grows from daily job logs. A lesson goes into the kit only after it proves itself on real jobs, as a short note in the module that owns it.
 
-The current version is **0.9.15** (2026-10-25).
+The current version is **0.9.20** (2026-11-05).
+
+Visit notes use a ◇ walkthrough set: claim-level inspection and visit summary notes, plus room scope and equipment notes with a claim-level rollup for each. Accumulative notes list days newest at the top, older below. Native shop forms stay in use and can be filled from the ◇ notes.
 
 Since 0.9.8, when a shower or tub sits over a crawl, check the underside, including the underdeck. Visit notes follow a cadence, and materials and readings map into the job notes. Approach photos can inform prep; leave-time notes wait until those photos have uploaded. Notes stay short sentences, with a line break between sections, so they're easy to scan. File review runs before the day-forward plan, sorted PM, then Lead, then Techs. Morning into-file notes stay delta-only: decisions, today's work, and who's assigned, without reprinting data already in the job file.
 
@@ -538,4 +540,5 @@ Ask one thing and it answers like a senior tech next to you. Short, specific, th
 - **0.9.12.** Photo timing: approach photos can inform prep, and leave-time notes wait until the photos have uploaded.
 - **0.9.13.** Note style: short sentences, line breaks between sections, easy to scan.
 - **0.9.14.** File review before the day-forward plan, role-sorted PM, then Lead, then Techs.
+- **0.9.20.** Walkthrough note set: claim inspection and visit summary notes, room scope and equipment notes with claim-level rollups. Accumulative notes list days newest at the top. Native shop forms stay.
 - **0.9.15.** Morning into-file notes stay delta-only: decisions, today's work, and who's assigned. No reprint of data already in the job file.
