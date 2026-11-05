@@ -35,29 +35,212 @@
 
 ---
 
-## 📱 The application
+## 🧰 RestoKit tools: feature showroom
 
-Beyond the kit itself, RestoKit grew a working field app: a live project board for crews, trucks, dispatch and job files. These are real screens running on demo data (every name, claim and address is made up). Click any image to see it full size; the full walkthrough is in [restokit-showcase](https://github.com/neuresthetics/restokit-showcase).
+These are the board's tools as they look today, one screenshot each, running on demo data. Every name, job number and address is made up. The board ties into the RestoKit kit (the rules), the tower API (serves board.json), read-only Encircle digs (job data), the board manual and scope_bot.
 
-<p align="center"><a href="img/app/hero_board.jpg"><img src="img/app/hero_board.jpg" alt="The project board: crew, vehicles and every job lane on one screen" width="100%"></a><br><sub>The project board: crew, vehicles and every job lane on one screen</sub></p>
+### Main page, all sections collapsed
 
-<table>
-<tr>
-<td align="center" width="33%"><a href="img/app/dispatch.jpg"><img src="img/app/thumbs/dispatch.jpg" alt="Dispatch plans the day's routes"></a><br><sub>Dispatch plans the day's routes</sub></td>
-<td align="center" width="33%"><a href="img/app/dispatch_stops.jpg"><img src="img/app/thumbs/dispatch_stops.jpg" alt="Stops assigned per truck"></a><br><sub>Stops assigned per truck</sub></td>
-<td align="center" width="33%"><a href="img/app/map.jpg"><img src="img/app/thumbs/map.jpg" alt="Map of the day's jobs"></a><br><sub>Map of the day's jobs</sub></td>
-</tr>
-<tr>
-<td align="center" width="33%"><a href="img/app/lanes.jpg"><img src="img/app/thumbs/lanes.jpg" alt="Job lanes from call to close"></a><br><sub>Job lanes from call to close</sub></td>
-<td align="center" width="33%"><a href="img/app/job_table.jpg"><img src="img/app/thumbs/job_table.jpg" alt="Table view of every job"></a><br><sub>Table view of every job</sub></td>
-<td align="center" width="33%"><a href="img/app/vehicles.jpg"><img src="img/app/thumbs/vehicles.jpg" alt="Trucks and seats, drag to assign"></a><br><sub>Trucks and seats, drag to assign</sub></td>
-</tr>
-<tr>
-<td align="center" width="33%"><a href="img/app/templates.jpg"><img src="img/app/thumbs/templates.jpg" alt="Note templates"></a><br><sub>Note templates</sub></td>
-<td align="center" width="33%"><a href="img/app/file_quality.jpg"><img src="img/app/thumbs/file_quality.jpg" alt="Job file quality checks"></a><br><sub>Job file quality checks</sub></td>
-<td align="center" width="33%"><a href="img/app/phone_map.jpg"><img src="img/app/thumbs/phone_map.jpg" alt="The map on a phone"></a><br><sub>The map on a phone</sub></td>
-</tr>
-</table>
+<a href="img/showroom/00_overview.png"><img src="img/showroom/00_overview.png" alt="Main page, all sections collapsed" width="100%"></a>
+
+The board's front page. One Ops panel with a collapsible section per tool; each header shows a live count or status (jobs on board, trucks staffed, stops today).
+
+- Collapse all / Expand all
+- Sync stamp and job count in the header
+- Desktop and phone layouts
+
+**Ties in:** Reads board.json, which the tower host rebuilds from read-only Encircle digs.
+
+### Personnel
+
+<a href="img/showroom/01_personnel.png"><img src="img/showroom/01_personnel.png" alt="Personnel" width="100%"></a>
+
+Who is on the crew today, their role and the truck they're in.
+
+- Role and default vehicle per person
+- Tap a name for skills, licenses and notes
+- Local-only edits, never synced
+
+**Ties in:** Feeds Vehicles and Dispatch so crews are suggested from people who are actually available.
+
+### Vehicles
+
+<a href="img/showroom/02_vehicles.png"><img src="img/showroom/02_vehicles.png" alt="Vehicles" width="100%"></a>
+
+Seats people into trucks for the day.
+
+- Drag or tap to seat a person
+- Crew suggestions from today's jobs, two-person jobs first
+- Return to defaults / set defaults
+
+**Ties in:** Uses Personnel plus the job board's due stops; the seats drive Dispatch and the Labor ratio.
+
+### Job board
+
+<a href="img/showroom/03_job_board.png"><img src="img/showroom/03_job_board.png" alt="Job board" width="100%"></a>
+
+Every open job as a card in the lane for its stage, from call to close.
+
+- Lanes (Call/Inspect, Work Authorization, Hazard testing, Abatement, Demo, Dry out, On hold, Close) or table view
+- Needs-action filters: missing work auth, asbestos/lead not negative, lockbox and spider placement
+- Locked by default; unlock to edit
+
+**Ties in:** Lanes follow the kit's phase sequence. Card data comes from the Encircle digs through the tower API.
+
+### Labor ratio
+
+<a href="img/showroom/04_labor_ratio.png"><img src="img/showroom/04_labor_ratio.png" alt="Labor ratio" width="100%"></a>
+
+Due stops divided by the stops the crew can make today, as a plain call: OK, busy or too busy.
+
+- Two-person vs solo check coverage
+- Stuck jobs by lane
+- Short explainer of what the ratio measures
+
+**Ties in:** Built from the job board and today's Vehicles seats.
+
+### Triage
+
+<a href="img/showroom/05_triage.png"><img src="img/showroom/05_triage.png" alt="Triage" width="100%"></a>
+
+An intake script for the office on a new loss call, most urgent first.
+
+- Tap what the caller says; the board suggests urgency
+- Only asks what a caller can answer; the tech measures the rest
+- Writes are disabled when offline (as in this demo)
+
+**Ties in:** Questions and urgency rules come from the kit's intake guidance; a filled intake becomes a new job card.
+
+### Dispatch
+
+<a href="img/showroom/06_dispatch.png"><img src="img/showroom/06_dispatch.png" alt="Dispatch" width="100%"></a>
+
+Builds the day's routes from the trucks going out and the stops due.
+
+- Suggest crews from jobs, compute routes, clear
+- Per-device settings for crews and special conditions
+- Optional resto_kit_bot review of the plan
+
+**Ties in:** Uses Vehicles, the job board and the Map; route order shows as numbered pins.
+
+### Map
+
+<a href="img/showroom/07_map.png"><img src="img/showroom/07_map.png" alt="Map" width="100%"></a>
+
+Job pins on a map, colored by lane.
+
+- Lane filters, fit to jobs
+- Show today's routes with truck stop order
+- Rings mark jobs that need a stop today
+
+**Ties in:** Pins come from the job board; routes come from Dispatch. (Demo data here has no pins placed.)
+
+### Hazard survey
+
+<a href="img/showroom/08_hazard_survey.png"><img src="img/showroom/08_hazard_survey.png" alt="Hazard survey" width="100%"></a>
+
+Jobs that still need asbestos or lead testing.
+
+- Pending / unknown / positive status per job
+- Close and On hold skipped
+- Mark a request locally with Update
+
+**Ties in:** Read-only from board.json; results gate Demo per the kit's hazard rules.
+
+### ScopeBot
+
+<a href="img/showroom/09_scopebot.png"><img src="img/showroom/09_scopebot.png" alt="ScopeBot" width="100%"></a>
+
+The billable line-item list ScopeBot scopes against, in order of work.
+
+- 10 categories, 114 items
+- Cat 3 flags on items that apply to Category 3 losses
+- No prices
+
+**Ties in:** scope_bot reads job notes and photos and maps findings to these items; codes show here once it has run.
+
+### Templates
+
+<a href="img/showroom/10_templates.png"><img src="img/showroom/10_templates.png" alt="Templates" width="100%"></a>
+
+Blank note templates for copy and paste into the job file.
+
+- Inspection, every-visit, scope/rooms, plan and holds
+- One-tap Copy
+- No job data in the templates
+
+**Ties in:** Matches the kit's note structure, so notes land in the file the way the file-quality check expects.
+
+### PM analysis
+
+<a href="img/showroom/11_pm_analysis.png"><img src="img/showroom/11_pm_analysis.png" alt="PM analysis" width="100%"></a>
+
+A project manager's view of what has stalled.
+
+- Stalled jobs (5+ days idle), oldest first
+- Jobs past inspection with no work authorization
+- On hold and open counts
+
+**Ties in:** Computed from the digs' last-activity dates and the job board lanes.
+
+### File quality
+
+<a href="img/showroom/12_file_quality.png"><img src="img/showroom/12_file_quality.png" alt="File quality" width="100%"></a>
+
+Scores each active job file and lists what's missing.
+
+- Health score and fix-these-first list
+- Checks photos per room, notes per visit and recency
+- Rolling 7-day window
+
+**Ties in:** Metrics follow the kit's file-quality chapter; data is read-only from Encircle digs.
+
+### Features
+
+<a href="img/showroom/13_features.png"><img src="img/showroom/13_features.png" alt="Features" width="100%"></a>
+
+A searchable list of every board feature and the reason it exists.
+
+- 57 features grouped by tool
+- Each one says why: a kit rule or an ops rule
+- Search box
+
+**Ties in:** Ties each feature back to the kit version it follows (references hidden in this shot).
+
+### Dev
+
+<a href="img/showroom/14_dev.png"><img src="img/showroom/14_dev.png" alt="Dev" width="100%"></a>
+
+Developer notes and a systems check.
+
+- How the board reads Encircle: data flow, write policy, PII handling, refresh cadence
+- Version history
+- Live systems check of the tower host
+
+**Ties in:** Documents the tower API and the read-only Encircle digs. Section bodies are collapsed here.
+
+### Manual / Lookup
+
+<a href="img/showroom/15_manual.png"><img src="img/showroom/15_manual.png" alt="Manual / Lookup" width="100%"></a>
+
+The board manual: searchable chapters with quick-lookup chips.
+
+- Chapters and sections with expand/collapse
+- Quick chips: moisture readings, containment, asbestos, PPE, photos and more
+- Cross-links into board tools
+
+**Ties in:** A field reference that follows the kit; only chapter headings are shown here.
+
+### Tech demo (extracurricular)
+
+<a href="img/showroom/16_tech_demo.png"><img src="img/showroom/16_tech_demo.png" alt="Tech demo (extracurricular)" width="100%"></a>
+
+A show-and-tell panel for gear and ideas being tried. Not part of daily field ops.
+
+- Remote monitoring, smart glasses, voice capture and other topics
+- Status on each topic
+
+**Ties in:** Stands apart from the job flow; no job cards, lanes or priority.
 
 ## 🧰 What it is
 
