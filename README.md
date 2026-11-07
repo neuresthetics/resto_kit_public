@@ -45,283 +45,73 @@ RestoKit is the framework: the job stages (phases) and the modules that load int
 
 ## 🧰 What it is
 
-RestoKit is a structured JSON kit that loads into an AI model and works alongside anyone running a restoration job, from tech and lead to project manager and estimator. It's grounded in IICRC S500 (water) and S520 (mold) principles and written in a peer voice, the way a senior tech talks a job through. For now it runs on commercial models only.
+RestoKit is a structured kit that loads into an AI model and works alongside anyone running a restoration job, from tech and lead to project manager and estimator. It's informed by industry practice for water and mold work and written in a peer voice, the way a senior tech talks a job through. For now it runs on commercial models only.
 
 It has two layers:
 
-- **Phases:** a linear job flow with gates in a set order, so safety-critical steps don't get skipped under time pressure.
-- **Modules and base science:** a reference pool the steps point into for the why. It covers category, remove-vs-dry, containment, equipment sizing, drying science, mold cleaning, and crawlspaces.
+- **Phases:** an ordered job flow, so important steps aren't skipped under time pressure.
+- **Modules and base science:** a reference layer the phases draw on for the why behind each call.
 
-It's senior field knowledge in a form a tech, lead, PM, or estimator can use. It doesn't replace years on the job. Its main job is memory: it holds the rare edge-case lessons that don't come up often enough to stay top of mind.
+It's meant to put senior field knowledge in a form a tech, lead, PM, or estimator can use. It doesn't replace years on the job. Its main job is memory: holding the rare edge-case lessons that don't come up often enough to stay top of mind.
 
 ## 🕰️ Development history
 
 - **Pre-0.6.** First single-file kit, then split into a modular kit.
-- **0.6.7 to 0.6.9.** First numbered releases.
-- **0.8.0 and 0.8.1.** Base for the 0.8 line.
-- **0.8.2.** Field-memory expansion: crawlspaces rebuilt around displacement, combustion backdrafting, condition labels, cleaning stacks, dehumidifier ducting, and a job-type gate.
-- **0.8.3 to 0.8.9.** Batched field additions, ending with Normal, Settled, and Colonized condition labels.
-- **0.9.0.** Depth cap, four tiers, citations and notes moved out of the kit body, and a pump truck module.
-- **0.9.1.** Job flow restructured into five phases, survey to closeout, plus Hold as a status. Hazard sampling rebuilt: the asbestos stop matches the regulatory line (more than 1 percent), Oregon's small-repair exemption is added as a note, and age-based wording is replaced with "older or suspect, any age."
-- **0.9.2.** Electrical material note on wiring exposed to water. Field improvisation patterns for water interception.
-- **0.9.3.** Daily log template loads with the kit.
-- **0.9.4.** Job file review workflow: read the job's photos room by room, ask the lead review questions, then produce photo-backed PM, Lead, and Tech to-dos, an estimator scope, and a floor covering estimate.
-- **0.9.5.** Review checks for the job file (media by room, atmosphere readings, dry standard, category facts, mold wording) and scope, lead, and estimator rules.
-- **0.9.6.** Before cutting, check clearance behind and below the cut.
-- **0.9.7.** Moisture mapping tape line: tape 6 inches to a foot past the wet edge, never in the middle of the fuzz.
-- **0.9.8.** Day forward plan format: Day 0 is the initial response, only the next day is concrete, and later phases are named by the condition that starts them. Checklist wording rules: room names match the floor plan, shared items read "Lead/Techs", and each day opens with a Lead reminder to fill out the scope sheet as you go or by end of day. Spider box as the default for temporary power beyond a small bathroom.
-- **0.9.9.** Field refinements.
-- **0.9.10.** When a shower or tub sits over a crawl, check the underside, including the underdeck.
-- **0.9.11.** Visit-note cadence: materials and readings map into the job notes.
-- **0.9.12.** Photo timing: approach photos can inform prep, and leave-time notes wait until the photos have uploaded.
-- **0.9.13.** Note style: short sentences, line breaks between sections, easy to scan.
-- **0.9.14.** File review before the day-forward plan, role-sorted PM, then Lead, then Techs.
-- **0.9.15.** Morning into-file notes stay delta-only: decisions, today's work, and who's assigned. No reprint of data already in the job file.
+- **0.6.x.** First numbered releases.
+- **0.8.x.** Base for the 0.8 line, then a field-memory expansion with batched additions, including a rebuilt crawlspace section and mold condition labels.
+- **0.9.0.** Kit body tightened, with references moved out and a new equipment module.
+- **0.9.1.** Job flow restructured into phases plus a Hold status; hazard sampling reworked.
+- **0.9.2 to 0.9.7.** Field additions: electrical, improvisation, a daily log template, a job file review workflow, review checks, and moisture mapping.
+- **0.9.8 to 0.9.15.** Planning and note-writing refinements: a day-forward plan format, checklist and note style, photo timing, visit-note cadence, and morning notes.
 
 ## 🏗️ What it covers on a job
 
-- **Phase 0, Survey & Estimate:** The first look before any work is authorized. The surveyor talks with the customer, investigates and marks wet areas, takes a quick photo sweep, checks the crawlspace from the hatch (4-gas before entry), samples suspect materials before anything is disturbed, and builds the scope, estimate sketch, and job file the tech inherits. The surveyor doesn't lock scope, because initial scopes almost always run low.
-- **Phase 1, Initial Response & Stabilization:** Starts at signed work authorization. Then: a job-type check, the safety walk and category check, confirming or completing the survey photos and measurements, source control, bulk extraction, and baseline readings in affected and unaffected areas. It also covers full crawlspace entry and confirming asbestos results before any disturbing work.
-- **Phase 2, Selective Demolition & Post-Demo Cleaning:** Remove vs. dry-in-place by material, category, and dwell time. Controls are upgraded before demo, and demo runs top-down. Hidden water gets chased into cavities, under LVP, and along base plates. Then post-demo cleaning and an equipment re-set.
-- **Phase 3, Active Drying & Monitoring:** Daily temperature, RH, and GPP readings, plus dehumidifier grain depression. Moisture readings go at the same points every visit, and containment gets re-checked. If progress stalls after 48–72 hours of proper conditions, the kit calls for a root-cause check.
-- **Phase 4, Verification & Closeout:** Controls stay up and teardown waits until final moisture verification passes. Then the cavity and crawlspace inspection, customer walkthrough, and documentation package.
-- **Hold Status (any phase):** A job can pause at any phase while it waits on approval, abatement, a plumber, or a signature. Hold means minimum stabilization: protect contents, flag hazards, put up minimal containment, and document the hold and the wet-time clock. Each phase lists its common hold points, and the job returns to the phase it left once cleared. Whether to pause is a judgment call between the restoration company, homeowner, and carrier.
+- **Phase 0, Survey & Estimate:** the first look before work is authorized, through to the scope and job file the crew inherits.
+- **Phase 1, Initial Response & Stabilization:** safety, source control, extraction, and baseline documentation.
+- **Phase 2, Selective Demolition & Post-Demo Cleaning:** remove-or-dry decisions, controls, demo, and cleanup.
+- **Phase 3, Active Drying & Monitoring:** drying, daily monitoring, and catching stalled progress.
+- **Phase 4, Verification & Closeout:** verifying dry, teardown, walkthrough, and documentation.
+- **Hold Status (any phase):** keeping a paused job stable and documented until it can resume.
 
 ## ✅ Checks the kit calls out
 
-- **Category:** When unsure, go with the higher category. Water from under a toilet is Category 3 until proven otherwise. A strong musty or sewage odor overrides appearance.
-- **Electrical:** Standing water plus live circuits means stop. Kill it at the breaker, verify it's dead, and use GFCI on temp power. Anything bigger than a single small bathroom, or more than a little equipment, gets a spider box by default, because household breakers trip too often to rely on.
-- **Wet edge:** Tape past the fuzz. Blue tape goes 6 inches to a foot beyond the last wet reading, so nothing wet sits outside the line.
-- **Crawlspaces:** Size it up at the hatch. A 4-gas check is recommended; a gas or sewer smell means get out. Don't work a tight, hot, or contaminated crawl alone, and never push crawl air up into the house. When a shower or tub sits over the crawl, check the underside, including the underdeck.
-- **Containment:** Minimal containment on every job, even Category 1. Full containment before demo or when contamination risk rises. Never bag a live HVAC return.
-- **Negative air:** Target about −5 Pa continuous, sized for 4+ air changes per hour. If a gas appliance is in or next to the chamber, check flue draft and plan makeup air.
-- **Dry standard:** The unaffected material in the same building sets it, and the goal is at or above it. For wood, 2–4 points is a quick field check. The ≤16 / 16.1–19.9 / ≥20% traffic light is a risk band, not a second dry standard.
-- **Mold:** Surfaces are called Condition 1, 2, or 3. Kill is not remove, because dead spores stay a reservoir.
+The kit flags judgment calls and safety checks across the job, including water category, electrical safety, wet-edge mapping, crawlspace safety, containment, pressure and airflow, dry standards, and mold condition. Specific rules and thresholds stay in the private kit.
 
 ## 🔬 The science behind the calls
 
-- Read RH and temp, log GPP. RH for the quick check, GPP to compare days, rooms, and dehu inlet vs. outlet, since RH shifts with temperature.
-- Vapor pressure and vapor drive
-- Wicking, capillary action, and free vs. bound moisture
-- Material behavior, including LVP and other modern flooring that traps water underneath
-- Equipment sizing by water class and cubic footage, and the displacement principle behind tenting and ducting
+The base science layer includes notes on psychrometry, moisture and vapor behavior, how water moves through a building, material behavior, contamination and mold science, and equipment sizing principles.
 
 ---
 
 ## 🗂️ Kit structure
 
-Layout of the kit two levels deep. Each section lists the keys inside it; contents omitted.
-
-```jsonc
-{
-  "framework": "…",  // Kit identifier
-  "meta": ["author", "description", "repository", "version", "date"],  // Author, version, date, and kit description
-  "framework_scale": [  // Rules for when modules grow into shallow trees
-    "purpose", "core_principle", "triggers_for_tree", "tree_design_rules", "restructuring_process",
-    "what_stays_flat", "current_candidates", "success_test", "remembering_function",
-    "runtime_contracts"
-  ],
-  "main_content": {
-    "phases": {
-      "phase0": ["name", "objective", "principles", "sequence", "pm_board_alignment", "hold_triggers", "references"],  // Survey & Estimate
-      "phase1": ["name", "objective", "sequence", "pm_board_alignment", "phase_collapse_note", "hold_triggers"],  // Initial Response & Stabilization
-      "phase2": ["name", "objective", "sequence", "pm_board_alignment", "hold_triggers"],  // Selective Demolition & Post-Demo Cleaning
-      "phase3": ["name", "objective", "sequence", "pm_board_alignment", "hold_triggers"],  // Active Drying & Monitoring
-      "phase4": ["name", "objective", "sequence", "pm_board_alignment", "hold_triggers"],  // Verification & Closeout
-      "hold_status": [  // Hold Status: unnumbered, enterable from any phase
-        "name", "frequency", "objective", "sequence", "hold_reasons", "minimal_actions_only",
-        "when_to_resume", "pm_board_alignment", "voice_note", "resume_voice_line",
-        "entry_rule", "exit_rule", "judgment_note"
-      ]
-    },
-    "modules": {
-      "demolition": ["title", "description", "tree", "voice_entry_points"],  // Remove-vs-dry decisions, demo sequence, controls, post-demo clean
-      "crawlspaces": ["title", "description", "tree", "voice_entry_points"],  // Crawl safety, inspection, insulation, airflow, vapor barrier
-      "special_situations": ["title", "description", "tree", "voice_entry_points"],  // High-complexity homes needing elevated PPE and sequencing
-      "leadership_and_labor": [  // Crew leadership and labor distribution
-        "description", "core_principle", "key_considerations", "voice_considerations",
-        "pump_truck_deployment"
-      ],
-      "practical_judgment": [  // Sound technical calls under real-world constraints
-        "description", "core_principle", "key_considerations", "minimize_passes", "voice_note",
-        "noise_mitigation", "good_enough", "remembering_edge_cases"
-      ],
-      "emergency_calls": [  // Triage for after-hours and urgent calls
-        "title", "description", "triage_questions", "true_emergency_criteria",
-        "non_emergency_examples", "emotional_reaction_handling", "on_site_protocol",
-        "mitigation_to_restoration_note", "voice_considerations", "heavy_sewage_override"
-      ],
-      "service_contract": [  // Work authorization before scope or demo
-        "description", "key_activities", "critical_decision_points", "practical_guidance",
-        "voice_considerations", "life_safety_carve_out"
-      ],
-      "legal_and_liability": [  // Authorization, change orders, deviations, consent, records, and what not to claim
-        "title", "description", "core_principle", "disclaimer_framing", "work_authorization_and_contract",
-        "change_orders", "limitations_complexities_complications_conflicts", "deviation_procedure",
-        "informed_consent_antimicrobials", "who_decides_what", "qualifications_and_licensing",
-        "records_and_retention", "insurance_boundary", "must_not_claim", "waivers", "voice_note"
-      ],
-      "glossary": ["title", "description", "terms", "voice_note"],  // Plain-language definitions of field terms
-      "initial_assessment": [  // First on-site evaluation
-        "description", "key_activities", "critical_decision_points", "practical_guidance",
-        "voice_considerations"
-      ],
-      "source_control": [  // Stopping and verifying the water source
-        "description", "key_activities", "critical_decision_points", "practical_guidance",
-        "voice_considerations"
-      ],
-      "extraction": [  // Removing standing water
-        "description", "key_activities", "critical_decision_points", "practical_guidance",
-        "voice_considerations"
-      ],
-      "ambient_humidity_assessment": [  // Quick RH and temp screen before equipment
-        "title", "description", "traffic_light", "key_activities", "voice_line", "integration",
-        "scope_note"
-      ],
-      "contents_handling": ["description", "key_activities", "contents_return", "voice_considerations"],  // Protecting, moving, cleaning, and returning contents
-      "engineering_controls": [  // Negative pressure, air filtration, and related controls
-        "description", "key_activities", "critical_decision_points", "practical_guidance",
-        "voice_considerations", "negative_pressure_targets", "gas_appliance_backdraft"
-      ],
-      "containment": [  // Containment types, build sequence, and blowouts
-        "zipper_doors", "types", "philosophy", "blowout", "hvac_intake_ban",
-        "gas_appliance_backdraft_check", "core_mindset", "when_to_use", "recommended_sequence",
-        "voice_note", "voice_considerations", "recommended_sequence_voice_chunks"
-      ],
-      "hvac_systems": ["title", "description", "key_rules", "source", "voice_note"],  // When the building's HVAC is part of the loss and how to handle it
-      "extension_cord_safety": ["description", "key_rules", "practical_guidance", "voice_considerations"],
-      "electrical_safety": ["description", "key_rules", "practical_guidance", "voice_considerations", "voice_note"],
-      "drying_and_monitoring": [  // Drying setup, tenting, dry standards, dehu ducting
-        "description", "key_activities", "tenting", "critical_decision_points", "practical_guidance",
-        "voice_considerations", "references", "monitoring_module_note", "dry_standards",
-        "moisture_after_spray", "dehumidifier_ducting"
-      ],
-      "general_cleaning": ["description", "core_approach", "practical_tips", "voice_note"],
-      "ulv_vs_hand_pump_sprayer": ["description", "key_rules", "rules_of_thumb", "when_not_to_use_ulv", "financial_note"],  // Choosing an application method for antimicrobials
-      "trash_management_and_logistics": [  // Debris handling and hauling
-        "description", "core_approaches", "daily_handling", "vehicle_loading",
-        "contaminated_material", "equipment_decisions", "key_principles"
-      ],
-      "final_verification": [  // Final moisture checks before teardown
-        "description", "key_activities", "critical_decision_points", "practical_guidance",
-        "voice_considerations"
-      ],
-      "job_closeout": [  // Teardown, walkthrough, and closing the job
-        "description", "key_activities", "critical_decision_points", "practical_guidance", "warnings",
-        "voice_considerations"
-      ],
-      "documentation": [  // Documentation habits across the job
-        "description", "core_principle", "key_habits", "decision_criteria", "practical_guidance",
-        "warnings", "voice_considerations"
-      ],
-      "category_decision": [  // Verifying or upgrading water category on site
-        "description", "key_activities", "critical_decision_points", "practical_guidance",
-        "voice_considerations"
-      ],
-      "hazard_sampling": [  // Asbestos and hazardous material sampling
-        "title", "description", "references", "who_samples", "decisions", "homogeneous_areas",
-        "minimum_counts", "collection", "lab_and_results", "count_vs_cost", "lead", "voice_considerations"
-      ],
-      "limited_targeted_access": [  // Low-risk access before full demo
-        "description", "key_activities", "critical_decision_points", "practical_guidance",
-        "voice_considerations"
-      ],
-      "equipment_setup": [  // Equipment placement and sizing
-        "description", "key_activities", "critical_decision_points", "industry_rules_of_thumb",
-        "sizing_and_calculations", "practical_guidance", "references", "voice_considerations",
-        "noise_reduction"
-      ],
-      "van_organization": [  // Work vehicle setup
-        "description", "core_principle", "vehicle_type_recommendations",
-        "cab_separation_and_contamination_control", "clean_dirty_flow", "functional_zones",
-        "racking_and_shelving", "theft_and_security", "weather_adaptations",
-        "van_cleaning_and_maintenance", "professional_appearance", "comfort_and_quality_of_life",
-        "daily_reset_habits", "voice_considerations"
-      ],
-      "mcgyver": [  // Practical field improvisations
-        "name", "description", "core_principle", "trigger_phrases", "field_fixes",
-        "water_interception", "voice_considerations", "edge_case_memory"
-      ],
-      "insurance_dynamics": [  // Working within carrier rules
-        "description", "key_realities", "field_reality", "practical_guidance", "voice_considerations",
-        "honesty_guard"
-      ],
-      "monitoring": [  // Daily monitoring methods and trend logging
-        "description", "core_principle", "key_principles", "fixed_point_techniques",
-        "long_dwell_sewage_handling", "integration", "voice_considerations"
-      ],
-      "mold_cleaning": [  // Mold cleaning approach, sequence, and condition labels
-        "title", "description", "core_principle", "customer_notify", "cleaning_stacks",
-        "practical_approach", "voice_note", "moisture_after_spray_note", "spore_reservoir",
-        "kill_then_remove", "condition_labels"
-      ],
-      "ale": ["title", "description", "status", "deferred_reason", "voice_note"],  // Additional living expense notes
-      "electricity_bills": ["title", "description", "status", "deferred_reason", "voice_note"],  // Equipment power cost notes
-      "_structure_note": ["description"],  // Internal note on module layout
-      "job_type_gate": ["title", "rule", "example", "voice_note"]  // Confirm the job type before loading water modules
-    },
-    "base_science": {
-      "water_category": [
-        "description", "category_1", "category_2", "category_3", "time_and_migration",
-        "decision_rules", "nuances", "voice_notes"
-      ],
-      "psychrometry": ["description", "core_concepts", "field_implication", "voice_note"],
-      "moisture_physics": ["description", "core_concepts", "field_implications"],
-      "water_movement_pathways": [
-        "description", "core_mechanisms", "layering_and_drainage", "horizontal_pathways",
-        "vertical_pathways", "high_probability_collection_points", "field_implications", "voice_notes"
-      ],
-      "evaporation_principles": ["description", "core_concepts", "field_implication"],
-      "dry_standards": ["description", "core_principle", "wood", "non_wood_materials", "insulation_rule", "voice_note"],
-      "contamination_science": ["description", "core_concepts", "field_implication"],
-      "mold_science": [
-        "description", "core_concepts", "key_relationships", "field_implications",
-        "common_misunderstandings"
-      ],
-      "material_behavior": [
-        "description", "core_concepts", "key_relationships", "field_implications",
-        "common_misunderstandings"
-      ],
-      "vapor_drive_and_pressure": ["description", "core_concepts", "field_implications"],
-      "wood_emc": ["description", "core_concepts", "field_implications"]  // Wood equilibrium moisture content
-    },
-    "board_stage_aliases": ["purpose", "aliases", "notes"]  // Maps workflow stages to project-board column names
-  },
-  "update_notes": "…"  // Version-by-version changelog
-}
-```
+RestoKit is organized as a single structured file: kit metadata, the job phases, a set of topic modules (field practice, safety, controls, drying, documentation, legal and insurance awareness, crew and logistics), a base science section, and a changelog. Internal layout is private.
 
 ## 🚀 How to use it
 
-RestoKit is a single JSON file. There's nothing to install and no code to run.
+RestoKit is a single file. There's nothing to install and no code to run.
 
-1. **Load it.** Open the Grok app or a Grok Bot and attach `resto_kit_0.9.15.json`, or add it to a project or bot's knowledge so it stays loaded.
-2. **Tell it the job.** For example, "Category 2 supply-line leak, kitchen and crawlspace, 1990s house, I'm the PM."
-3. **Ask one thing at a time.** For example, "What's Phase 1?", "Remove or dry this LVP?", "Containment before demo?", or "Is the subfloor dry?" It answers from the kit's phases, checks, and science, and goes deeper only when you ask.
+1. **Load it.** Attach the kit in the Grok app or a Grok Bot, or add it to a project or bot's knowledge so it stays loaded.
+2. **Tell it the job.** For example, "Category 2 supply-line leak, kitchen and crawlspace, I'm the PM."
+3. **Ask one thing at a time.** For example, "What's Phase 1?" or "Is this ready for demo?" It answers from the kit and goes deeper only when you ask.
 
 The full kit is private for now. A demo is available on request.
 
 ## 📋 How it answers
 
-Each step carries a short summary line. Ask about one step and you get only that part, not the whole module. Deeper detail stays in the reference layer until you ask for it. The short lines are also written to work read aloud.
-
-**Example answer:**
-
-> "Full containment before demo. Neg air target: about minus five pascals continuous, or more negative. Quick check: bounce a quarter on the six-mil. If it's flat or flapping, you lost pressure."
+Answers are short and focused on the step you asked about, with deeper detail available on request. They're written to work read aloud.
 
 ## 🌱 How it grows
 
-RestoKit grows from daily job logs. A lesson goes into the kit only after it proves itself on real jobs, as a short note in the module that owns it.
+RestoKit grows from daily job logs. A lesson is added only after it holds up on real jobs.
 
 The current version is **0.9.15** (2026-10-25).
 
-Since 0.9.8, when a shower or tub sits over a crawl, check the underside, including the underdeck. Visit notes follow a cadence, and materials and readings map into the job notes. Approach photos can inform prep; leave-time notes wait until those photos have uploaded. Notes stay short sentences, with a line break between sections, so they're easy to scan. File review runs before the day-forward plan, sorted PM, then Lead, then Techs. Morning into-file notes stay delta-only: decisions, today's work, and who's assigned, without reprinting data already in the job file.
-
 ## 🧭 Where it's headed
 
-The kit stays a field memory and a voice guide, grounded in real restoration practice. It's also growing the habits that keep the claim trail filled every stop: photos, moisture, why the equipment is there and where it sits, and a short note. That gets written on the stop, not left for a second pass.
+The kit aims to stay a field memory and voice guide grounded in real restoration practice, while helping keep job documentation current on each visit instead of left for later.
 
-Further out, connecting the field scope to Xactimate so the scope and the estimate line up.
+Further out, the goal is to connect the field scope with estimating software so the two line up.
 
 ---
 
@@ -329,9 +119,9 @@ Further out, connecting the field scope to Xactimate so the scope and the estima
 
 ![RestoKit on a phone, next to a meter and a moisture meter](img/resto_kit_3.png)
 
-The rare edge cases live in the kit, the ones that don't come up often enough to stay top of mind. You carry less of that inventory in your head.
+The rare edge cases live in the kit, so you carry less of that inventory in your head.
 
-The claim trail rides with the work. Photos, moisture, why the equipment is there and where it sits, and a short note happen on the stop, instead of a second menu pass at the truck.
+Documentation can happen on the stop, instead of a second pass at the truck.
 
 Ask one thing and it answers like a senior tech next to you. Short, specific, the way you'd talk the job through. Not a boss.
 
