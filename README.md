@@ -137,6 +137,16 @@ RestoKit is built by **Jason Burns**, a restoration tech and builder in Portland
 - GitHub: [github.com/neuresthetics](https://github.com/neuresthetics)
 - Email: [neuresthetics@gmail.com](mailto:neuresthetics@gmail.com)
 
+## Why a framework
+
+**Near-perfect, at low effort.** With RestoKit and an AI assistant, job documentation can get there at low effort compared with today's standards. The restoration knowledge base is the foundation. That is what makes it trustworthy, rather than the assistant guessing.
+
+**Ready to send.** By the end of a job, RestoKit holds the voice logs plus all measurements, materials, and equipment placements needed for a structured PDF you can send to an insurance company. With your company's approved price lines, that package can stand on its own without a separate estimating platform.
+
+**Anyone can pick it up.** Task lists stay hand-editable. Someone not using RestoKit can open one, see what's done, half done, and still to do, pick up where the last person left off, and check a box. Crews don't have time to write long lists, and hand-written lists are sloppy and rarely read.
+
+**It runs on Grok Bot.** With teams, each field tech gets a bot for the work in the field. Tech bots form a cluster that reports to the manager's bot or cluster, and that continues up. The top of the business gets a complete view of profit and loss.
+
 ---
 
 ---
