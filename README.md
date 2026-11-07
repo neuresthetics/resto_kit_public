@@ -10,7 +10,7 @@
 <p align="center"><strong>A restoration kit for water, mold, and crawlspace work, from tech to lead, PM, and estimator.</strong></p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.9.15-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.15">
+  <img src="https://img.shields.io/badge/version-0.9.20-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.20">
   <img src="https://img.shields.io/badge/for-tech%20%7C%20lead%20%7C%20PM%20%7C%20estimator-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="For tech, lead, PM, and estimator">
   <img src="https://img.shields.io/badge/runs%20on-commercial%20models-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Runs on commercial models">
   <img src="https://img.shields.io/badge/status-full%20kit%20private-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Status: full kit private">
@@ -63,6 +63,7 @@ It's meant to put senior field knowledge in a form a tech, lead, PM, or estimato
 - **0.9.1.** Job flow restructured into phases plus a Hold status; hazard sampling reworked.
 - **0.9.2 to 0.9.7.** Field additions: electrical, improvisation, a daily log template, a job file review workflow, review checks, and moisture mapping.
 - **0.9.8 to 0.9.15.** Planning and note-writing refinements: a day-forward plan format, checklist and note style, photo timing, visit-note cadence, and morning notes.
+- **0.9.16 to 0.9.20.** Walkthrough note set, job digest, README restructure.
 
 ## 🏗️ What it covers on a job
 
@@ -105,7 +106,7 @@ Answers are short and focused on the step you asked about, with deeper detail av
 
 RestoKit grows from daily job logs. A lesson is added only after it holds up on real jobs.
 
-The current version is **0.9.15** (2026-10-25).
+The current version is **0.9.20** (2026-10-25).
 
 ## 🧭 Where it's headed
 
