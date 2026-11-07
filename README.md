@@ -211,9 +211,9 @@ Every open job as a card in the lane for its stage, from call to close.
 
 ### Labor ratio
 
-<a href="img/showroom/04_labor_ratio.png"><img src="img/showroom/04_labor_ratio.png" alt="Labor ratio" width="100%"></a>
+<a href="img/showroom/04_labor_ratio.png"><img src="img/showroom/04_labor_ratio.png" alt="Labor ratio illustration. The figures are invented demo numbers, not measured results." width="100%"></a>
 
-Due stops divided by the stops the crew can make today, as a plain call: OK, busy or too busy.
+Due stops divided by the stops the crew can make today, as a plain call: OK, busy or too busy. The figures in this picture are an illustration, invented for the showroom, not measured results.
 
 - Two-person vs solo check coverage
 - Stuck jobs by lane
@@ -247,15 +247,15 @@ Builds the day's routes from the trucks going out and the stops due.
 
 ### Map
 
-<a href="img/showroom/07_map.png"><img src="img/showroom/07_map.png" alt="Map" width="100%"></a>
+<a href="img/showroom/07_map.png"><img src="img/showroom/07_map.png" alt="Map illustration with fictional demo pins on a public basemap. Not actual job locations." width="100%"></a>
 
-Job pins on a map, colored by lane.
+Job pins on a map, colored by lane. This picture is an illustration: the pins are fictional marks on a public basemap, not customer jobs or real stop locations.
 
 - Lane filters, fit to jobs
 - Show today's routes with truck stop order
 - Rings mark jobs that need a stop today
 
-**Ties in:** Pins come from the job board; routes come from Dispatch. (Demo data here has no pins placed.)
+**Ties in:** Pins come from the job board; routes come from Dispatch.
 
 ### Hazard survey
 
