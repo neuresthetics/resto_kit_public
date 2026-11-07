@@ -147,6 +147,8 @@ RestoKit is built by **Jason Burns**, a restoration tech and builder in Portland
 
 **It runs on Grok Bot.** With teams, each field tech gets a bot for the work in the field. Tech bots form a cluster that reports to the manager's bot or cluster, and that continues up. The top of the business gets a complete view of profit and loss.
 
+**Carriers read the data, not the logo.** Insurance carriers care what's in the file, not which software made it. A file laid out close to the format carriers already see for that job type gives them no reason to push back, because it carries all the required data, and usually better data than most restoration companies send today. Well-organized files move through review faster, which means less back-and-forth and faster payment.
+
 ---
 
 ---
