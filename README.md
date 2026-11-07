@@ -37,7 +37,7 @@
 
 ## 🧰 RestoKit tools: feature showroom
 
-These are the board's tools as they look today, one screenshot each, running on demo data. Every name, job number and address is made up. The board ties into the RestoKit kit (the rules), the tower API (serves board.json), read-only Encircle digs (job data), the board manual and scope_bot.
+Feature previews captured with synthetic demonstration data, one screenshot each. Every name, job number, and address shown here is a demo stand-in. The board ties into the RestoKit kit (the rules), the tower API (serves board.json), read-only Encircle digs (job data), the board manual and scope_bot.
 
 ### Main page, all sections collapsed
 
@@ -74,6 +74,18 @@ Seats people into trucks for the day.
 - Return to defaults / set defaults
 
 **Ties in:** Uses Personnel plus the job board's due stops; the seats drive Dispatch and the Labor ratio.
+
+### Job Digest
+
+<a href="img/showroom/16_job_digest.png"><img src="img/showroom/16_job_digest.png" alt="Job Digest section, collapsed. The chip reads get in, state, next." width="100%"></a>
+
+A job-by-job briefing so office and field start from the same picture. Shown collapsed here. The header chip names the three fields: get in, state, and next.
+
+- Get in: what came in on the job
+- State: where the job stands now
+- Next: the next action
+
+**Ties in:** Same jobs as the job board, folded into one short briefing per job.
 
 ### Job board
 
@@ -308,7 +320,7 @@ Further out, connecting the field scope to Xactimate so the scope and the estima
 
 ## 🤝 For shops
 
-A demo of the kit is available on request. From there, Jason can build a company version around a shop's own procedures.
+A demo of the kit is available on request. Shops that want to see it against their own day can talk with Jason about a demo, a company-specific workflow, or implementation work. From there, he can build a company version around a shop's own procedures.
 
 ## 👤 About
 
