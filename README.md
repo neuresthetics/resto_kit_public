@@ -46,6 +46,7 @@ Your whole crew aligned on the same methods, on every job.</p>
 - [How the system is set up](#how-the-system-is-set-up)
 - [Integrations](#integrations)
 - [Own your stack](#own-your-stack)
+- [Tech expansion: in-house API servers](#tech-expansion-in-house-api-servers)
 - [Licensing and service](#licensing-and-service)
 - [Contact](#contact)
 - [Tools showcase](#tools-showcase)
@@ -178,6 +179,22 @@ A planning estimate dated **October 25, 2026** (America/Los_Angeles), prepared f
 | Own the stack after cutover | ~$6,300–$10,900 | Shop API and backup server (~$1,500–$2,500 one-time; ~$80/month private network; ~$20–$40/month disk and power) plus the same seat bands; bound software cut after a real cutover |
 
 Until cutover, a shop may run the existing software and the new server in parallel, so Year-1 cash can run higher than the cutover band. Seat prices in that brief were taken from October 2026 list prices (Grok Teams; a standard private-network plan). Confirm current invoices and list prices before making a decision.
+
+## Tech expansion: in-house API servers
+
+The path is a company API server that agents and the board talk to. That is the same direction already sketched under [Own your stack](#own-your-stack): the server holds the job record, and it can sit in front of software the shop already uses or become the shop's own job-file service.
+
+### Mixed AI subscriptions
+
+Each person can use the AI subscription they already pay for (Grok, Claude, ChatGPT, and so on). Every one of them connects to the same company RestoKit API server.
+
+That server holds the kit, the job files, photos, notes, and transcripts. It controls access by role — Owner, PM, Lead, Tech, Estimator. It is the single writer to the job record, and the bridge to the APIs of software the shop already runs.
+
+Because the agents fetch the same kit and read and write through the same endpoints, everyone sees the same job and follows the same steps, whatever model they use.
+
+Models behave differently on voice, photos, and how closely they follow the kit. So far RestoKit has only been tested with Grok, and every other model needs testing before anyone calls it supported. Access is managed at the company server, not in personal subscriptions.
+
+Once mixed subscriptions are in play, a company API server is required. The same server also improves a Grok-only setup.
 
 ## Licensing and service
 
