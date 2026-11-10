@@ -7,10 +7,6 @@
 
 <p align="center"><img src="img/banner.jpg" alt="RestoKit — a kit for restoration agents" width="100%"></p>
 
-<p align="center">
-  <img src="assets/robot/happy.png" alt="RestoKit robot" width="72" height="72">
-</p>
-
 <p align="center"><a href="https://resto-kit.com"><strong>resto-kit.com</strong></a></p>
 
 <h1 align="center">RestoKit</h1>
