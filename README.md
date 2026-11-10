@@ -47,6 +47,7 @@ Your whole crew aligned on the same methods, on every job.</p>
 - [Integrations](#integrations)
 - [Own your stack](#own-your-stack)
 - [Tech expansion: in-house API servers](#tech-expansion-in-house-api-servers)
+- [Connectivity for deployed vans](#connectivity-for-deployed-vans)
 - [Licensing and service](#licensing-and-service)
 - [Contact](#contact)
 - [Tools showcase](#tools-showcase)
@@ -195,6 +196,12 @@ Because the agents fetch the same kit and read and write through the same endpoi
 Models behave differently on voice, photos, and how closely they follow the kit. So far RestoKit has only been tested with Grok, and every other model needs testing before anyone calls it supported. Access is managed at the company server, not in personal subscriptions.
 
 Once mixed subscriptions are in play, a company API server is required. The same server also improves a Grok-only setup.
+
+## Connectivity for deployed vans
+
+Documentation demands keep rising. Better documentation than other companies is a competitive edge, and this technology makes that possible without putting more burden on technicians. Once that quality becomes the expectation, drops in service become a much bigger problem. The push is toward satellite internet kits on deployed service vans — Starlink, for example — so crews can stay connected in the field.
+
+Work should still be captured offline and sync when the connection comes back, including photos.
 
 ## Licensing and service
 
