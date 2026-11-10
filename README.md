@@ -7,6 +7,12 @@
 
 <p align="center"><img src="img/banner.jpg" alt="RestoKit — a kit for restoration agents" width="100%"></p>
 
+<p align="center">
+  <img src="assets/robot/happy.png" alt="RestoKit robot" width="72" height="72">
+</p>
+
+<p align="center"><a href="https://resto-kit.com"><strong>resto-kit.com</strong></a></p>
+
 <h1 align="center">RestoKit</h1>
 
 <p align="center"><strong>A kit for restoration agents</strong></p>
@@ -15,13 +21,12 @@
 Your whole crew aligned on the same methods, on every job.</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-0.9.20-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Version 0.9.20">
-  <img src="https://img.shields.io/badge/for-tech%20%7C%20lead%20%7C%20PM%20%7C%20estimator-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="For tech, lead, PM, and estimator">
-  <img src="https://img.shields.io/badge/status-full%20kit%20private-F08A24?style=flat&amp;labelColor=0C1B2E" alt="Status: full kit private">
+  <a href="https://resto-kit.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fresto-kit.com&amp;up_message=resto--kit.com&amp;down_message=down&amp;label=website&amp;style=flat&amp;labelColor=0C1B2E&amp;up_color=1D69C6" alt="Website status for resto-kit.com"></a>
+  <img src="https://img.shields.io/badge/kit-0.9.20-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Kit version 0.9.20">
+  <a href="https://resto-kit.com/kit/demo"><img src="https://img.shields.io/badge/demo%20kit-available-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Demo kit available"></a>
 </p>
 
 <p align="center">
-  <a href="https://resto-kit.com">resto-kit.com</a> ·
   <a href="https://resto-kit.com/kit/demo">Try the demo kit</a> ·
   <a href="https://resto-kit.com/kit/setup.md">Loop in your agent</a>
 </p>
@@ -40,10 +45,10 @@ Your whole crew aligned on the same methods, on every job.</p>
 - [Demo vs. the full kit](#demo-vs-the-full-kit)
 - [How the system is set up](#how-the-system-is-set-up)
 - [Integrations](#integrations)
-- [RestoKit tools](#restokit-tools)
 - [Own your stack](#own-your-stack)
 - [Licensing and service](#licensing-and-service)
 - [Contact](#contact)
+- [Tools showcase](#tools-showcase)
 - [Changelog](#changelog)
 - [Credits](#credits)
 
@@ -97,7 +102,7 @@ Every billable item can carry a real reason, down to the specifics of that job. 
 
 Answers are short and focused on the step you asked about, written to work read aloud.
 
-## Try it
+<h2 id="try-it"><img src="assets/robot/curious.png" width="28" height="28" alt=""> Try it</h2>
 
 You could read all this, or you can try it.
 
@@ -124,11 +129,11 @@ Measured size of the demo file compared with the full kit (byte sizes of the JSO
 | Base science | 61,822 | 61,822 | 100% |
 | Modules | 95,575 | 467,143 | 20.5% |
 
-Some modules in the demo are headings only: a title and a short description, without the detailed guidance. Those are marked on the demo page. Other modules appear only in the full kit. See the [section-by-section comparison](https://resto-kit.com/kit/resto_kit_demo_vs_full.md) and the readable demo at [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo).
+Some modules in the demo are included in condensed form: a title and a short section, not the full guidance. Those are marked on the demo page. Other modules appear only in the full kit. See the [section-by-section comparison](https://resto-kit.com/kit/resto_kit_demo_vs_full.md) and the readable demo at [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo).
 
 Do not invent content for missing parts. Point people who need the complete kit to [resto-kit.com](https://resto-kit.com).
 
-## How the system is set up
+<h2 id="how-the-system-is-set-up"><img src="assets/robot/neutral.png" width="28" height="28" alt=""> How the system is set up</h2>
 
 RestoKit is a **0.9.x** kit. The current version is **0.9.20**. There is nothing to install to read the kit itself: it is one structured JSON file.
 
@@ -148,7 +153,7 @@ Around the kit, a shop setup looks like this:
 
 - **Per-person agents.** Each person who needs an agent can have their own Grok Bot, with the kit in its knowledge. Tech agents can report in a cluster to a lead or PM agent, and that can continue up, so the people running the company see one current picture rather than chasing updates.
 - **A job file as the system of record.** Photos and voice intake land in the file and are matched by timestamp. Drafts, approvals, and analyses are kept as versioned records so you can see what changed and that a person approved it.
-- **A board.** An ops board reads from a shop API and follows the kit's stages: jobs, digest, dispatch, file quality, and related tools. The [feature showroom](#restokit-tools) below is that board on demonstration data.
+- **A board.** An ops board reads from a shop API and follows the kit's stages: jobs, digest, dispatch, file quality, and related tools. The [tools showcase](#tools-showcase) later in this README is that board on demonstration data.
 - **An API server, as the direction of travel.** Agents and the board talk to the shop's own API, which can sit in front of software the shop already uses, or become the shop's own job-file service. A backup server keeps a copy of the record.
 
 You still work in your existing software if you want to. The agents are a bridge between restoration knowledge and the decisions that produce scopes, billable items, estimates, and bills.
@@ -159,11 +164,44 @@ RestoKit is meant to pilot tools a shop already runs — any job-file or ops sys
 
 The public tools showroom today reads job data through a shop API in front of existing job-file software (for example, read-only Encircle digs). The same pattern can apply to other platforms shops already use, including bound systems such as Encircle or DASH, as long as an API is available. The kit does not replace those tools by itself; it is the restoration logic layer and the agent layer on top of them.
 
-## RestoKit tools
+<h2 id="own-your-stack"><img src="assets/robot/proud.png" width="28" height="28" alt=""> Own your stack</h2>
+
+Shops do not have to stay bound to a single vendor's job-file platform. The longer-term path is to own a small API server and a backup server that hold the job record, then connect agents and the board to that, cheaply, instead of renting the only copy of the file from bound software.
+
+A planning estimate dated **October 25, 2026** (America/Los_Angeles), prepared for one restoration company, compared staying on bound job-documentation software with adding agents and, if needed, cutting over to a shop-owned API and backup server. Figures are department-level planning estimates, not invoice-confirmed, and not quotes.
+
+| Route | Year-1 cash band (estimate) | What it assumes |
+| --- | --- | --- |
+| Status quo | ~$38,400 | Bound job-documentation software only, at about **$3,200/month** (~$38,400/year) |
+| Lean pilot | ~$40,900–$43,200 | Keep that software; add a lean set of Grok Bot seats (~$210–$400/month) |
+| Full-assist | ~$42,000–$44,400+ | Keep that software; more seats (~$300–$500+/month) |
+| Own the stack after cutover | ~$6,300–$10,900 | Shop API and backup server (~$1,500–$2,500 one-time; ~$80/month private network; ~$20–$40/month disk and power) plus the same seat bands; bound software cut after a real cutover |
+
+Until cutover, a shop may run the existing software and the new server in parallel, so Year-1 cash can run higher than the cutover band. Seat prices in that brief were taken from October 2026 list prices (Grok Teams; a standard private-network plan). Confirm current invoices and list prices before making a decision.
+
+## Licensing and service
+
+This repository is a public window into the project: documentation, training materials, and a tools showroom. The **full kit remains private**. No license is published here that grants use of the full kit.
+
+A trimmed **demo kit (0.9.20)** is on [resto-kit.com](https://resto-kit.com) for people and agents to try. Shops that want the complete kit, a company-specific workflow, or implementation work can [email Jason](mailto:neuresthetics@gmail.com). From there, a company version can be built around that shop's own procedures.
+
+## Contact
+
+- Site: [resto-kit.com](https://resto-kit.com)
+- Demo kit: [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo)
+- Agent setup: [resto-kit.com/kit/setup.md](https://resto-kit.com/kit/setup.md)
+- Email: [neuresthetics@gmail.com](mailto:neuresthetics@gmail.com)
+- GitHub: [github.com/neuresthetics](https://github.com/neuresthetics)
+
+RestoKit is built by **Jason Burns**, a restoration tech and builder in Portland, OR, and a U.S. Army Engineer veteran.
+
+---
+
+<a id="tools-showcase"></a>
+<details>
+<summary>Tools showcase</summary>
 
 RestoKit tools are the applications built on top of the framework: the ops board, Job Digest, ScopeBot, and the rest. They follow the kit's stages and rules; they are not the kit itself.
-
-### Feature showroom
 
 Feature previews captured with synthetic demonstration data, one screenshot each. Every name, job number, and address shown here is a demo stand-in. The board ties into the RestoKit kit (the rules), the tower API (serves board.json), read-only Encircle digs (job data), the board manual and scope_bot.
 
@@ -371,40 +409,7 @@ The board manual: searchable chapters with quick-lookup chips.
 
 **Ties in:** A field reference that follows the kit; only chapter headings are shown here.
 
----
-
-## Own your stack
-
-Shops do not have to stay bound to a single vendor's job-file platform. The longer-term path is to own a small API server and a backup server that hold the job record, then connect agents and the board to that, cheaply, instead of renting the only copy of the file from bound software.
-
-A planning estimate dated **October 25, 2026** (America/Los_Angeles), prepared for one restoration company, compared staying on bound job-documentation software with adding agents and, if needed, cutting over to a shop-owned API and backup server. Figures are department-level planning estimates, not invoice-confirmed, and not quotes.
-
-| Route | Year-1 cash band (estimate) | What it assumes |
-| --- | --- | --- |
-| Status quo | ~$38,400 | Bound job-documentation software only, at about **$3,200/month** (~$38,400/year) |
-| Lean pilot | ~$40,900–$43,200 | Keep that software; add a lean set of Grok Bot seats (~$210–$400/month) |
-| Full-assist | ~$42,000–$44,400+ | Keep that software; more seats (~$300–$500+/month) |
-| Own the stack after cutover | ~$6,300–$10,900 | Shop API and backup server (~$1,500–$2,500 one-time; ~$80/month private network; ~$20–$40/month disk and power) plus the same seat bands; bound software cut after a real cutover |
-
-Until cutover, a shop may run the existing software and the new server in parallel, so Year-1 cash can run higher than the cutover band. Seat prices in that brief were taken from October 2026 list prices (Grok Teams; a standard private-network plan). Confirm current invoices and list prices before making a decision.
-
-## Licensing and service
-
-This repository is a public window into the project: documentation, training materials, and a tools showroom. The **full kit remains private**. No license is published here that grants use of the full kit.
-
-A trimmed **demo kit (0.9.20)** is on [resto-kit.com](https://resto-kit.com) for people and agents to try. Shops that want the complete kit, a company-specific workflow, or implementation work can [email Jason](mailto:neuresthetics@gmail.com). From there, a company version can be built around that shop's own procedures.
-
-## Contact
-
-- Site: [resto-kit.com](https://resto-kit.com)
-- Demo kit: [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo)
-- Agent setup: [resto-kit.com/kit/setup.md](https://resto-kit.com/kit/setup.md)
-- Email: [neuresthetics@gmail.com](mailto:neuresthetics@gmail.com)
-- GitHub: [github.com/neuresthetics](https://github.com/neuresthetics)
-
-RestoKit is built by **Jason Burns**, a restoration tech and builder in Portland, OR, and a U.S. Army Engineer veteran.
-
----
+</details>
 
 ## Changelog
 
