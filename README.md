@@ -114,7 +114,7 @@ Fetch https://resto-kit.com/kit/setup.md and follow it.
 
 The setup guide loads the demo kit and tells the agent how to use it, including the demo's limits. Read the kit as a person at [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo).
 
-The full kit is private. If you want it, [request the full kit](mailto:neuresthetics@gmail.com).
+The full kit is private. If you want it, email neuresthetics@gmail.com.
 
 ## Demo vs. the full kit
 
@@ -183,14 +183,14 @@ Until cutover, a shop may run the existing software and the new server in parall
 
 This repository is a public window into the project: documentation, training materials, and a tools showroom. The **full kit remains private**. No license is published here that grants use of the full kit.
 
-A trimmed **demo kit (0.9.20)** is on [resto-kit.com](https://resto-kit.com) for people and agents to try. Shops that want the complete kit, a company-specific workflow, or implementation work can [email Jason](mailto:neuresthetics@gmail.com). From there, a company version can be built around that shop's own procedures.
+A trimmed **demo kit (0.9.20)** is on [resto-kit.com](https://resto-kit.com) for people and agents to try. Shops that want the complete kit, a company-specific workflow, or implementation work can email Jason at neuresthetics@gmail.com. From there, a company version can be built around that shop's own procedures.
 
 ## Contact
 
 - Site: [resto-kit.com](https://resto-kit.com)
 - Demo kit: [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo)
 - Agent setup: [resto-kit.com/kit/setup.md](https://resto-kit.com/kit/setup.md)
-- Email: [neuresthetics@gmail.com](mailto:neuresthetics@gmail.com)
+- Email: neuresthetics@gmail.com
 - GitHub: [github.com/neuresthetics](https://github.com/neuresthetics)
 
 RestoKit is built by **Jason Burns**, a restoration tech and builder in Portland, OR, and a U.S. Army Engineer veteran.
