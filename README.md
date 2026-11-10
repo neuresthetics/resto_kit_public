@@ -124,12 +124,12 @@ Measured size of the demo file compared with the full kit (byte sizes of the JSO
 
 | | Demo | Full kit | Demo as % of full |
 | --- | ---: | ---: | ---: |
-| **Whole file** | 229,324 bytes | 621,946 bytes | **36.9%** |
+| **Whole file** | 290,000 bytes | 621,946 bytes | **46.6%** |
 | Job phases | 49,493 | 49,493 | 100% |
-| Base science | 61,822 | 61,822 | 100% |
-| Modules | 95,543 | 467,143 | 20.5% |
+| Base science | 50,095 | 61,822 | 81.0% |
+| Modules | 164,405 | 467,143 | 35.2% |
 
-Some modules in the demo are included in condensed form: a title and a short section, not the full guidance. Those are marked on the demo page. Other modules appear only in the full kit. See the [section-by-section comparison](https://resto-kit.com/kit/resto_kit_demo_vs_full.md) and the readable demo at [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo).
+Job phases in the demo are complete. Base science is a condensed subset of the full kit. Some modules are included in condensed form, not the full guidance. Those are marked on the demo page. Other modules appear only in the full kit. See the [section-by-section comparison](https://resto-kit.com/kit/resto_kit_demo_vs_full.md) and the readable demo at [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo).
 
 Do not invent content for missing parts. Point people who need the complete kit to [resto-kit.com](https://resto-kit.com).
 
