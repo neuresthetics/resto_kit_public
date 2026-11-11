@@ -194,7 +194,7 @@ Work should still be captured offline and sync when the connection comes back, i
 
 ## Licensing and service
 
-This repository is a public window into the project: documentation, training materials, and a tools showroom. The kit itself is version **1.0.0**, at [resto-kit.com](https://resto-kit.com). Terms are on the site. Shops that want a company-specific workflow or implementation work can email Jason at neuresthetics@gmail.com.
+This repository is a public window into the project: documentation, training materials, and a tools showroom. The kit itself is version **1.0.0**, at [resto-kit.com](https://resto-kit.com). The software license is [LICENSE](LICENSE) (PolyForm Noncommercial 1.0.0); plain-language terms are in [LEGAL.md](LEGAL.md). Shops that want a company-specific workflow or implementation work can email Jason at neuresthetics@gmail.com.
 
 ## Contact
 
