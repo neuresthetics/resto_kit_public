@@ -115,6 +115,8 @@ The setup guide loads the kit (version 1.0.0) and tells the agent how to use it.
 
 Improvements and challenges apply to the kit. If you can improve it, bring it.
 
+You can suggest a change right from your agent while you’re using the kit. Just tell it what should change and why; it drafts the email for you to send. No need to come back here or write it yourself.
+
 <h2 id="how-the-system-is-set-up"><img src="assets/robot/neutral.png" width="28" height="28" alt=""> How the system is set up</h2>
 
 RestoKit is kit **1.0.0**. There is nothing to install to read the kit itself: it is one structured JSON file.
