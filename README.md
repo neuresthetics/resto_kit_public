@@ -18,12 +18,11 @@ Your whole crew aligned on the same methods, on every job.</p>
 
 <p align="center">
   <a href="https://resto-kit.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fresto-kit.com&amp;up_message=resto--kit.com&amp;down_message=down&amp;label=website&amp;style=flat&amp;labelColor=0C1B2E&amp;up_color=1D69C6" alt="Website status for resto-kit.com"></a>
-  <img src="https://img.shields.io/badge/kit-0.9.20-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Kit version 0.9.20">
-  <a href="https://resto-kit.com/kit/demo"><img src="https://img.shields.io/badge/demo%20kit-available-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Demo kit available"></a>
+  <img src="https://img.shields.io/badge/kit-1.0.0-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Kit version 1.0.0">
 </p>
 
 <p align="center">
-  <a href="https://resto-kit.com/kit/demo">Try the demo kit</a> ·
+  <a href="https://resto-kit.com/#loop-in-your-agent">Try the kit</a> ·
   <a href="https://resto-kit.com/kit/setup.md">Loop in your agent</a>
 </p>
 
@@ -38,7 +37,6 @@ Your whole crew aligned on the same methods, on every job.</p>
 - [Who it's for](#who-its-for)
 - [How it works](#how-it-works)
 - [Try it](#try-it)
-- [Demo vs. the full kit](#demo-vs-the-full-kit)
 - [How the system is set up](#how-the-system-is-set-up)
 - [Integrations](#integrations)
 - [Own your stack](#own-your-stack)
@@ -113,37 +111,18 @@ Give this instruction to your AI agent:
 Fetch https://resto-kit.com/kit/setup.md and follow it.
 ```
 
-The setup guide loads the demo kit and tells the agent how to use it, including the demo's limits. Read the kit as a person at [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo).
+The setup guide loads the kit (version 1.0.0) and tells the agent how to use it. Read it at [resto-kit.com](https://resto-kit.com).
 
-The full kit is private. If you want it, email neuresthetics@gmail.com.
-
-Improvements and challenges apply to the full kit, not just the demo. If you can improve it, bring it.
-
-## Demo vs. the full kit
-
-The public demo is a trimmed preview of kit **0.9.20**. It does not receive live updates.
-
-Measured size of the demo file compared with the full kit (byte sizes of the JSON, not estimates):
-
-| | Demo | Full kit | Demo as % of full |
-| --- | ---: | ---: | ---: |
-| **Whole file** | 290,000 bytes | 621,946 bytes | **46.6%** |
-| Job phases | 49,493 | 49,493 | 100% |
-| Base science | 50,095 | 61,822 | 81.0% |
-| Modules | 164,405 | 467,143 | 35.2% |
-
-Job phases in the demo are complete. Base science is a condensed subset of the full kit. Some modules are included in condensed form, not the full guidance. Those are marked on the demo page. Other modules appear only in the full kit. See the [section-by-section comparison](https://resto-kit.com/kit/resto_kit_demo_vs_full.md) and the readable demo at [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo).
-
-Do not invent content for missing parts. Point people who need the complete kit to [resto-kit.com](https://resto-kit.com).
+Improvements and challenges apply to the kit. If you can improve it, bring it.
 
 <h2 id="how-the-system-is-set-up"><img src="assets/robot/neutral.png" width="28" height="28" alt=""> How the system is set up</h2>
 
-RestoKit is a **0.9.x** kit. The current version is **0.9.20**. There is nothing to install to read the kit itself: it is one structured JSON file.
+RestoKit is kit **1.0.0**. There is nothing to install to read the kit itself: it is one structured JSON file.
 
 The file is organized at the top level as:
 
 - **`framework`** — identifies the kit
-- **`meta`** — version, date, purpose, and (in the demo) notes on what is trimmed
+- **`meta`** — version, date, purpose, and how the kit is meant to be used
 - **`framework_scale`** — rules for how modules stay shallow or grow
 - **`main_content`**
   - **`phases`** — the gated job flow, plus Hold
@@ -206,14 +185,12 @@ Work should still be captured offline and sync when the connection comes back, i
 
 ## Licensing and service
 
-This repository is a public window into the project: documentation, training materials, and a tools showroom. The **full kit remains private**. No license is published here that grants use of the full kit.
-
-A trimmed **demo kit (0.9.20)** is on [resto-kit.com](https://resto-kit.com) for people and agents to try. Shops that want the complete kit, a company-specific workflow, or implementation work can email Jason at neuresthetics@gmail.com. From there, a company version can be built around that shop's own procedures.
+This repository is a public window into the project: documentation, training materials, and a tools showroom. The kit itself is version **1.0.0**, at [resto-kit.com](https://resto-kit.com). Terms are on the site. Shops that want a company-specific workflow or implementation work can email Jason at neuresthetics@gmail.com.
 
 ## Contact
 
 - Site: [resto-kit.com](https://resto-kit.com)
-- Demo kit: [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo)
+- The kit: [resto-kit.com](https://resto-kit.com/#loop-in-your-agent)
 - Agent setup: [resto-kit.com/kit/setup.md](https://resto-kit.com/kit/setup.md)
 - Email: neuresthetics@gmail.com
 - GitHub: [github.com/neuresthetics](https://github.com/neuresthetics)
@@ -241,7 +218,7 @@ Useful, not magic. You still do the thinking.
 
 RestoKit tools are the applications built on top of the framework: the ops board, Job Digest, ScopeBot, and the rest. They follow the kit's stages and rules; they are not the kit itself.
 
-Feature previews captured with synthetic demonstration data, one screenshot each. Every name, job number, and address shown here is a demo stand-in. Reading review is a planned concept, not a shipped tool; its shot uses sample placeholder data only. The board ties into the RestoKit kit (the rules), the tower API (serves board.json), read-only Encircle digs (job data), the board manual and scope_bot.
+Feature previews captured with synthetic demonstration data, one screenshot each. Every name, job number, and address shown here is a demo stand-in. Reading review is a planned concept, not a shipped tool; its shot uses real readings, with identifying details removed. The board ties into the RestoKit kit (the rules), the tower API (serves board.json), read-only Encircle digs (job data), the board manual and scope_bot.
 
 ### Main page, all sections collapsed
 
@@ -449,7 +426,7 @@ The board manual: searchable chapters with quick-lookup chips.
 
 ### Reading review (concept)
 
-<a href="img/showroom/17_reading_review.png"><img src="img/showroom/17_reading_review.png" alt="Reading review concept mockup with sample placeholder data. Not a real job." width="100%"></a>
+<a href="img/showroom/17_reading_review.png"><img src="img/showroom/17_reading_review.png" alt="Reading review concept mockup with real readings, identifying details removed." width="100%"></a>
 
 Reading review: confirm the wettest reading per material per room, click through the rest fast. Concept.
 
@@ -457,7 +434,7 @@ Reading review: confirm the wettest reading per material per room, click through
 - When no audio was recorded, confirm the wettest reading per material per room first, by voice or tap
 - The rest stay unconfirmed but stay backed by their photos, which can be checked if a line is questioned
 - Optional click-through of every row on a fast review screen
-- Shown here with sample placeholder data, not a real job
+- Shown here with real readings, identifying details removed
 
 **Ties in:** Follows the kit's photo evidence limits. Confirmation stays on the board; the encircle bot owns Encircle writes.
 
@@ -465,7 +442,7 @@ Reading review: confirm the wettest reading per material per room, click through
 
 ## Changelog
 
-RestoKit is on the **0.9.x** line. The current version is **0.9.20**.
+RestoKit is at **1.0.0**.
 
 - **Pre-0.6.** First single-file kit, then split into a modular kit.
 - **0.6.x.** First numbered releases.
@@ -475,6 +452,7 @@ RestoKit is on the **0.9.x** line. The current version is **0.9.20**.
 - **0.9.2 to 0.9.7.** Field additions: electrical, improvisation, a daily log template, a job file review workflow, review checks, and moisture mapping.
 - **0.9.8 to 0.9.15.** Planning and note-writing refinements: a day-forward plan format, checklist and note style, photo timing, visit-note cadence, and morning notes.
 - **0.9.16 to 0.9.20.** Walkthrough note set, job digest, README restructure.
+- **1.0.0.** Public release of the kit. There is no separate demo edition.
 
 ## Credits
 
