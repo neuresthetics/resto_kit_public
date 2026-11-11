@@ -38,6 +38,7 @@ Your whole crew aligned on the same methods, on every job.</p>
 - [How it works](#how-it-works)
 - [Try it](#try-it)
 - [How the system is set up](#how-the-system-is-set-up)
+- [Dev considerations](#dev-considerations)
 - [Integrations](#integrations)
 - [Own your stack](#own-your-stack)
 - [Tech expansion: in-house API servers](#tech-expansion-in-house-api-servers)
@@ -141,6 +142,12 @@ Around the kit, a shop setup looks like this:
 - **An API server, as the direction of travel.** Agents and the board talk to the shop's own API, which can sit in front of software the shop already uses, or become the shop's own job-file service. A backup server keeps a copy of the record.
 
 You still work in your existing software if you want to. The agents are a bridge between restoration knowledge and the decisions that produce scopes, billable items, estimates, and bills.
+
+## Dev considerations
+
+The kit's phase list is a flat map (phase 0 through phase 4, plus Hold) so an agent can traverse it in a predictable order and so safety gates stay in a fixed sequence inside a lane. A live job often is not one box on that map: work can run in multiple lanes at once, and between named phases — for example a crawl drying while upstairs is still pre-demo. A sticky on the line between phase boxes is an honest picture of the job.
+
+`phases.lanes` is not in the 1.0.0 kit. Putting it in would mean reworking the phase map together with the day-forward plan, visit-note cadence, and job-file review so "one phase box" language does not contradict the field. That is a structural pass for a later release, not a documentation fold into 1.0.0.
 
 ## Integrations
 
