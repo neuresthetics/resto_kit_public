@@ -46,6 +46,7 @@ Your whole crew aligned on the same methods, on every job.</p>
 - [Connectivity for deployed vans](#connectivity-for-deployed-vans)
 - [Licensing and service](#licensing-and-service)
 - [Contact](#contact)
+- [Limitations](#limitations)
 - [Tools showcase](#tools-showcase)
 - [Changelog](#changelog)
 - [Credits](#credits)
@@ -54,7 +55,7 @@ Your whole crew aligned on the same methods, on every job.</p>
 
 ## What it is
 
-RestoKit is a restoration knowledge framework plus agents that help a shop's people pilot the software they already run. It is not another app to learn, license, or click through.
+RestoKit is a restoration knowledge framework plus agents that help a shop's people pilot the software they already run. It is not another app to learn, license, or click through. It is aligned from science to scope to billing.
 
 The kit is a structured JSON file: job stages (phases) and modules that an agent can load and work from. It is informed by industry practice for water and mold work, and written in a peer voice — the way a senior tech talks a job through. It does not replace years on the job. Its main job is memory: holding the rare edge-case lessons that don't come up often enough to stay top of mind.
 
@@ -83,6 +84,8 @@ The same kit serves every seat, with each role seeing what it needs:
 **The role shift:** same roles, fewer handoffs. People move from producing the work product to approving it. Scope lines, moisture logs, and notes come back as drafts with a reason for each one. You approve, edit, or reject. Nothing is written to the job file without a person.
 
 Task lists stay hand-editable. Someone not using RestoKit can open one, see what's done, half done, and still to do, pick up where the last person left off, and check a box.
+
+In a multilingual crew, each person can talk to their agent in their own language, while notes and the job file stay in one shared language.
 
 ## How it works
 
@@ -113,6 +116,8 @@ Fetch https://resto-kit.com/kit/setup.md and follow it.
 The setup guide loads the demo kit and tells the agent how to use it, including the demo's limits. Read the kit as a person at [resto-kit.com/kit/demo](https://resto-kit.com/kit/demo).
 
 The full kit is private. If you want it, email neuresthetics@gmail.com.
+
+Improvements and challenges apply to the full kit, not just the demo. If you can improve it, bring it.
 
 ## Demo vs. the full kit
 
@@ -217,13 +222,26 @@ RestoKit is built by **Jason Burns**, a restoration tech and builder in Portland
 
 ---
 
+## Limitations
+
+Useful, not magic. You still do the thinking.
+
+- The agent doesn't know what it hasn't been told. Until it has the context a decision needs, don't count on it to make projections for you.
+- You still do the work and put in the thinking. The agent primarily organizes it, like a scribe.
+- What makes it work is traversal: it moves through the kit to find the situation and pulls together — synthesizes — what's relevant to read back to you. That's real, but it's not as much magic as people think.
+- Photo analysis is kept to a short list it does well: equipment, meter readings, rooms, and general progress. Appearance — moisture, wicking, shadows, textures, finishes — can't drive decisions or scopes without a meter reading or a person. Don't put 100% trust in everything. It's not a miracle solution. You still do your job.
+- A person approves every decision.
+- Only Grok has been tested so far.
+
+---
+
 <a id="tools-showcase"></a>
 <details>
 <summary>Tools showcase</summary>
 
 RestoKit tools are the applications built on top of the framework: the ops board, Job Digest, ScopeBot, and the rest. They follow the kit's stages and rules; they are not the kit itself.
 
-Feature previews captured with synthetic demonstration data, one screenshot each. Every name, job number, and address shown here is a demo stand-in. The board ties into the RestoKit kit (the rules), the tower API (serves board.json), read-only Encircle digs (job data), the board manual and scope_bot.
+Feature previews captured with synthetic demonstration data, one screenshot each. Every name, job number, and address shown here is a demo stand-in. Reading review is a planned concept, not a shipped tool; its shot uses sample placeholder data only. The board ties into the RestoKit kit (the rules), the tower API (serves board.json), read-only Encircle digs (job data), the board manual and scope_bot.
 
 ### Main page, all sections collapsed
 
@@ -428,6 +446,20 @@ The board manual: searchable chapters with quick-lookup chips.
 - Cross-links into board tools
 
 **Ties in:** A field reference that follows the kit; only chapter headings are shown here.
+
+### Reading review (concept)
+
+<a href="img/showroom/17_reading_review.png"><img src="img/showroom/17_reading_review.png" alt="Reading review concept mockup with sample placeholder data. Not a real job." width="100%"></a>
+
+Reading review: confirm the wettest reading per material per room, click through the rest fast. Concept.
+
+- Planned feature, not shipped
+- When no audio was recorded, confirm the wettest reading per material per room first, by voice or tap
+- The rest stay unconfirmed but stay backed by their photos, which can be checked if a line is questioned
+- Optional click-through of every row on a fast review screen
+- Shown here with sample placeholder data, not a real job
+
+**Ties in:** Follows the kit's photo evidence limits. Confirmation stays on the board; the encircle bot owns Encircle writes.
 
 </details>
 
