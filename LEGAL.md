@@ -14,7 +14,7 @@ Using the kit to produce job files, scopes, estimates, or other work product for
 
 Commercial use needs a paid commercial license from Jason Burns.
 
-To ask about a commercial license, write to neuresthetics@gmail.com
+To ask about a commercial license, write to data@resto-kit.com
 
 ## Trademarks
 

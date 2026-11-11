@@ -194,14 +194,14 @@ Work should still be captured offline and sync when the connection comes back, i
 
 ## Licensing and service
 
-This repository is a public window into the project: documentation, training materials, and a tools showroom. The kit itself is version **1.0.0**, at [resto-kit.com](https://resto-kit.com). The software license is [LICENSE](LICENSE) (PolyForm Noncommercial 1.0.0); plain-language terms are in [LEGAL.md](LEGAL.md). Shops that want a company-specific workflow or implementation work can email Jason at neuresthetics@gmail.com.
+This repository is a public window into the project: documentation, training materials, and a tools showroom. The kit itself is version **1.0.0**, at [resto-kit.com](https://resto-kit.com). The software license is [LICENSE](LICENSE) (PolyForm Noncommercial 1.0.0); plain-language terms are in [LEGAL.md](LEGAL.md). Shops that want a company-specific workflow or implementation work can email Jason at data@resto-kit.com.
 
 ## Contact
 
 - Site: [resto-kit.com](https://resto-kit.com)
 - The kit: [resto-kit.com](https://resto-kit.com/#loop-in-your-agent)
 - Agent setup: [resto-kit.com/kit/setup.md](https://resto-kit.com/kit/setup.md)
-- Email: neuresthetics@gmail.com
+- Email: data@resto-kit.com
 - GitHub: [github.com/neuresthetics](https://github.com/neuresthetics)
 
 RestoKit is built by **Jason Burns**, a restoration tech and builder in Portland, OR, and a U.S. Army Engineer veteran.
