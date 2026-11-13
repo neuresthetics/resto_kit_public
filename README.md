@@ -18,7 +18,7 @@ Your whole crew aligned on the same methods, on every job.</p>
 
 <p align="center">
   <a href="https://resto-kit.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fresto-kit.com&amp;up_message=resto--kit.com&amp;down_message=down&amp;label=website&amp;style=flat&amp;labelColor=0C1B2E&amp;up_color=1D69C6" alt="Website status for resto-kit.com"></a>
-  <img src="https://img.shields.io/badge/kit-1.0.0-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Kit version 1.0.0">
+  <img src="https://img.shields.io/badge/kit-1.1.0-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Kit version 1.1.0">
 </p>
 
 <p align="center">
@@ -112,7 +112,7 @@ Give this instruction to your AI agent:
 Fetch https://resto-kit.com/kit/setup.md and follow it.
 ```
 
-The setup guide loads the kit (version 1.0.0) and tells the agent how to use it. Read it at [resto-kit.com](https://resto-kit.com).
+The setup guide loads the kit (version 1.1.0) and tells the agent how to use it. Read it at [resto-kit.com](https://resto-kit.com).
 
 Improvements and challenges apply to the kit. If you can improve it, bring it.
 
@@ -120,7 +120,7 @@ You can suggest a change right from your agent while you’re using the kit. Jus
 
 <h2 id="how-the-system-is-set-up"><img src="assets/robot/neutral.png" width="28" height="28" alt=""> How the system is set up</h2>
 
-RestoKit is kit **1.0.0**. There is nothing to install to read the kit itself: it is one structured JSON file.
+RestoKit is kit **1.1.0**. There is nothing to install to read the kit itself: it is one structured JSON file.
 
 The file is organized at the top level as:
 
@@ -147,7 +147,7 @@ You still work in your existing software if you want to. The agents are a bridge
 
 The kit's phase list is a flat map (phase 0 through phase 4, plus Hold) so an agent can traverse it in a predictable order and so safety gates stay in a fixed sequence inside a lane. A live job often is not one box on that map: work can run in multiple lanes at once, and between named phases — for example a crawl drying while upstairs is still pre-demo. A sticky on the line between phase boxes is an honest picture of the job.
 
-`phases.lanes` is not in the 1.0.0 kit. Putting it in would mean reworking the phase map together with the day-forward plan, visit-note cadence, and job-file review so "one phase box" language does not contradict the field. That is a structural pass for a later release, not a documentation fold into 1.0.0.
+`phases.lanes` is not in the 1.1.0 kit. Putting it in would mean reworking the phase map together with the day-forward plan, visit-note cadence, and job-file review so "one phase box" language does not contradict the field. That is a structural pass for a later release, not a documentation fold into 1.1.0.
 
 ## Integrations
 
@@ -194,7 +194,7 @@ Work should still be captured offline and sync when the connection comes back, i
 
 ## Licensing and service
 
-This repository is a public window into the project: documentation, training materials, and a tools showroom. The kit itself is version **1.0.0**, at [resto-kit.com](https://resto-kit.com). The software license is [LICENSE](LICENSE) (PolyForm Noncommercial 1.0.0); plain-language terms are in [LEGAL.md](LEGAL.md). Shops that want a company-specific workflow or implementation work can email Jason at neuresthetics@gmail.com.
+This repository is a public window into the project: documentation, training materials, and a tools showroom. The kit itself is version **1.1.0**, at [resto-kit.com](https://resto-kit.com). The [1.1.0 update record](docs/releases/1.1.0.md) describes what changed. The software license is [LICENSE](LICENSE) (PolyForm Noncommercial 1.0.0). The copyright holder and commercial licensor is Neuresthetics LLC. Jason Burns is the author. Plain-language terms are in [LEGAL.md](LEGAL.md). Shops that want a company-specific workflow or implementation work can email Jason at neuresthetics@gmail.com.
 
 ## Contact
 
@@ -451,7 +451,7 @@ Reading review: confirm the wettest reading per material per room, click through
 
 ## Changelog
 
-RestoKit is at **1.0.0**.
+RestoKit is at **1.1.0**.
 
 - **Pre-0.6.** First single-file kit, then split into a modular kit.
 - **0.6.x.** First numbered releases.
@@ -461,6 +461,7 @@ RestoKit is at **1.0.0**.
 - **0.9.2 to 0.9.7.** Field additions: electrical, improvisation, a daily log template, a job file review workflow, review checks, and moisture mapping.
 - **0.9.8 to 0.9.15.** Planning and note-writing refinements: a day-forward plan format, checklist and note style, photo timing, visit-note cadence, and morning notes.
 - **0.9.16 to 0.9.20.** Walkthrough note set, job digest, README restructure.
+- **1.1.0.** Billable catalog of 117 lines with a reason for every line, company sheet support, new equipment and setup sections, cleaner wording, and Neuresthetics LLC as the license holder. [Update record](docs/releases/1.1.0.md).
 - **1.0.0.** Public release of the kit. There is no separate demo edition.
 
 ## Credits
