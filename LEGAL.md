@@ -18,7 +18,7 @@ To ask about a commercial license, write to neuresthetics@gmail.com
 
 ## Trademarks
 
-The RestoKit name and the RestoKit avatar and logo are trademarks of Jason Burns. They are not licensed under LICENSE. Copies and forks may not be called RestoKit.
+The RestoKit name and the RestoKit avatar and logo are trademarks of Neuresthetics LLC. They are not licensed under LICENSE. Copies and forks may not be called RestoKit.
 
 ## Standards
 
