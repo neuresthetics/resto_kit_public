@@ -157,18 +157,7 @@ The public tools showroom today reads job data through a shop API in front of ex
 
 <h2 id="own-your-stack"><img src="assets/robot/proud.png" width="28" height="28" alt=""> Own your stack</h2>
 
-Shops do not have to stay bound to a single vendor's job-file platform. The longer-term path is to own a small API server and a backup server that hold the job record, then connect agents and the board to that, cheaply, instead of renting the only copy of the file from bound software.
-
-A planning estimate dated **October 25, 2026** (America/Los_Angeles), prepared for one restoration company, compared staying on bound job-documentation software with adding agents and, if needed, cutting over to a shop-owned API and backup server. Figures are department-level planning estimates, not invoice-confirmed, and not quotes.
-
-| Route | Year-1 cash band (estimate) | What it assumes |
-| --- | --- | --- |
-| Status quo | ~$38,400 | Bound job-documentation software only, at about **$3,200/month** (~$38,400/year) |
-| Lean pilot | ~$40,900–$43,200 | Keep that software; add a lean set of Grok Bot seats (~$210–$400/month) |
-| Full-assist | ~$42,000–$44,400+ | Keep that software; more seats (~$300–$500+/month) |
-| Own the stack after cutover | ~$6,300–$10,900 | Shop API and backup server (~$1,500–$2,500 one-time; ~$80/month private network; ~$20–$40/month disk and power) plus the same seat bands; bound software cut after a real cutover |
-
-Until cutover, a shop may run the existing software and the new server in parallel, so Year-1 cash can run higher than the cutover band. Seat prices in that brief were taken from October 2026 list prices (Grok Teams; a standard private-network plan). Confirm current invoices and list prices before making a decision.
+Shops do not have to stay bound to a single vendor's job-file platform. The longer-term path is to own a small API server and a backup server that hold the job record, then connect agents and the board to that, instead of renting the only copy of the file from bound software.
 
 ## Tech expansion: in-house API servers
 
@@ -194,7 +183,7 @@ Work should still be captured offline and sync when the connection comes back, i
 
 ## Licensing and service
 
-This repository is a public window into the project: documentation, training materials, and a tools showroom. The kit itself is version **1.1.0**, at [resto-kit.com](https://resto-kit.com). The [1.1.0 update record](docs/releases/1.1.0.md) describes what changed. The software license is [LICENSE](LICENSE) (PolyForm Noncommercial 1.0.0). The copyright holder and commercial licensor is Neuresthetics LLC. Jason Burns is the author. Plain-language terms are in [LEGAL.md](LEGAL.md). Shops that want a company-specific workflow or implementation work can email Jason at neuresthetics@gmail.com.
+This repository is a public window into the project: documentation and a tools showroom. The kit itself is version **1.1.0**, at [resto-kit.com](https://resto-kit.com). The [1.1.0 update record](docs/releases/1.1.0.md) describes what changed. The software license is [LICENSE](LICENSE) (PolyForm Noncommercial 1.0.0). The copyright holder and commercial licensor is Neuresthetics LLC. Jason Burns is the author. Plain-language terms are in [LEGAL.md](LEGAL.md). Shops that want a company-specific workflow or implementation work can email Jason at neuresthetics@gmail.com.
 
 ## Contact
 
