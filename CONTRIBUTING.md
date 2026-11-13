@@ -8,4 +8,4 @@ Do not include job data, customer names, addresses, claim numbers, or other pers
 
 ## Contributor license agreement
 
-By submitting a contribution, you confirm that you have the right to submit it, and you grant Jason Burns a perpetual, irrevocable, worldwide, royalty-free license to your contribution, including the right to relicense it commercially.
+By submitting a contribution, you confirm that you have the right to submit it, and you grant Neuresthetics LLC a perpetual, irrevocable, worldwide, royalty-free license to your contribution, including the right to relicense it commercially.
