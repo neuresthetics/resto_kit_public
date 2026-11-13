@@ -12,7 +12,7 @@ Personal testing, study, research, and suggesting fixes are free.
 
 Using the kit to produce job files, scopes, estimates, or other work product for a business — including a restoration company using it on its own jobs — is commercial use. Selling setups, or embedding the kit in a product, is also commercial use.
 
-Commercial use needs a paid commercial license from Jason Burns.
+Commercial use needs a paid commercial license from Neuresthetics LLC.
 
 To ask about a commercial license, write to neuresthetics@gmail.com
 
@@ -30,6 +30,6 @@ The kit is provided as-is, with no warranty. It is not a substitute for professi
 
 The kit helps organize, find, and synthesize information. It does not replace the user's own judgment, and outputs depend on the context provided.
 
-Anyone who uses the kit without a license or setup from Jason is solely responsible for how they use it and for their results. Jason is not liable for outcomes from unlicensed or unsupported use.
+Anyone who uses the kit without a license or setup from Neuresthetics LLC is solely responsible for how they use it and for their results. Neuresthetics LLC is not liable for outcomes from unlicensed or unsupported use.
 
 This section is a draft pending attorney review.
