@@ -183,7 +183,7 @@ Work should still be captured offline and sync when the connection comes back, i
 
 ## Licensing and service
 
-This repository is a public window into the project: documentation and a tools showroom. The kit itself is version **1.1.2**, at [resto-kit.com](https://resto-kit.com). The [1.1.2 update record](docs/releases/1.1.2.md) describes what changed. The software license is [LICENSE](LICENSE) (PolyForm Noncommercial 1.0.0). The copyright holder and commercial licensor is Neuresthetics LLC. Jason Burns is the author. Plain-language terms are in [LEGAL.md](LEGAL.md). Shops that want a company-specific workflow or implementation work can email Jason at data@resto-kit.com.
+This repository is a public window into the project: documentation and a tools showroom. The kit itself is version **1.1.3**, at [resto-kit.com](https://resto-kit.com). The [1.1.3 update record](docs/releases/1.1.3.md) describes what changed. The software license is [LICENSE](LICENSE) (PolyForm Noncommercial 1.0.0). The copyright holder and commercial licensor is Neuresthetics LLC. Jason Burns is the author. Plain-language terms are in [LEGAL.md](LEGAL.md). Shops that want a company-specific workflow or implementation work can email Jason at data@resto-kit.com.
 
 ## Contact
 
@@ -440,7 +440,7 @@ Reading review: confirm the wettest reading per material per room, click through
 
 ## Changelog
 
-RestoKit is at **1.1.2**.
+RestoKit is at **1.1.3**.
 
 - **Pre-0.6.** First single-file kit, then split into a modular kit.
 - **0.6.x.** First numbered releases.
@@ -450,6 +450,7 @@ RestoKit is at **1.1.2**.
 - **0.9.2 to 0.9.7.** Field additions: electrical, improvisation, a daily log template, a job file review workflow, review checks, and moisture mapping.
 - **0.9.8 to 0.9.15.** Planning and note-writing refinements: a day-forward plan format, checklist and note style, photo timing, visit-note cadence, and morning notes.
 - **0.9.16 to 0.9.20.** Walkthrough note set, job digest, README restructure.
+- **1.1.3.** On a Category 3 sewage job, line the cargo area with plastic like a bowl before loading the extractor, hoses, or contaminated debris. This is not a default for ordinary demolition. [Update record](docs/releases/1.1.3.md).
 - **1.1.2.** Before setup, run a short power survey so a power box is used only when house circuits cannot carry the projected load, and give the homeowner a simple electricity usage record in kilowatt-hours. [Update record](docs/releases/1.1.2.md).
 - **1.1.1.** The improvisation section is renamed Field Adaptations, with all of its content kept, and gains a one-person chalk line fix. [Update record](docs/releases/1.1.1.md).
 - **1.1.0.** Billable catalog of 117 lines with a reason for every line, company sheet support, new equipment and setup sections, cleaner wording, and Neuresthetics LLC as the license holder. [Update record](docs/releases/1.1.0.md).
