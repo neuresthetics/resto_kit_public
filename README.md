@@ -18,7 +18,7 @@ Your whole crew aligned on the same methods, on every job.</p>
 
 <p align="center">
   <a href="https://resto-kit.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fresto-kit.com&amp;up_message=resto--kit.com&amp;down_message=down&amp;label=website&amp;style=flat&amp;labelColor=0C1B2E&amp;up_color=1D69C6" alt="Website status for resto-kit.com"></a>
-  <img src="https://img.shields.io/badge/kit-1.1.1-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Kit version 1.1.1">
+  <img src="https://img.shields.io/badge/kit-1.1.4-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Kit version 1.1.4">
 </p>
 
 <p align="center">
@@ -112,7 +112,7 @@ Give this instruction to your AI agent:
 Fetch https://resto-kit.com/kit/setup.md and follow it.
 ```
 
-The setup guide loads the kit (version 1.1.1) and tells the agent how to use it. Read it at [resto-kit.com](https://resto-kit.com).
+The setup guide loads the kit (version 1.1.4) and tells the agent how to use it. The standard kit files are also in this repository, starting with [`resto_kit_1.1.4.json`](resto_kit_1.1.4.json). Read it at [resto-kit.com](https://resto-kit.com).
 
 Improvements and challenges apply to the kit. If you can improve it, bring it.
 
@@ -120,7 +120,7 @@ You can suggest a change right from your agent while you’re using the kit. Jus
 
 <h2 id="how-the-system-is-set-up"><img src="assets/robot/neutral.png" width="28" height="28" alt=""> How the system is set up</h2>
 
-RestoKit is kit **1.1.1**. There is nothing to install to read the kit itself: it is one structured JSON file.
+RestoKit is kit **1.1.4**. There is nothing to install to read the kit itself: it is one structured JSON file.
 
 The file is organized at the top level as:
 
@@ -132,7 +132,7 @@ The file is organized at the top level as:
   - **`modules`** — field practice, safety, controls, drying, documentation, and related topics
   - **`base_science`** — the why behind the calls
 
-Internal layout below that stays in the private kit.
+The complete standard kit files are in this repository, including [`resto_kit_1.1.4.json`](resto_kit_1.1.4.json).
 
 Around the kit, a shop setup looks like this:
 
@@ -147,13 +147,15 @@ You still work in your existing software if you want to. The agents are a bridge
 
 The kit's phase list is a flat map (phase 0 through phase 4, plus Hold) so an agent can traverse it in a predictable order and so safety gates stay in a fixed sequence inside a lane. A live job often is not one box on that map: work can run in multiple lanes at once, and between named phases — for example a crawl drying while upstairs is still pre-demo. A sticky on the line between phase boxes is an honest picture of the job.
 
-`phases.lanes` is not in the 1.1.1 kit. Putting it in would mean reworking the phase map together with the day-forward plan, visit-note cadence, and job-file review so "one phase box" language does not contradict the field. That is a structural pass for a later release, not a documentation fold into 1.1.0.
+`phases.lanes` is not in the 1.1.4 kit. Putting it in would mean reworking the phase map together with the day-forward plan, visit-note cadence, and job-file review so "one phase box" language does not contradict the field. That is a structural pass for a later release, not a documentation-only change to the current kit.
 
 ## Integrations
 
 RestoKit is meant to pilot tools a shop already runs — any job-file or ops system that has an API. The agents connect once, then draft into that system for a person to approve. Writes are human-gated: a person owns accuracy and safety.
 
 The public tools showroom today reads job data through a shop API in front of existing job-file software (for example, read-only Encircle digs). The same pattern can apply to other platforms shops already use, including bound systems such as Encircle or DASH, as long as an API is available. The kit does not replace those tools by itself; it is the restoration logic layer and the agent layer on top of them.
+
+RestoKit is built to work with others. Someone will eventually combine agents and their own restoration frameworks with this kit, and RestoKit must mesh with them. Future connections should merge with local work and respect it, rather than replace it.
 
 <h2 id="own-your-stack"><img src="assets/robot/proud.png" width="28" height="28" alt=""> Own your stack</h2>
 
@@ -183,12 +185,25 @@ Work should still be captured offline and sync when the connection comes back, i
 
 ## Licensing and service
 
-This repository is a public window into the project: documentation and a tools showroom. The kit itself is version **1.1.4**, at [resto-kit.com](https://resto-kit.com). The [1.1.4 update record](docs/releases/1.1.4.md) describes what changed. The software license is [LICENSE](LICENSE) (PolyForm Noncommercial 1.0.0). The copyright holder and commercial licensor is Neuresthetics LLC. Jason Burns is the author. Plain-language terms are in [LEGAL.md](LEGAL.md). Shops that want a company-specific workflow or implementation work can email Jason at data@resto-kit.com.
+The standard kit is version **1.1.4**. The live file is [`resto_kit_1.1.4.json`](resto_kit_1.1.4.json) in this repository (earlier 1.1.x files are here too). You can also sign in at [resto-kit.com/get-the-kit](https://resto-kit.com/get-the-kit). The [1.1.4 update record](docs/releases/1.1.4.md) describes what changed.
+
+This repository is licensed under the [Apache License 2.0](LICENSE). See also [NOTICE](NOTICE). Regular technicians and companies may use the standard kit in their business, and across companies, with no separate license from Neuresthetics LLC. Anyone may fork and customize it. You remain responsible for your own use and for anything you post or submit, and there is no warranty. Plain-language terms are in [LEGAL.md](LEGAL.md). The RestoKit name and logo are trademarks of Neuresthetics LLC and are not licensed; forks must choose another name and must not use the logo. The copyright holder is Neuresthetics LLC. Jason Burns is the author.
+
+If you fork the kit, you are welcome — but never required — to still connect with a free RestoKit account kit link from [resto-kit.com/get-the-kit](https://resto-kit.com/get-the-kit). That is optional and helps both sides: your agent can still pick up standard kit updates, and you have an easy way to share improvements back. Apache 2.0 does not require this.
+
+When you use the kit for work, your agent should settle, for that job, whether to freeze the kit version or take an update while the job is still open. Updating increases coverage. A mid-job update should be reviewed before it is used. If you choose not to update, Neuresthetics LLC is not responsible for outcomes caused by running an outdated version. This does not change the Apache 2.0 AS IS terms. See [LEGAL.md](LEGAL.md).
+
+Earlier releases of the standard kit were offered under the PolyForm Noncommercial License 1.0.0. The standard line is relicensed under Apache 2.0 from this point.
+
+RestoKit Platinum is a separate, private framework. It is not in this repository and is available only under a paid license from Neuresthetics LLC.
+
+Shops that want a company-specific workflow or implementation work can email Jason at data@resto-kit.com.
 
 ## Contact
 
 - Site: [resto-kit.com](https://resto-kit.com)
-- The kit: [resto-kit.com](https://resto-kit.com/#loop-in-your-agent)
+- The standard kit in this repository: [`resto_kit_1.1.4.json`](resto_kit_1.1.4.json)
+- Sign-in fetch: [resto-kit.com/get-the-kit](https://resto-kit.com/get-the-kit)
 - Agent setup: [resto-kit.com/kit/setup.md](https://resto-kit.com/kit/setup.md)
 - Email: data@resto-kit.com
 - GitHub: [github.com/neuresthetics](https://github.com/neuresthetics)
@@ -450,7 +465,7 @@ RestoKit is at **1.1.4**.
 - **0.9.2 to 0.9.7.** Field additions: electrical, improvisation, a daily log template, a job file review workflow, review checks, and moisture mapping.
 - **0.9.8 to 0.9.15.** Planning and note-writing refinements: a day-forward plan format, checklist and note style, photo timing, visit-note cadence, and morning notes.
 - **0.9.16 to 0.9.20.** Walkthrough note set, job digest, README restructure.
-- **1.1.4.** Weather-related water (wind-driven rain, storm water, roof and window leaks) is not Category 3 because of how it got in: the category follows the inspection, staining alone is not contamination or rot, and there is no automatic flood cut. The dry standard and drying goal are set at the first visit. Prompted by the IICRC S500 Consensus Body [position statement](https://iicrc.org/wp-content/uploads/2026/03/Weather-Related-Position-Statement-2026-0210-BB-225.pdf) of March 16, 2026. [Update record](docs/releases/1.1.4.md).
+- **1.1.4.** Weather-related water (wind-driven rain, storm water, roof and window leaks) is not Category 3 because of how it got in: the category follows the inspection, staining alone is not contamination or rot, and there is no automatic flood cut. The dry standard and drying goal are set at the first visit. Prompted by the IICRC S500 Consensus Body [position statement](https://iicrc.org/wp-content/uploads/2026/03/Weather-Related-Position-Statement-2026-0210-BB-225.pdf) of March 16, 2026. This is the last standard kit before RestoKit Platinum branches off into advanced class-structure billing and prediction science. RestoKit was built from the start for crews working with AI agents, and that is what opened the door to binding pay to tradecraft and to that direction. [Update record](docs/releases/1.1.4.md).
 - **1.1.3.** On a Category 3 sewage job, line the cargo area with plastic like a bowl before loading the extractor, hoses, or contaminated debris. This is not a default for ordinary demolition. [Update record](docs/releases/1.1.3.md).
 - **1.1.2.** Before setup, run a short power survey so a power box is used only when house circuits cannot carry the projected load, and give the homeowner a simple electricity usage record in kilowatt-hours. [Update record](docs/releases/1.1.2.md).
 - **1.1.1.** The improvisation section is renamed Field Adaptations, with all of its content kept, and gains a one-person chalk line fix. [Update record](docs/releases/1.1.1.md).
