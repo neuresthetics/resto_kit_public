@@ -187,6 +187,8 @@ The standard kit is version **1.1.4**. The live file is [`resto_kit_1.1.4.json`]
 
 This repository is licensed under the [Apache License 2.0](LICENSE). See also [NOTICE](NOTICE). Regular technicians and companies may use the standard kit in their business, and across companies, with no separate license from Neuresthetics LLC. Anyone may fork and customize it. You remain responsible for your own use and for anything you post or submit, and there is no warranty. Plain-language terms are in [LEGAL.md](LEGAL.md). The RestoKit name and logo are trademarks of Neuresthetics LLC and are not licensed; forks must choose another name and must not use the logo. The copyright holder is Neuresthetics LLC. Jason Burns is the author.
 
+If you fork the kit, you are welcome — but never required — to still connect with a free RestoKit account kit link from [resto-kit.com/get-the-kit](https://resto-kit.com/get-the-kit). That is optional and helps both sides: your agent can still pick up standard kit updates, and you have an easy way to share improvements back. Apache 2.0 does not require this.
+
 Earlier releases of the standard kit were offered under the PolyForm Noncommercial License 1.0.0. The standard line is relicensed under Apache 2.0 from this point.
 
 RestoKit Platinum is a separate, private framework. It is not in this repository and is available only under a paid license from Neuresthetics LLC.
