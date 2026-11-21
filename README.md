@@ -155,6 +155,8 @@ RestoKit is meant to pilot tools a shop already runs — any job-file or ops sys
 
 The public tools showroom today reads job data through a shop API in front of existing job-file software (for example, read-only Encircle digs). The same pattern can apply to other platforms shops already use, including bound systems such as Encircle or DASH, as long as an API is available. The kit does not replace those tools by itself; it is the restoration logic layer and the agent layer on top of them.
 
+RestoKit is built to work with others. Someone will eventually combine agents and their own restoration frameworks with this kit, and RestoKit must mesh with them. Future connections should merge with local work and respect it, rather than replace it.
+
 <h2 id="own-your-stack"><img src="assets/robot/proud.png" width="28" height="28" alt=""> Own your stack</h2>
 
 Shops do not have to stay bound to a single vendor's job-file platform. The longer-term path is to own a small API server and a backup server that hold the job record, then connect agents and the board to that, instead of renting the only copy of the file from bound software.
@@ -188,6 +190,8 @@ The standard kit is version **1.1.4**. The live file is [`resto_kit_1.1.4.json`]
 This repository is licensed under the [Apache License 2.0](LICENSE). See also [NOTICE](NOTICE). Regular technicians and companies may use the standard kit in their business, and across companies, with no separate license from Neuresthetics LLC. Anyone may fork and customize it. You remain responsible for your own use and for anything you post or submit, and there is no warranty. Plain-language terms are in [LEGAL.md](LEGAL.md). The RestoKit name and logo are trademarks of Neuresthetics LLC and are not licensed; forks must choose another name and must not use the logo. The copyright holder is Neuresthetics LLC. Jason Burns is the author.
 
 If you fork the kit, you are welcome — but never required — to still connect with a free RestoKit account kit link from [resto-kit.com/get-the-kit](https://resto-kit.com/get-the-kit). That is optional and helps both sides: your agent can still pick up standard kit updates, and you have an easy way to share improvements back. Apache 2.0 does not require this.
+
+When you use the kit for work, your agent should settle, for that job, whether to freeze the kit version or take an update while the job is still open. Updating increases coverage. A mid-job update should be reviewed before it is used. If you choose not to update, Neuresthetics LLC is not responsible for outcomes caused by running an outdated version. This does not change the Apache 2.0 AS IS terms. See [LEGAL.md](LEGAL.md).
 
 Earlier releases of the standard kit were offered under the PolyForm Noncommercial License 1.0.0. The standard line is relicensed under Apache 2.0 from this point.
 
@@ -461,7 +465,7 @@ RestoKit is at **1.1.4**.
 - **0.9.2 to 0.9.7.** Field additions: electrical, improvisation, a daily log template, a job file review workflow, review checks, and moisture mapping.
 - **0.9.8 to 0.9.15.** Planning and note-writing refinements: a day-forward plan format, checklist and note style, photo timing, visit-note cadence, and morning notes.
 - **0.9.16 to 0.9.20.** Walkthrough note set, job digest, README restructure.
-- **1.1.4.** Weather-related water (wind-driven rain, storm water, roof and window leaks) is not Category 3 because of how it got in: the category follows the inspection, staining alone is not contamination or rot, and there is no automatic flood cut. The dry standard and drying goal are set at the first visit. Prompted by the IICRC S500 Consensus Body [position statement](https://iicrc.org/wp-content/uploads/2026/03/Weather-Related-Position-Statement-2026-0210-BB-225.pdf) of March 16, 2026. [Update record](docs/releases/1.1.4.md).
+- **1.1.4.** Weather-related water (wind-driven rain, storm water, roof and window leaks) is not Category 3 because of how it got in: the category follows the inspection, staining alone is not contamination or rot, and there is no automatic flood cut. The dry standard and drying goal are set at the first visit. Prompted by the IICRC S500 Consensus Body [position statement](https://iicrc.org/wp-content/uploads/2026/03/Weather-Related-Position-Statement-2026-0210-BB-225.pdf) of March 16, 2026. This is the last standard kit before RestoKit Platinum branches off into advanced class-structure billing and prediction science. RestoKit was built from the start for crews working with AI agents, and that is what opened the door to binding pay to tradecraft and to that direction. [Update record](docs/releases/1.1.4.md).
 - **1.1.3.** On a Category 3 sewage job, line the cargo area with plastic like a bowl before loading the extractor, hoses, or contaminated debris. This is not a default for ordinary demolition. [Update record](docs/releases/1.1.3.md).
 - **1.1.2.** Before setup, run a short power survey so a power box is used only when house circuits cannot carry the projected load, and give the homeowner a simple electricity usage record in kilowatt-hours. [Update record](docs/releases/1.1.2.md).
 - **1.1.1.** The improvisation section is renamed Field Adaptations, with all of its content kept, and gains a one-person chalk line fix. [Update record](docs/releases/1.1.1.md).

@@ -30,6 +30,12 @@ The kit and agents draft. The technician or user reviews and approves. The perso
 
 RestoKit is not a substitute for professional judgment, applicable codes, or safety requirements.
 
+## Versions and updates
+
+When the kit is used for work, the agent should settle, for that job, whether to freeze the kit version or take an update while the job is still open. Updating increases coverage. A mid-job update should be reviewed before it is used.
+
+If you choose not to update, Neuresthetics LLC is not responsible for outcomes caused by running an outdated version. This does not change the license: the kit is provided AS IS, without warranty, as stated above and in LICENSE.
+
 ## Standards
 
 RestoKit aligns with the principles of IICRC S500 and S520 but is written entirely in its own words. It does not reproduce IICRC text, signature language, or trademarks. The body of knowledge comes from field practice across restoration companies, including real-world operations the standards don't address. RestoKit is not affiliated with, approved, or endorsed by IICRC.
