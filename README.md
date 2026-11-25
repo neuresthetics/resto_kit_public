@@ -18,7 +18,7 @@ Your whole crew aligned on the same methods, on every job.</p>
 
 <p align="center">
   <a href="https://resto-kit.com"><img src="https://img.shields.io/website?url=https%3A%2F%2Fresto-kit.com&amp;up_message=resto--kit.com&amp;down_message=down&amp;label=website&amp;style=flat&amp;labelColor=0C1B2E&amp;up_color=1D69C6" alt="Website status for resto-kit.com"></a>
-  <img src="https://img.shields.io/badge/kit-1.1.7-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Kit version 1.1.7">
+  <img src="https://img.shields.io/badge/kit-1.1.8-1D69C6?style=flat&amp;labelColor=0C1B2E" alt="Kit version 1.1.8">
 </p>
 
 <p align="center">
@@ -112,7 +112,7 @@ Give this instruction to your AI agent:
 Fetch https://resto-kit.com/kit/setup.md and follow it.
 ```
 
-The setup guide loads the kit (version 1.1.7) and tells the agent how to use it. The standard kit files are also in this repository, starting with [`resto_kit_1.1.7.json`](resto_kit_1.1.7.json). Read it at [resto-kit.com](https://resto-kit.com).
+The setup guide loads the kit (version 1.1.8) and tells the agent how to use it. The standard kit files are also in this repository, starting with [`resto_kit_1.1.8.json`](resto_kit_1.1.8.json). Read it at [resto-kit.com](https://resto-kit.com).
 
 Improvements and challenges apply to the kit. If you can improve it, bring it.
 
@@ -120,7 +120,7 @@ You can suggest a change right from your agent while you’re using the kit. Jus
 
 <h2 id="how-the-system-is-set-up"><img src="assets/robot/neutral.png" width="28" height="28" alt=""> How the system is set up</h2>
 
-RestoKit is kit **1.1.7**. There is nothing to install to read the kit itself: it is one structured JSON file.
+RestoKit is kit **1.1.8**. There is nothing to install to read the kit itself: it is one structured JSON file.
 
 The file is organized at the top level as:
 
@@ -132,7 +132,7 @@ The file is organized at the top level as:
   - **`modules`** — field practice, safety, controls, drying, documentation, and related topics
   - **`base_science`** — the why behind the calls
 
-The complete standard kit files are in this repository, including [`resto_kit_1.1.7.json`](resto_kit_1.1.7.json).
+The complete standard kit files are in this repository, including [`resto_kit_1.1.8.json`](resto_kit_1.1.8.json).
 
 Around the kit, a shop setup looks like this:
 
@@ -147,7 +147,7 @@ You still work in your existing software if you want to. The agents are a bridge
 
 The kit's phase list is a flat map (phase 0 through phase 4, plus Hold) so an agent can traverse it in a predictable order and so safety gates stay in a fixed sequence inside a lane. A live job often is not one box on that map: work can run in multiple lanes at once, and between named phases — for example a crawl drying while upstairs is still pre-demo. A sticky on the line between phase boxes is an honest picture of the job.
 
-`phases.lanes` is not in the 1.1.7 kit. Putting it in would mean reworking the phase map together with the visit-note cadence, the job-file review, and the morning note so "one phase box" language does not contradict the field. That is a structural pass for a later release, not a documentation-only change to the current kit.
+`phases.lanes` is not in the 1.1.8 kit. Putting it in would mean reworking the phase map together with the visit-note cadence, the job-file review, and the morning note so "one phase box" language does not contradict the field. That is a structural pass for a later release, not a documentation-only change to the current kit.
 
 ## Integrations
 
@@ -185,7 +185,7 @@ Work should still be captured offline and sync when the connection comes back, i
 
 ## Licensing and service
 
-The standard kit is version **1.1.7**. The live file is [`resto_kit_1.1.7.json`](resto_kit_1.1.7.json) in this repository (earlier 1.1.x files are here too). You can also sign in at [resto-kit.com/get-the-kit](https://resto-kit.com/get-the-kit). The [1.1.7 update record](docs/releases/1.1.7.md) describes what changed.
+The standard kit is version **1.1.8**. The live file is [`resto_kit_1.1.8.json`](resto_kit_1.1.8.json) in this repository (earlier 1.1.x files are here too). You can also sign in at [resto-kit.com/get-the-kit](https://resto-kit.com/get-the-kit). The [1.1.8 update record](docs/releases/1.1.8.md) describes what changed.
 
 This repository is licensed under the [Apache License 2.0](LICENSE). See also [NOTICE](NOTICE). Regular technicians and companies may use the standard kit in their business, and across companies, with no separate license from Neuresthetics LLC. Anyone may fork and customize it. You remain responsible for your own use and for anything you post or submit, and there is no warranty. Plain-language terms are in [LEGAL.md](LEGAL.md). The RestoKit name and logo are trademarks of Neuresthetics LLC and are not licensed; forks must choose another name and must not use the logo. The copyright holder is Neuresthetics LLC. Jason Burns is the author.
 
@@ -202,7 +202,7 @@ Shops that want a company-specific workflow or implementation work can email Jas
 ## Contact
 
 - Site: [resto-kit.com](https://resto-kit.com)
-- The standard kit in this repository: [`resto_kit_1.1.7.json`](resto_kit_1.1.7.json)
+- The standard kit in this repository: [`resto_kit_1.1.8.json`](resto_kit_1.1.8.json)
 - Sign-in fetch: [resto-kit.com/get-the-kit](https://resto-kit.com/get-the-kit)
 - Agent setup: [resto-kit.com/kit/setup.md](https://resto-kit.com/kit/setup.md)
 - Email: data@resto-kit.com
@@ -455,7 +455,7 @@ Reading review: confirm the wettest reading per material per room, click through
 
 ## Changelog
 
-RestoKit is at **1.1.7**.
+RestoKit is at **1.1.8**.
 
 - **Pre-0.6.** First single-file kit, then split into a modular kit.
 - **0.6.x.** First numbered releases.
@@ -465,6 +465,7 @@ RestoKit is at **1.1.7**.
 - **0.9.2 to 0.9.7.** Field additions: electrical, improvisation, a daily log template, a job file review workflow, review checks, and moisture mapping.
 - **0.9.8 to 0.9.15.** Planning and note-writing refinements: a day-forward plan format, checklist and note style, photo timing, visit-note cadence, and morning notes.
 - **0.9.16 to 0.9.20.** Walkthrough note set, job digest, README restructure.
+- **1.1.8.** Crawlspace negative air and containment guidance added to insulation removal and sewage work; new footing and pier vapor barrier rules (cut visqueen low and away from wood post bases); vapor barrier overlap and stem-wall height updated from 6 to 12 inches with an Oregon code note (keeping the kit jurisdiction-neutral); and crawlspace order clarified as insulation removal before dirty visqueen out and clean visqueen down before new insulation. [Update record](docs/releases/1.1.8.md).
 - **1.1.7.** No new field rules. The kit states its scope: the standard kit covers mitigation and remediation; reconstruction is covered by RestoKit Platinum. No files are renamed. [Update record](docs/releases/1.1.7.md).
 - **1.1.6.** No new field rules. Common trade acronyms a tech should know, such as HEPA, PPE, and HVAC, are fine when the Glossary defines them, and the Glossary now defines every trade acronym the kit uses. A few obscure short forms are written out in full. A maintainer note moved out of the list of sections. [Update record](docs/releases/1.1.6.md).
 - **1.1.5.** No new field rules: structure and consistency fixes from a full review. The hazard testing line on the scope sheet now matches the hazard rule (building age is a prompt, not a clearance). The leftover Day Forward section is removed and the morning note has one home. The daily log template names customers by role and records a job reference instead of a street address. [Update record](docs/releases/1.1.5.md).
